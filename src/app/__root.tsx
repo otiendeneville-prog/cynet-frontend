@@ -103,9 +103,9 @@ function RootLayout() {
                 <Footer />
               </div>
               <FloatingWhatsApp
-                phoneNumber="+254 715 113 519"
-                accountName="Bluestron Institute"
-                avatar="assets/bluestroninstitute-primary-logo.png"
+                phoneNumber="+254 792 972 525"
+                accountName="Cynet East Africa Consultancy"
+                avatar="assets/Logo-cynet.png"
                 statusMessage="Typically replies within 1 hour"
                 chatMessage="Hello! 👋 How can we help you today?"
                 darkMode={false}

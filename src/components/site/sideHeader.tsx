@@ -12,8 +12,8 @@ export function SiteHeader() {
         <Link to="/" className="flex items-center gap-3">
           {/* Logo */}
           <img
-            src="/assets/bluestroninstitute-primary-logo.png"
-            alt="Bluestron Logo"
+            src="/assets/Logo-cynet.png"
+            alt="Cynet East Africa Consultancy"
             className="h-[80px] w-auto object-contain"
           />
         </Link>
