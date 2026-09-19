@@ -79,12 +79,16 @@ export function Footer() {
         <div className="max-w-7xl mx-auto px-5 lg:px-8 py-12 grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_0.9fr_0.9fr_1.2fr]">
           <div>
             <div className="flex items-center gap-3">
-              <div className="rounded-xl bg-primary/10 text-primary border border-primary/20 px-3 py-2 text-sm font-semibold tracking-[0.18em] uppercase">
-                Cynet
+              <div>
+                  <img
+                       src="/assets/Logo-cynet.png"
+                        alt="Cynet East Africa Consultancy"
+                        className="h-[50px] w-auto object-contain"
+                       />
               </div>
               <div>
                 <div className="text-lg font-bold leading-none">
-                  East Africa
+                  
                 </div>
               </div>
             </div>

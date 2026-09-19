@@ -27,16 +27,15 @@ export const Route = createRootRoute({
       { charSet: "UTF-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1.0" },
       {
-        
         title: "Cynet East Africa Consultancy-Cynet East Africa Consultancy",
       },
-   
-        <img
-             src="/assets/Logo-cynet.png"
-             alt="Cynet East Africa Consultancy"
-             className="h-`7.5` w-auto object-contain"
-        />,        
-            
+
+      <img
+        src="/assets/Logo-cynet.png"
+        alt="Cynet East Africa Consultancy"
+        className="h-`7.5` w-auto object-contain"
+      />,
+
       {
         name: "description",
         content:

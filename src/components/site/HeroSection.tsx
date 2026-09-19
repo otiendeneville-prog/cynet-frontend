@@ -45,11 +45,11 @@ function HeroSection() {
   }
 
   return (
-    <section className="relative overflow-hidden border-b border-border min-h-[680px] lg:min-h-[760px] flex items-center">
+    <section className="relative  overflow-hidden border-b border-border min-h-[680px] lg:min-h-[760px] flex items-center">
       <HeroCarousel />
       <div className="absolute -right-40 -top-40 size-[28rem] rounded-full bg-primary/20 blur-3xl pointer-events-none z-0" />
       <div className="absolute -left-32 bottom-0 size-80 rounded-full bg-primary/15 blur-3xl pointer-events-none z-0" />
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-5 lg:px-8 pt-16 lg:pt-24 pb-24 lg:pb-28">
+      <div className="absolute z-10 w-full max-w-7xl mx-auto px-5 lg:px-8 pt-16 lg:pt-24 pb-24 lg:pb-28">
         {isLoading ? (
           <div className="h-6 w-40 rounded-full bg-muted animate-pulse" />
         ) : (
@@ -64,7 +64,7 @@ function HeroSection() {
             <div className="h-12 w-2/3 max-w-xl rounded-md bg-muted animate-pulse" />
           </div>
         ) : (
-          <h1 className="mt-5 text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] max-w-4xl">
+          <h1 className="mt-5 text-4xl sm:text-5xl text-primary lg:text-6xl font-bold leading-[1.05] max-w-4xl">
             {hero?.headline ??
               "Empowering Professionals Through Expert Training & Consultancy"}
           </h1>
@@ -98,7 +98,8 @@ function HeroSection() {
               to="https://drive.google.com/file/d/1TqaD4jHUqqFSqMgV5zePqF-uGg9rm4AE/view"
               className="inline-flex items-center gap-2 px-5 h-12 rounded-lg bg-secondary border border-border font-medium hover:bg-muted transition"
             >
-              <Calendar className="size-4" />View 2026 calendar
+              <Calendar className="size-4" />
+              View 2026 calendar
             </Link>
           </div>
         )}
