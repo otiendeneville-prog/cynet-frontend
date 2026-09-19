@@ -13,6 +13,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { FloatingWhatsApp } from "@digicroz/react-floating-whatsapp";
+import { Link } from "react-router-dom";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -26,8 +27,16 @@ export const Route = createRootRoute({
       { charSet: "UTF-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1.0" },
       {
+        
         title: "Cynet East Africa Consultancy-Cynet East Africa Consultancy",
       },
+   
+        <img
+             src="/assets/Logo-cynet.png"
+             alt="Cynet East Africa Consultancy"
+             className="h-`7.5` w-auto object-contain"
+        />,        
+            
       {
         name: "description",
         content:

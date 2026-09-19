@@ -89,7 +89,7 @@ function HeroSection() {
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               to={hero?.cta_url ?? "/courses"}
-              className="inline-flex items-center gap-2 px-5 h-12 rounded-lg bg-gradient-primary text-primary-foreground font-medium shadow-glow hover:opacity-95 transition"
+              className="inline-flex items-center gap-2 px-5 h-12 rounded-lg bg-primary hsl(194, 66%, 49%) text-black font-medium shadow-glow hover:opacity-95 transition"
             >
               <BookOpen className="size-4" />
               {hero?.cta_label ?? "View Courses"}
@@ -98,7 +98,7 @@ function HeroSection() {
               to="https://drive.google.com/file/d/1TqaD4jHUqqFSqMgV5zePqF-uGg9rm4AE/view"
               className="inline-flex items-center gap-2 px-5 h-12 rounded-lg bg-secondary border border-border font-medium hover:bg-muted transition"
             >
-              <Calendar className="size-4" /> 2026 calendar
+              <Calendar className="size-4" />View 2026 calendar
             </Link>
           </div>
         )}
