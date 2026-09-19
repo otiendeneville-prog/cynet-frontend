@@ -315,12 +315,12 @@ export function MegaMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Why Bluestron</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Cynet</NavigationMenuTrigger>
           <NavigationMenuContent>
             <MenuGrid
               items={aboutUs}
               feature={{
-                title: "Why Bluestron Institute",
+                title: "Cynet East Africa",
                 description:
                   "Deliver high-quality, reliable, and timely supply solutions that empower organizations to operate efficiently and focus on their core objectives..",
                 href: "/contact",
