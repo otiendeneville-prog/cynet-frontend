@@ -26,7 +26,7 @@ export const Route = createRootRoute({
       { charSet: "UTF-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1.0" },
       {
-        title: "Corporate: training trusted by 35+ organisations across Africa",
+        title: "Cynet East Africa Consultancy-Cynet East Africa Consultancy",
       },
       {
         name: "description",
