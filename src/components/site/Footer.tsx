@@ -22,10 +22,15 @@ const categories = [
 export function Footer() {
   return (
     <>
-      <section className="bg-hero">
+      {/* <section className=" bg-hero w-full bg-cover bg-center bg-no-repeat relative"
+
+       style={{
+    backgroundImage: `url("https://cyneteastafrica.com/wp-content/uploads/revslider/slider-1/colleagues-team-working-company-paperwork-doig-teamwork-analyze-documents-online-research-information-planning-corporate-presentation-with-data-charts-job-collaboration-scaled.jpg")`,
+  }}
+    >
         <div className="max-w-7xl mx-auto px-5 lg:px-8 py-12 lg:py-16">
           <div className="grid gap-6 lg:grid-cols-[1.2fr_1fr_1fr_1fr_1fr] items-center">
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-2 ">
               <a
                 href="https://cyneteastafrica.com/courses/"
                 target="_blank"
@@ -73,23 +78,96 @@ export function Footer() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <section 
+  className="bg-hero w-full bg-cover bg-center bg-no-repeat relative"
+  style={{
+    backgroundImage: `url("https://cyneteastafrica.com/wp-content/uploads/revslider/slider-1/colleagues-team-working-company-paperwork-doig-teamwork-analyze-documents-online-research-information-planning-corporate-presentation-with-data-charts-job-collaboration-scaled.jpg")`,
+  }}
+>
+  {/* Optional: Dark overlay to make the white text links pop against the image */}
+  <div className="absolute inset-0 bg-black/40 pointer-events-none" />
+
+  <div className="max-w-7xl mx-auto px-5 lg:px-8 py-12 lg:py-16 relative z-10">
+    <div className="grid gap-6 lg:grid-cols-[1.2fr_1fr_1fr_1fr_1fr] items-center">
+      
+      {/* Container for the Button Link */}
+      <div className="lg:col-span-2 flex items-center">
+        <h2 className="text-white text-4xl ">
+            Your Best Partner in Business Development
+        </h2>
+      
+      </div>
+
+     
+      <div className="flex items-center gap-3 text-sm">
+        <Link
+          to="/about"
+          className="font-medium text-white/90 hover:text-white backdrop-blur-sm bg-black/20 px-3 py-2 rounded"
+        >
+          Our Mission
+        </Link>
+      </div>
+
+      <div className="flex items-center gap-3 text-sm">
+        <Link
+          to="/about"
+          className="font-medium text-white/90 hover:text-white backdrop-blur-sm bg-black/20 px-3 py-2 rounded"
+        >
+          Our Vision
+        </Link>
+      </div>
+
+      <div className="flex items-center gap-3 text-sm">
+        <Link
+          to="/about"
+          className="font-medium text-white/90 hover:text-white backdrop-blur-sm bg-black/20 px-3 py-2 rounded"
+        >
+          Our Values
+        </Link>
+      </div>
+
+      <div className="flex items-center gap-3 text-sm">
+        <Link
+          to="/about"
+          className="font-medium text-white/90 hover:text-white backdrop-blur-sm bg-black/20 px-3 py-2 rounded"
+        >
+          Our Journey
+        </Link>
+        
+      </div>
+       <div className="lg:col-span-2 ">
+              <a
+                href="https://cyneteastafrica.com/courses/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 h-12 rounded-lg bg-[#1e293b] text-primary-foreground font-medium shadow-glow"
+              >
+                Start Learning, Choose a course
+              </a>
+            </div>
+      <div>
+        
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
       <footer className="border-t border-border bg-card">
         <div className="max-w-7xl mx-auto px-5 lg:px-8 py-12 grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_0.9fr_0.9fr_1.2fr]">
           <div>
             <div className="flex items-center gap-3">
               <div>
-                  <img
-                       src="/assets/Logo-cynet.png"
-                        alt="Cynet East Africa Consultancy"
-                        className="h-[50px] w-auto object-contain"
-                       />
+                <img
+                  src="/assets/Logo-cynet.png"
+                  alt="Cynet East Africa Consultancy"
+                  className="h-[50px] w-auto object-contain"
+                />
               </div>
               <div>
-                <div className="text-lg font-bold leading-none">
-                  
-                </div>
+                <div className="text-lg font-bold leading-none"></div>
               </div>
             </div>
 

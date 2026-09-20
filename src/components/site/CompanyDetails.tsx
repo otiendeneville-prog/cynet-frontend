@@ -7,11 +7,10 @@ function CompanyDetails() {
         <p className="text-xs font-semibold uppercase tracking-widest text-primary">
           Accreditation
         </p>
-        <h2 className="text-2xl text-primary lg:text-3xl font-bold mt-2">Company
-          <span className="text-black ml-2">
-           Details 
-          </span>   
-          </h2>
+        <h2 className="text-2xl text-primary lg:text-3xl font-bold mt-2">
+          Company
+          <span className="text-black ml-2">Details</span>
+        </h2>
       </div>
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6 py-8">
         {CompanyDetailsData.map((detail) => {
