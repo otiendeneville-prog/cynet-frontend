@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
-import hero1 from "/assets/hero-1.webp";
-import hero2 from "/assets/hero-2.webp";
-import hero3 from "/assets/hero-3.webp";
-import hero4 from "/assets/hero-4.webp";
+// import hero1 from "/assets/hero-1.webp";
+// import hero2 from "/assets/hero-2.webp";
+// import hero3 from "/assets/hero-3.webp";
+// import hero4 from "/assets/hero-4.webp";
 
 const slides = [
-  { src: hero1, alt: "Professional training classroom" },
-  { src: hero2, alt: "Strategy session with charts" },
-  { src: hero3, alt: "Team collaborating on data" },
-  { src: hero4, alt: "Seminars" },
+  // { src: hero1, alt: "Professional training classroom" },
+  // { src: hero2, alt: "Strategy session with charts" },
+  // { src: hero3, alt: "Team collaborating on data" },
+  // { src: hero4, alt: "Seminars" },
 ];
 
 interface Props {
