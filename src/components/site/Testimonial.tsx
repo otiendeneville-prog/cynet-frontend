@@ -3,58 +3,89 @@ import { Carousel } from "nuka-carousel";
 
 const feedback = [
   {
-    id: "B",
+    id: "1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
-    title: "Founder & Leader",
-    img: "https://i.imgur.com/Dn0qoCG.png",
+    "Exceptional service! The team at Cynet East Africa Consultancy Limited is highly professional, knowledgeable, and dedicated. Their expert guidance helped us navigate complex challenges with ease.",
+    name: "brian ogolla",
+    title: "1 year ago",
+    img: "https://googleusercontent.com",
   },
   {
-    id: "C",
+    id: "2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
-    img: "https://i.imgur.com/fk8eEvW.png",
+      "Best of the best consultancy firm in Nairobi with excellent trainers. Their knowledge and rich experience in human resource development and training design are fully customized.",
+    name: "Avi Tuvia Odek",
+    title: "2 years ago",
+    img: "A",
   },
   {
-    id: "D",
+    id: "3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
-    img: "https://i.imgur.com/dLxxRDy.png",
+    "I'm thrilled to recommend Cynet East Africa Consultancy for PowerBI training. Their professionalism, patience, and clear expertise made data modeling completely effortless for our team.",
+    name: "churchill otiende",
+    title: "2 years ago",
+    img: "https://googleusercontent.com",
+  },
+  {
+    id: "4",
+    content:
+    "Want to experience top-notch professional training services garnished with excellent customer service? Cynet East Africa is the absolute partner you need.",
+    name: "nancy kemunto",
+    title: "2 years ago",
+    img: "N",
   },
 ];
 
 const Testimonials = () => (
   <section
     id="clients"
-    className={`sm:py-16 py-6 flex justify-center items-center flex-col relative `}
+    className="sm:py-16 py-6 flex justify-center items-center flex-col relative bg-slate-50 w-full"
   >
-    <div className="absolute z-[0] w-[30%] h-[40%] -right-[0%] rounded-full blue__gradient bottom-40" />
-
-    <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
-      <h2
-        className={`font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full`}
-      >
-        What People are <br className="sm:block hidden" /> saying about us
+    <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1] max-w-[1200px] mx-auto px-6">
+      <h2 className="font-poppins font-semibold xs:text-[48px] text-[40px] text-slate-900 xs:leading-[76.8px] leading-[66.8px] w-full">
+        What Our Clients <br className="sm:block hidden" /> Say About Us
       </h2>
-      <div className="w-full md:mt-0 mt-6">
-        <p
-          className={`font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px] text-left max-w-[450px]`}
+      <div className="w-full md:mt-0 mt-6 md:flex justify-end">
+        <a
+          href="https://cyneteastafrica.com/"
+          target="_blank"
+          rel="noreferrer"
+          className="justify-center items-center flex bg-[#0f2a4a] text-white px-6 py-3 rounded-xl font-poppins font-medium shadow-md hover:bg-slate-800 transition"
         >
-          Everything you need to accept card payments and grow your business
-          anywhere on the planet.
-        </p>
+          Leave a Review
+        </a>
       </div>
     </div>
-    <Carousel autoplay autoplayInterval={3000} wrapMode="wrap">
-      {feedback.map((card) => (
-        <FeedbackCard key={card.id} {...card} />
-      ))}
-    </Carousel>
+
+    <div className="w-full max-w-[1200px] mx-auto px-6 relative z-[1]">
+      <Carousel
+        autoplay={true}
+        autoplayInterval={4000}
+        wrapMode="wrap"
+        slidesToShow={1}
+        breakpoints={[
+          { minWidth: 768, slidesToShow: 2 },
+          { minWidth: 1024, slidesToShow: 3 },
+        ]}
+      >
+        {feedback.map((card) => (
+          <FeedbackCard key={card.id} {...card} />
+        ))}
+      </Carousel>
+    </div>
+
+    <div className="w-full max-w-[1200px] mx-auto px-6 flex justify-end mt-6">
+      <div className="bg-[#006f42] text-white px-3 py-1.5 rounded-md text-xs font-semibold flex items-center gap-1 shadow-sm">
+        <span>Verified by Trustindex</span>
+        <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20">
+          <path
+            fillRule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l5-5z"
+            clipRule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
   </section>
 );
 
