@@ -1,9 +1,9 @@
-import  feedbackCard  from "../feedbackCard.tsx";
+import FeedbackCard from "../FeedbackCard.tsx";
 import { Carousel } from "nuka-carousel";
 
 const feedback = [
   {
-    id: "feedback-1",
+    id: "B",
     content:
       "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
     name: "Herman Jensen",
@@ -11,7 +11,7 @@ const feedback = [
     img: "https://i.imgur.com/Dn0qoCG.png",
   },
   {
-    id: "feedback-2",
+    id: "C",
     content:
       "Money makes your life easier. If you're lucky to have it, you're lucky.",
     name: "Steve Mark",
@@ -19,7 +19,7 @@ const feedback = [
     img: "https://i.imgur.com/fk8eEvW.png",
   },
   {
-    id: "feedback-3",
+    id: "D",
     content:
       "It is usually people in the money business, finance, and international trade that are really rich.",
     name: "Kenn Gallagher",
@@ -33,7 +33,7 @@ const Testimonials = () => (
     id="clients"
     className={`sm:py-16 py-6 flex justify-center items-center flex-col relative `}
   >
-    <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
+    <div className="absolute z-[0] w-[30%] h-[40%] -right-[0%] rounded-full blue__gradient bottom-40" />
 
     <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
       <h2
@@ -50,9 +50,9 @@ const Testimonials = () => (
         </p>
       </div>
     </div>
-    <Carousel autoplay autoplayInterval={3000} wrapAround={true}>
+    <Carousel autoplay autoplayInterval={3000} wrapMode="wrap">
       {feedback.map((card) => (
-        <feedbackCard key={card.id} {...card} />
+        <FeedbackCard key={card.id} {...card} />
       ))}
     </Carousel>
   </section>
