@@ -4,37 +4,39 @@ interface FeedbackCardProps {
   id: string;
   content: string;
   name: string;
-  title: string; 
-  img: string;   
+  title: string;
+  img: string;
 }
 
-export default function FeedbackCard({ content, name, title, img }: FeedbackCardProps) {
+export default function FeedbackCard({
+  content,
+  name,
+  title,
+  img,
+}: FeedbackCardProps) {
   const isUrl = img.startsWith("http") || img.startsWith("/");
 
   return (
     <div className="flex flex-col justify-between p-6 rounded-2xl bg-white shadow-sm border border-gray-100 max-w-[360px] min-h-[300px] h-full mx-auto text-left font-sans">
-      
       <div className="flex flex-row items-center justify-between w-full">
         <div className="flex flex-row items-center">
           {isUrl ? (
-            <img 
-              className="w-11 h-11 rounded-full object-cover" 
-              src={img} 
-              alt={name} 
+            <img
+              className="w-11 h-11 rounded-full object-cover"
+              src={img}
+              alt={name}
             />
           ) : (
             <div className="w-11 h-11 rounded-full flex items-center justify-center text-white font-bold text-lg bg-teal-600">
               {img}
             </div>
           )}
-          
+
           <div className="flex flex-col ml-3">
             <h4 className="font-semibold text-[15px] text-gray-900 leading-tight">
               {name}
             </h4>
-            <p className="text-[13px] text-gray-500 mt-0.5">
-              {title}
-            </p>
+            <p className="text-[13px] text-gray-500 mt-0.5">{title}</p>
           </div>
         </div>
 
@@ -74,7 +76,6 @@ export default function FeedbackCard({ content, name, title, img }: FeedbackCard
           Read more
         </button>
       </div>
-
     </div>
   );
 }

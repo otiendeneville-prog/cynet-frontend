@@ -13,7 +13,7 @@ const feedback = [
   {
     id: "2",
     content:
-      "Best of the best consultancy firm in Nairobi with excellent trainers. Their knowledge and rich experience in human resource development and training design are fully customized.",
+    "Best of the best consultancy firm in Nairobi with excellent trainers. Their knowledge and rich experience in human resource development and training design are fully customized.",
     name: "Avi Tuvia Odek",
     title: "2 years ago",
     img: "A",
@@ -29,10 +29,18 @@ const feedback = [
   {
     id: "4",
     content:
-    "Want to experience top-notch professional training services garnished with excellent customer service? Cynet East Africa is the absolute partner you need.",
+      "Want to experience top-notch professional training services garnished with excellent customer service? Cynet East Africa is the absolute partner you need.",
     name: "nancy kemunto",
     title: "2 years ago",
     img: "N",
+  },
+   {
+    id: "4",
+    content:
+      "Want to experience top-notch professional training services garnished with excellent customer service? Cynet East Africa is the absolute partner you need.",
+    name: "Jonte",
+    title: "2 years ago",
+    img: "J",
   },
 ];
 
@@ -77,13 +85,7 @@ const Testimonials = () => (
     <div className="w-full max-w-[1200px] mx-auto px-6 flex justify-end mt-6">
       <div className="bg-[#006f42] text-white px-3 py-1.5 rounded-md text-xs font-semibold flex items-center gap-1 shadow-sm">
         <span>Verified by Trustindex</span>
-        <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20">
-          <path
-            fillRule="evenodd"
-            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l5-5z"
-            clipRule="evenodd"
-          />
-        </svg>
+       
       </div>
     </div>
   </section>
