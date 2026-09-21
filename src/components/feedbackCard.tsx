@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function feedBack({ id, content, name, title, img }) {
+export default function feedbackCard({ id, content, name, title, img }) {
   return (
     <>
       <div className="justify-center flex-col flex px-10 py-12 rounde-[20px] max-w-[370px] max-auto my-0 feedback-card">
@@ -28,3 +28,4 @@ export default function feedBack({ id, content, name, title, img }) {
     </>
   );
 }
+

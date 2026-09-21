@@ -1,6 +1,5 @@
-
-import {feedbackCard} from "./feedbackCard";
-import {Carousel} from 'nuka-carousel';
+import  feedbackCard  from "../feedbackCard.tsx";
+import { Carousel } from "nuka-carousel";
 
 const feedback = [
   {
@@ -60,4 +59,3 @@ const Testimonials = () => (
 );
 
 export default Testimonials;
-
