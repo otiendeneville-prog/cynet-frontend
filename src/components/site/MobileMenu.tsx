@@ -82,7 +82,7 @@ export function MobileMenu() {
               <GraduationCap className="h-4 w-4" />
             </span>
             <span className="text-lg font-semibold text-foreground">
-              Bluestron Institute
+              Cynet East Afica Consultacy
             </span>
           </div>
           <button
