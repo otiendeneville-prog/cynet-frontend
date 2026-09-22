@@ -10,8 +10,8 @@ import {
 const CompanyDetailsData = [
   {
     icon: Building2,
-    label: "Bluestron Institute",
-    value: "Bluestron Solutions Ltd",
+    label: "Cynet East Africa Consultancy",
+    value: "Cynet East Africa Consultancy",
   },
   { icon: Hash, label: "Registration Number", value: "PVT-9XUGZ293" },
   { icon: CalendarCheck, label: "Date Incorporated", value: "16 Jun 2022" },

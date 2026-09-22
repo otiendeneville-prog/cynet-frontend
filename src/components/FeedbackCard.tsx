@@ -6,6 +6,7 @@ interface FeedbackCardProps {
   name: string;
   title: string;
   img: string;
+  bgColor?: string;
 }
 
 export default function FeedbackCard({
@@ -13,11 +14,12 @@ export default function FeedbackCard({
   name,
   title,
   img,
+  bgColor,
 }: FeedbackCardProps) {
   const isUrl = img.startsWith("http") || img.startsWith("/");
 
   return (
-    <div className="flex flex-col justify-between p-6 rounded-2xl bg-white shadow-sm border border-gray-100 max-w-[360px] min-h-[300px] h-full mx-auto text-left font-sans">
+    <div className="flex flex-col justify-between p-6 rounded-2xl bg-white shadow-sm border border-gray-100 max-w-[360px] min-h-[300px] h-full mx-auto text-left font-sans ${bgColor || 'bg-white border border-gray-100'}">
       <div className="flex flex-row items-center justify-between w-full">
         <div className="flex flex-row items-center">
           {isUrl ? (
@@ -50,7 +52,7 @@ export default function FeedbackCard({
             d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
           />
           <path
-            fill="#FBBC05"
+            fill="secondary"
             d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"
           />
           <path
