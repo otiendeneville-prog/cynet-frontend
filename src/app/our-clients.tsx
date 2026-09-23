@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site/sideHeader";
-import InfiniteMarquee from "vanilla-infinite-marquee";
-import { useEffect, useState } from "react";
+
 
 const clients = [
   {
@@ -129,23 +128,8 @@ export const Route = createFileRoute("/our-clients")({
   component: OurClients,
 });
 export function OurClients() {
-  useEffect(() => {
-    const marquee = new InfiniteMarquee({
-      element: ".marquee-container",
-      speed: 200000,
-      smoothEdges: true,
-      direction: "right",
-      dublicateCount: "2",
-      pauseOnHover: true,
-      mobileSettings: {
-        direction: "right",
-        speed: 200000,
-      },
-    });
-    return () => {
-      marquee.destroy();
-    };
-  }, []);
+ 
+   
   return (
     <div className="min-h-screen bg-background text-foreground">
       <main className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
@@ -157,8 +141,8 @@ export function OurClients() {
             Trusted by leading organisations across East Africa and beyond.
           </p>
         </div>
-
-        <div className=" marquee-container mt-16 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 ">
+        
+          <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 ">
           {clients.map((client) => (
             <div
               key={client.name}
