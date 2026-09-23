@@ -9,7 +9,7 @@ export default function OurServices() {
             Our <span className="text-primary">Services</span>
           </h2>
           
-          <div className="max-w-xl flex flex-col sm:flex-row items-start sm:items-center gap-6">
+          <div className="flex-col lg:flex-row ml-0 gap-4 lg:gap-16">
             <p className="text-slate-600 text-base leading-relaxed">
               Tailored solutions to help organizations succeed — from growth strategy and financial advisory to team building and research. We drive measurable outcomes at every stage.
             </p>
