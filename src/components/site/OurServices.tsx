@@ -29,7 +29,7 @@ export default function OurServices() {
 
         <div className="mt-12 grid grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-white border rounded-3xl p-8 shadow-sm">
-            <h1 className="text-xl font-bold text-slate-900">
+            <h1 className="text-xl  font-bold text-slate-900">
               Business Strategy Services
             </h1>
             <p className="text-slate-900">
@@ -48,6 +48,17 @@ export default function OurServices() {
             <h1 className="text-xl font-bold text-slate-900"> 
                 Tax and Financial Issues
             </h1>
+            <p className="text-slate-900">
+             Navigate complex tax landscapes and optimize your financial position with expert advisory tailored to your sector and scale
+            </p>
+          </div>
+          <div className="bg-bold border rounded-3xl p-8 shadow-sm">
+            <h1 className="text-xl font-bold text-slate-900">
+                Research Services
+            </h1>
+           <p>
+            Data-driven insight to inform every decision. From baseline surveys to impact evaluations, we give you clarity on what's working and what's not.
+           </p>
           </div>
         </div>
         
