@@ -7,6 +7,7 @@ import ClientCarousel from "@/components/site/ClientCarousel";
 import { api } from "@/lib/api-client";
 import Testimonials from "@/components/site/Testimonial";
 import BestPatner from "@/components/site/BestPatner";
+import OurServices from "@/components/site/OurServices";
 
 export const Route = createFileRoute("/")({
   head: async () => {
@@ -44,6 +45,7 @@ function Home() {
     <div>
       <HeroSection />
       <ClientCarousel />
+       <OurServices />
       <CompanyDetails />
       <FeaturedCourses />
       <CategoriesSection />
