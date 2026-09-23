@@ -7,8 +7,7 @@ export default function OurServices() {
           
           <h2 className="font-bold text-3xl lg:text-5xl tracking-tight">
             Our <span className="text-primary">Services</span>
-          </h2>
-          
+          </h2> 
           <div className="flex-col lg:flex-row ml-0 gap-4 lg:gap-16">
             <p className="text-base leading-relaxed">
               Tailored solutions to help organizations succeed — from <br />growth strategy and financial advisory to team building <br /> and research. We drive measurable outcomes at every stage.
@@ -28,7 +27,7 @@ export default function OurServices() {
 
         </div>
 
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mt-12 grid grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-white border rounded-3xl p-8 shadow-sm">
             <h1 className="text-xl font-bold text-slate-900">
               Business Strategy Services
@@ -37,7 +36,17 @@ export default function OurServices() {
               We help organizations build resilient strategies aligned to long-term goals — from operational frameworks to performance excellence.
             </p>
           </div>
+          <div className="bg-white border rounded-3xl p-8 shadow-sm ">
+            <h1 className="text-xl font-bol text-slate-900 font-bold">
+                Team Building Services
+            </h1>
+            <p className="text-slate-900">
+            Strengthen your organization from the inside. We design interventions that improve team dynamics, culture, and collective problem-solving capability.
+            </p>
+          </div>
         </div>
+        
+
 
       </div>
     </section>
