@@ -36,7 +36,7 @@ export default function OurServices() {
               We help organizations build resilient strategies aligned to long-term goals — from operational frameworks to performance excellence.
             </p>
           </div>
-          <div className="bg-white border rounded-3xl p-8 shadow-sm ">
+          <div className="bg-white border hover:bg-secondary rounded-3xl p-8 shadow-sm ">
             <h1 className="text-xl font-bold text-slate-900">
                 Team Building Services
             </h1>
@@ -52,11 +52,11 @@ export default function OurServices() {
              Navigate complex tax landscapes and optimize your financial position with expert advisory tailored to your sector and scale
             </p>
           </div>
-          <div className="bg-bold border rounded-3xl p-8 shadow-sm">
+          <div className="bg-white border rounded-3xl p-8 shadow-sm">
             <h1 className="text-xl font-bold text-slate-900">
                 Research Services
             </h1>
-           <p>
+           <p className="text-slate-900">
             Data-driven insight to inform every decision. From baseline surveys to impact evaluations, we give you clarity on what's working and what's not.
            </p>
           </div>
