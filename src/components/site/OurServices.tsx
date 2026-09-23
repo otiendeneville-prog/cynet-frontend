@@ -15,7 +15,7 @@ export default function OurServices() {
             </p>
             
             <button className="flex-shrink-0 flex items-center p-1.5 pr-5 bg-white border border-slate-200 rounded-full transition-all duration-300 shadow-sm group/btn">
-              <span className="flex items-center justify-center h-9 w-9 bg-emerald-500 group-hover:bg-emerald-600 text-white rounded-full font-bold text-xs tracking-wider transition-colors">
+              <span className="flex items-center justify-center h-9 w-9 bg-secondary group-hover:bg-emerald-600 text-white rounded-full font-bold text-xs tracking-wider transition-colors">
                 11+
               </span>
               <div className="flex flex-col items-start ml-3 text-left">
