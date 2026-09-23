@@ -1,16 +1,16 @@
 export default function OurServices() {
   return (
-    <section className="relative overflow-hidden py-16 md:py-24 bg-slate-50/50">
+    <section className="relative overflow-hidden py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 pb-12 border-b border-slate-100">
           
-          <h2 className="font-bold text-slate-900 text-3xl sm:text-4xl lg:text-5xl tracking-tight">
+          <h2 className="font-bold text-3xl lg:text-5xl tracking-tight">
             Our <span className="text-primary">Services</span>
           </h2>
           
           <div className="flex-col lg:flex-row ml-0 gap-4 lg:gap-16">
-            <p className="text-slate-600 text-base leading-relaxed">
+            <p className="text-base leading-relaxed">
               Tailored solutions to help organizations succeed — from growth strategy and financial advisory to team building and research. We drive measurable outcomes at every stage.
             </p>
             
@@ -32,7 +32,9 @@ export default function OurServices() {
             <h1 className="text-xl font-bold text-slate-900">
               Business Strategy Services
             </h1>
-            We help organizations build resilient strategies aligned to long-term goals — from operational frameworks to performance excellence.
+            <p className="text-slate-900">
+              We help organizations build resilient strategies aligned to long-term goals — from operational frameworks to performance excellence.
+            </p>
           </div>
         </div>
 
