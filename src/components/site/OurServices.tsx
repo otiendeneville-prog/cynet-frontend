@@ -37,12 +37,17 @@ export default function OurServices() {
             </p>
           </div>
           <div className="bg-white border rounded-3xl p-8 shadow-sm ">
-            <h1 className="text-xl font-bol text-slate-900 font-bold">
+            <h1 className="text-xl font-bold text-slate-900">
                 Team Building Services
             </h1>
             <p className="text-slate-900">
             Strengthen your organization from the inside. We design interventions that improve team dynamics, culture, and collective problem-solving capability.
             </p>
+          </div>
+          <div className="bg-white border rounded-3xl p-8 shadow-sm">
+            <h1 className="text-xl font-bold text-slate-900"> 
+                Tax and Financial Issues
+            </h1>
           </div>
         </div>
         
