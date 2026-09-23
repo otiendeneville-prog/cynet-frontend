@@ -1,29 +1,42 @@
-
-
 export default function OurServices() {
   return (
-    <section className="relative overflow-hidden border-border  flex items-center">
-        <div className="align-center flex justify-center">
-            <h2 className="font-bold ml-9 text-secondary text-3xl lg:text-4xl mt-2">
-              
-                Our 
-                <span className="text-primary ml-2">
-                Services
-                </span>
-            </h2>
-            <div className="ml-20 align-center justify-center content-end inline-6xl">
-                <p>
-                Tailored solutions to help organizations 
-                succeed — from growth <br /> strategy and financial advisory to team building and research. We drive <br /> measurable outcomes at every stage.
-                </p>
-                <button className="mt-10 border-l-purple-50 rounded-2xl  hover:bg-secondary align-middle justify-center content-center">
-                    <h1>
-                        Years of experience
-                    </h1>
-                    <p>Delivering results across East Africa</p>
-                </button>
-            </div>
+    <section className="relative overflow-hidden py-16 md:py-24 bg-slate-50/50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 pb-12 border-b border-slate-100">
+          
+          <h2 className="font-bold text-slate-900 text-3xl sm:text-4xl lg:text-5xl tracking-tight">
+            Our <span className="text-primary">Services</span>
+          </h2>
+          
+          <div className="max-w-xl flex flex-col sm:flex-row items-start sm:items-center gap-6">
+            <p className="text-slate-600 text-base leading-relaxed">
+              Tailored solutions to help organizations succeed — from growth strategy and financial advisory to team building and research. We drive measurable outcomes at every stage.
+            </p>
+            
+            <button className="flex-shrink-0 flex items-center p-1.5 pr-5 bg-white border border-slate-200 rounded-full transition-all duration-300 shadow-sm group/btn">
+              <span className="flex items-center justify-center h-9 w-9 bg-emerald-500 group-hover:bg-emerald-600 text-white rounded-full font-bold text-xs tracking-wider transition-colors">
+                11+
+              </span>
+              <div className="flex flex-col items-start ml-3 text-left">
+                <span className="text-xs font-bold text-slate-800">Explore Solutions</span>
+                <span className="text-[10px] text-slate-400 font-normal">View consultancy frameworks</span>
+              </div>
+            </button>
+          </div>
+
         </div>
+
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="bg-white border border-slate-100 rounded-3xl p-8 shadow-sm">
+            <h1 className="text-xl font-bold text-slate-900">
+              Business Strategy Services
+            </h1>
+            We help organizations build resilient strategies aligned to long-term goals — from operational frameworks to performance excellence.
+          </div>
+        </div>
+
+      </div>
     </section>
   )
 }
