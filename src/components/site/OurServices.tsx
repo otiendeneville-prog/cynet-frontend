@@ -11,11 +11,12 @@ export default function OurServices() {
           
           <div className="flex-col lg:flex-row ml-0 gap-4 lg:gap-16">
             <p className="text-base leading-relaxed">
-              Tailored solutions to help organizations succeed — from growth strategy and financial advisory to team building and research. We drive measurable outcomes at every stage.
+              Tailored solutions to help organizations succeed — from <br />growth strategy and financial advisory to team building <br /> and research. We drive measurable outcomes at every stage.
             </p>
             
-            <button className="flex-shrink-0 flex items-center p-1.5 pr-5 bg-white border border-slate-200 rounded-full transition-all duration-300 shadow-sm group/btn">
-              <span className="flex items-center justify-center h-9 w-9 bg-secondary group-hover:bg-emerald-600 text-white rounded-full font-bold text-xs tracking-wider transition-colors">
+            <button className="f flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
+              <span className="flex items-center justify-center h-9 w-9 bg-secondary group-hover:bg-emerald-600 text-white rounded-full
+              font-bold text-xs tracking-wider transition-colors">
                 11+
               </span>
               <div className="flex flex-col items-start ml-3 text-left">
@@ -28,7 +29,7 @@ export default function OurServices() {
         </div>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-white border border-slate-100 rounded-3xl p-8 shadow-sm">
+          <div className="bg-white border rounded-3xl p-8 shadow-sm">
             <h1 className="text-xl font-bold text-slate-900">
               Business Strategy Services
             </h1>
