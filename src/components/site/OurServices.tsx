@@ -16,7 +16,7 @@ export default function OurServices() {
                 Tailored solutions to help organizations 
                 succeed — from growth <br /> strategy and financial advisory to team building and research. We drive <br /> measurable outcomes at every stage.
                 </p>
-                <button className="mt-10 border-l-purple-50 rounded-2xl">
+                <button className="mt-10 border-l-purple-50 rounded-2xl  hover:bg-secondary align-middle justify-center content-center">
                     <h1>
                         Years of experience
                     </h1>
