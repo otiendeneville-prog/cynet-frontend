@@ -28,7 +28,7 @@ export default function OurServices() {
         </div>
 
         <div className="mt-12 grid grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-white border rounded-3xl p-8 shadow-sm">
+          <div className="bg-white hover:bg-secondary border rounded-3xl p-8 shadow-sm">
             <h1 className="text-xl  font-bold text-slate-900">
               Business Strategy Services
             </h1>
@@ -44,7 +44,7 @@ export default function OurServices() {
             Strengthen your organization from the inside. We design interventions that improve team dynamics, culture, and collective problem-solving capability.
             </p>
           </div>
-          <div className="bg-white border rounded-3xl p-8 shadow-sm">
+          <div className="bg-white border hover:bg-secondary rounded-3xl p-8 shadow-sm">
             <h1 className="text-xl font-bold text-slate-900"> 
                 Tax and Financial Issues
             </h1>
@@ -52,7 +52,7 @@ export default function OurServices() {
              Navigate complex tax landscapes and optimize your financial position with expert advisory tailored to your sector and scale
             </p>
           </div>
-          <div className="bg-white border rounded-3xl p-8 shadow-sm">
+          <div className="bg-white border hover:bg-secondary rounded-3xl p-8 shadow-sm">
             <h1 className="text-xl font-bold text-slate-900">
                 Research Services
             </h1>
