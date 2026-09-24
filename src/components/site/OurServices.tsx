@@ -149,7 +149,7 @@ export default function OurServices() {
              <img src={cynet} alt="Cynet" />
            </div>
            <div className="align-center  content-center">
-             <img className="h-50" src={nita} alt="Nita" />
+             <img src={nita} alt="Nita" />
            </div>
           
         </div>
