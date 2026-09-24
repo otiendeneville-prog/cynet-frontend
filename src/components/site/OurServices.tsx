@@ -1,4 +1,5 @@
 import nita from "/assets/nita.webp"
+import cynet from "/assets/cert.jpg"
 export default function OurServices() {
   return (
     <section className="relative overflow-hidden py-16 md:py-24">
@@ -144,9 +145,13 @@ export default function OurServices() {
                 </button>
            </div>        
           </div>
-           <div>
-            <img src={nita} alt="Nita" />
+            <div>
+             <img src={cynet} alt="Cynet" />
            </div>
+           <div className="align-center  content-center">
+             <img className="h-50" src={nita} alt="Nita" />
+           </div>
+          
         </div>
         
 
