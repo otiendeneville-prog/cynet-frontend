@@ -1,3 +1,4 @@
+import nita from "../assets/nita.webp"
 export default function OurServices() {
   return (
     <section className="relative overflow-hidden py-16 md:py-24">
@@ -28,20 +29,20 @@ export default function OurServices() {
         </div>
 
         <div className="mt-12 grid grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-white rounded-3xl p-8 shadow-sm">
-            <h1 className="text-xl  font-bold text-slate-900">
+          <div className=" rounded-3xl p-8 shadow-sm">
+            <h1 className="text-xl  font-bold text-secondary">
               Business Strategy Services
             </h1>
             <p className="text-slate-400 mt-6">
               We help organizations build resilient strategies aligned to long-term goals — from operational frameworks to performance excellence.
             </p>
             <div className="mt-8 grid grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
-              <button className="f flex items-center p-1.5 pr-5 bg-white border  rounded-3xl transition-all duration-300 shadow-sm group/btn">
+              <button className="f flex items-center justify-center p-1.5 pr-5 bg-white border  rounded-3xl transition-all duration-300 shadow-sm group/btn">
               <div className="flex flex-col items-start ml-3 text-left">
                 <span className="text-[10px] text-slate-400 font-normal">Strategic Planning</span>
               </div>
             </button>
-            <button className="flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
+            <button className="flex items-center justify-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
               <div className="flex flex-col items-start ml-3 text-left">
                 <span className="text-[10px] text-slate-400 font-normal">Balance Scorecard</span>
               </div>
@@ -59,8 +60,8 @@ export default function OurServices() {
             </div>
             
           </div>
-          <div className="bg-white border  rounded-3xl p-8 shadow-sm ">
-            <h1 className="text-xl font-bold text-slate-900">
+          <div className="rounded-3xl p-8 shadow-sm">
+            <h1 className="text-xl font-bold text-secondary">
                 Team Building Services
             </h1>
             <p className="text-slate-400 mt-6">
@@ -84,8 +85,8 @@ export default function OurServices() {
             </button>
             </div>
           </div>
-          <div className="bg-white border  rounded-3xl p-8 shadow-sm">
-            <h1 className="text-xl font-bold text-slate-900"> 
+          <div className="rounded-3xl p-8 shadow-sm">
+            <h1 className="text-xl font-bold text-secondary"> 
                 Tax and Financial Issues
             </h1>
             <p className="text-slate-400 mt-6">
@@ -113,8 +114,8 @@ export default function OurServices() {
               
             </div>
           </div>
-          <div className="bg-white border  rounded-3xl p-8 shadow-sm">
-            <h1 className="text-xl font-bold text-slate-900">
+          <div className="rounded-3xl p-8 shadow-sm">
+            <h1 className="text-xl font-bold text-secondary">
                 Research Services
             </h1>
            <p className="text-slate-400 mt-6">
@@ -138,12 +139,14 @@ export default function OurServices() {
                 </button>
                   <button className=" align-center justify-center flex items-center p-1.5 pr-5 bg-white border rounded-full transition-all duration-300 shadow-sm group/btin">
                   <span className="text-[10px] text-slate-400 font-normal">
-                   End-line Surveys
+                    End-line Surveys
                   </span>
                 </button>
-                
-           </div>
+           </div>        
           </div>
+           <div>
+            <img src="nita.webp" alt="Nita" />
+           </div>
         </div>
         
 
