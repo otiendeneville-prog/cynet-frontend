@@ -29,7 +29,7 @@ export default function OurServices() {
         </div>
 
         <div className="mt-12 grid grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className=" rounded-3xl p-8 shadow-sm">
+          <div className=" rounded-3xl p-8 shadow-sm border">
             <h1 className="text-xl  font-bold text-secondary">
               Business Strategy Services
             </h1>
@@ -60,7 +60,7 @@ export default function OurServices() {
             </div>
             
           </div>
-          <div className="rounded-3xl p-8 shadow-sm">
+          <div className="rounded-3xl p-8 shadow-sm border">
             <h1 className="text-xl font-bold text-secondary">
                 Team Building Services
             </h1>
@@ -85,7 +85,7 @@ export default function OurServices() {
             </button>
             </div>
           </div>
-          <div className="rounded-3xl p-8 shadow-sm">
+          <div className="rounded-3xl p-8 shadow-sm border">
             <h1 className="text-xl font-bold text-secondary"> 
                 Tax and Financial Issues
             </h1>
@@ -114,7 +114,7 @@ export default function OurServices() {
               
             </div>
           </div>
-          <div className="rounded-3xl p-8 shadow-sm">
+          <div className="rounded-3xl p-8 shadow-sm border">
             <h1 className="text-xl font-bold text-secondary">
                 Research Services
             </h1>
