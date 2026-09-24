@@ -13,7 +13,7 @@ export default function OurServices() {
               Tailored solutions to help organizations succeed — from <br />growth strategy and financial advisory to team building <br /> and research. We drive measurable outcomes at every stage.
             </p>
             
-            <button className="f flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
+            <button className="flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
               <span className="flex items-center justify-center h-9 w-9 bg-secondary group-hover:bg-emerald-600 text-white rounded-full
               font-bold text-xs tracking-wider transition-colors">
                 11+
@@ -41,17 +41,17 @@ export default function OurServices() {
                 <span className="text-[10px] text-slate-400 font-normal">Strategic Planning</span>
               </div>
             </button>
-            <button className="f flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
+            <button className="flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
               <div className="flex flex-col items-start ml-3 text-left">
                 <span className="text-[10px] text-slate-400 font-normal">Balance Scorecard</span>
               </div>
             </button>
-             <button className="f flex align-center justify-center items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
+             <button className=" flex align-center justify-center items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
               <div className="flex flex-col items-start ml-3 text-left">
                 <span className="text-[10px] text-slate-400 font-normal">Operations</span>
               </div>
             </button>
-             <button className="f align-center justify-center flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
+             <button className=" align-center justify-center flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
               <div className="flex flex-col items-start ml-3 text-left">
                 <span className="text-[10px] text-slate-400 font-normal">Performance Management</span>
               </div>
@@ -72,7 +72,7 @@ export default function OurServices() {
                 <span className="text-[10px] text-slate-400 font-normal">Team Dynamics</span>
               </div>
             </button>
-            <button className="f align-center justify-center flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
+            <button className="align-center justify-center flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
               <div className="flex flex-col items-start ml-3 text-left">
                 <span className="text-[10px] text-slate-400 font-normal">Productivity</span>
               </div>
@@ -91,6 +91,24 @@ export default function OurServices() {
             <p className="text-slate-400 mt-6">
              Navigate complex tax landscapes and optimize your financial position with expert advisory tailored to your sector and scale
             </p>
+            <div className="mt-8 grid grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
+                <button className="align-center justify-center flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
+                <span className="text-[10px] text-slate-400 font-normal">Business Tax</span>
+                </button>
+                <button className="align-center justify-center flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
+                <span className="text-[10px] text-slate-400 font-normal">Risk Management</span>
+                </button>
+                <button className="align-center justify-center flex items-center p-1.5 pr-5 bg-white border rounded-full transition-all duration-300 shadow-sm group/btn">
+                  <span className="text-[10px] text-slate-400 font-normal">
+                      Capital Advisory
+                  </span>
+                </button>
+                <button className=" align-center justify-center flex items-center p-1.5 pr-5 bg-white border rounded-full transition-all duration-300 shadow-sm group/btin">
+                  <span className="text-[10px] text-slate-400 font-normal">
+                    Employment Tax
+                  </span>
+                </button>
+            </div>
             <div>
               
             </div>
