@@ -32,10 +32,10 @@ export default function OurServices() {
             <h1 className="text-xl  font-bold text-slate-900">
               Business Strategy Services
             </h1>
-            <p className="text-slate-900">
+            <p className="text-slate-400 mt-6">
               We help organizations build resilient strategies aligned to long-term goals — from operational frameworks to performance excellence.
             </p>
-            <div className="mt-12 grid grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="mt-8 grid grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
               <button className="f flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
               <div className="flex flex-col items-start ml-3 text-left">
                 <span className="text-[10px] text-slate-400 font-normal">Strategic Planning</span>
