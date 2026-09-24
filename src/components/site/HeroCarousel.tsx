@@ -3,12 +3,21 @@ import hero1 from "/assets/hero-1.jpeg";
 import hero2 from "/assets/hero-2.jpeg";
 import hero3 from "/assets/hero-3.jpeg";
 import hero4 from "/assets/hero-4.webp";
-
+import hero6 from "/assets/hero-6.jpeg";
+import hero7 from "/assets/hero-7.jpeg";
+import hero8 from "/assets/hero-8.jpeg";
+import hero9 from "/assets/hero-9.jpeg"
 const slides = [
   { src: hero1, alt: "Professional training classroom" },
   { src: hero2, alt: "Strategy session with charts" },
   { src: hero3, alt: "Team collaborating on data" },
   { src: hero4, alt: "Seminars" },
+  { src: hero6, alt: "Governance and Leadership"},
+  { src: hero7, alt: "Accounting and Finance"},
+  { src: hero8, alt: "Data analysis and Management"},
+  { src: hero9, alt: "Procurement"},
+
+
 ];
 
 interface Props {
