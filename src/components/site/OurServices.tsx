@@ -1,4 +1,4 @@
-import nita from "../assets/nita.webp"
+import nita from "/assets/nita.webp"
 export default function OurServices() {
   return (
     <section className="relative overflow-hidden py-16 md:py-24">
@@ -145,7 +145,7 @@ export default function OurServices() {
            </div>        
           </div>
            <div>
-            <img src="nita.webp" alt="Nita" />
+            <img src={nita} alt="Nita" />
            </div>
         </div>
         
