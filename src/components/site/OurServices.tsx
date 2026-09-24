@@ -28,7 +28,7 @@ export default function OurServices() {
         </div>
 
         <div className="mt-12 grid grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-white hover: border rounded-3xl p-8 shadow-sm">
+          <div className="bg-white rounded-3xl p-8 shadow-sm">
             <h1 className="text-xl  font-bold text-slate-900">
               Business Strategy Services
             </h1>
@@ -36,7 +36,7 @@ export default function OurServices() {
               We help organizations build resilient strategies aligned to long-term goals — from operational frameworks to performance excellence.
             </p>
             <div className="mt-8 grid grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
-              <button className="f flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
+              <button className="f flex items-center p-1.5 pr-5 bg-white border  rounded-3xl transition-all duration-300 shadow-sm group/btn">
               <div className="flex flex-col items-start ml-3 text-left">
                 <span className="text-[10px] text-slate-400 font-normal">Strategic Planning</span>
               </div>
@@ -66,6 +66,23 @@ export default function OurServices() {
             <p className="text-slate-400 mt-6">
             Strengthen your organization from the inside. We design interventions that improve team dynamics, culture, and collective problem-solving capability.
             </p>
+            <div className="mt-8 grid grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
+              <button className="f align-center justify-center flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
+              <div className="flex flex-col items-start ml-3 text-left">
+                <span className="text-[10px] text-slate-400 font-normal">Team Dynamics</span>
+              </div>
+            </button>
+            <button className="f align-center justify-center flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
+              <div className="flex flex-col items-start ml-3 text-left">
+                <span className="text-[10px] text-slate-400 font-normal">Productivity</span>
+              </div>
+            </button>
+            <button className="f align-center justify-center flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
+              <div className="flex flex-col items-start ml-3 text-left">
+                <span className="text-[10px] text-slate-400 font-normal">Culture Alignment</span>
+              </div>
+            </button>
+            </div>
           </div>
           <div className="bg-white border  rounded-3xl p-8 shadow-sm">
             <h1 className="text-xl font-bold text-slate-900"> 
@@ -74,6 +91,9 @@ export default function OurServices() {
             <p className="text-slate-400 mt-6">
              Navigate complex tax landscapes and optimize your financial position with expert advisory tailored to your sector and scale
             </p>
+            <div>
+              
+            </div>
           </div>
           <div className="bg-white border  rounded-3xl p-8 shadow-sm">
             <h1 className="text-xl font-bold text-slate-900">
