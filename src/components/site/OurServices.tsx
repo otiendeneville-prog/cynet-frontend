@@ -63,7 +63,7 @@ export default function OurServices() {
             <h1 className="text-xl font-bold text-slate-900">
                 Team Building Services
             </h1>
-            <p className="text-slate-900">
+            <p className="text-slate-400 mt-6">
             Strengthen your organization from the inside. We design interventions that improve team dynamics, culture, and collective problem-solving capability.
             </p>
           </div>
@@ -71,7 +71,7 @@ export default function OurServices() {
             <h1 className="text-xl font-bold text-slate-900"> 
                 Tax and Financial Issues
             </h1>
-            <p className="text-slate-900">
+            <p className="text-slate-400 mt-6">
              Navigate complex tax landscapes and optimize your financial position with expert advisory tailored to your sector and scale
             </p>
           </div>
@@ -79,7 +79,7 @@ export default function OurServices() {
             <h1 className="text-xl font-bold text-slate-900">
                 Research Services
             </h1>
-           <p className="text-slate-900">
+           <p className="text-slate-400 mt-6">
             Data-driven insight to inform every decision. From baseline surveys to impact evaluations, we give you clarity on what's working and what's not.
            </p>
           </div>
