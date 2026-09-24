@@ -37,22 +37,22 @@ export default function OurServices() {
               We help organizations build resilient strategies aligned to long-term goals — from operational frameworks to performance excellence.
             </p>
             <div className="mt-8 grid grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
-              <button className="f flex items-center justify-center p-1.5 pr-5 bg-white border  rounded-3xl transition-all duration-300 shadow-sm group/btn">
+              <button className="f flex items-center justify-center p-1.5 pr-5  border  rounded-3xl transition-all duration-300 shadow-sm group/btn">
               <div className="flex flex-col items-start ml-3 text-left">
                 <span className="text-[10px] text-slate-400 font-normal">Strategic Planning</span>
               </div>
             </button>
-            <button className="flex items-center justify-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
+            <button className="flex items-center justify-center p-1.5 pr-5  border  rounded-full transition-all duration-300 shadow-sm group/btn">
               <div className="flex flex-col items-start ml-3 text-left">
                 <span className="text-[10px] text-slate-400 font-normal">Balance Scorecard</span>
               </div>
             </button>
-             <button className=" flex align-center justify-center items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
+             <button className=" flex align-center justify-center items-center p-1.5 pr-5  border  rounded-full transition-all duration-300 shadow-sm group/btn">
               <div className="flex flex-col items-start ml-3 text-left">
                 <span className="text-[10px] text-slate-400 font-normal">Operations</span>
               </div>
             </button>
-             <button className=" align-center justify-center flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
+             <button className=" align-center justify-center flex items-center p-1.5 pr-5  border  rounded-full transition-all duration-300 shadow-sm group/btn">
               <div className="flex flex-col items-start ml-3 text-left">
                 <span className="text-[10px] text-slate-400 font-normal">Performance Management</span>
               </div>
@@ -68,17 +68,17 @@ export default function OurServices() {
             Strengthen your organization from the inside. We design interventions that improve team dynamics, culture, and collective problem-solving capability.
             </p>
             <div className="mt-8 grid grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
-              <button className="f align-center justify-center flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
+              <button className="f align-center justify-center flex items-center p-1.5 pr-5  border  rounded-full transition-all duration-300 shadow-sm group/btn">
               <div className="flex flex-col items-start ml-3 text-left">
                 <span className="text-[10px] text-slate-400 font-normal">Team Dynamics</span>
               </div>
             </button>
-            <button className="align-center justify-center flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
+            <button className="align-center justify-center flex items-center p-1.5 pr-5  border  rounded-full transition-all duration-300 shadow-sm group/btn">
               <div className="flex flex-col items-start ml-3 text-left">
                 <span className="text-[10px] text-slate-400 font-normal">Productivity</span>
               </div>
             </button>
-            <button className="f align-center justify-center flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
+            <button className="f align-center justify-center flex items-center p-1.5 pr-5  border  rounded-full transition-all duration-300 shadow-sm group/btn">
               <div className="flex flex-col items-start ml-3 text-left">
                 <span className="text-[10px] text-slate-400 font-normal">Culture Alignment</span>
               </div>
@@ -93,18 +93,18 @@ export default function OurServices() {
              Navigate complex tax landscapes and optimize your financial position with expert advisory tailored to your sector and scale
             </p>
             <div className="mt-8 grid grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
-                <button className="align-center justify-center flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
+                <button className="align-center justify-center flex items-center p-1.5 pr-5  border  rounded-full transition-all duration-300 shadow-sm group/btn">
                 <span className="text-[10px] text-slate-400 font-normal">Business Tax</span>
                 </button>
-                <button className="align-center justify-center flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
+                <button className="align-center justify-center flex items-center p-1.5 pr-5  border  rounded-full transition-all duration-300 shadow-sm group/btn">
                 <span className="text-[10px] text-slate-400 font-normal">Risk Management</span>
                 </button>
-                <button className="align-center justify-center flex items-center p-1.5 pr-5 bg-white border rounded-full transition-all duration-300 shadow-sm group/btn">
+                <button className="align-center justify-center flex items-center p-1.5 pr-5  border rounded-full transition-all duration-300 shadow-sm group/btn">
                   <span className="text-[10px] text-slate-400 font-normal">
                       Capital Advisory
                   </span>
                 </button>
-                <button className=" align-center justify-center flex items-center p-1.5 pr-5 bg-white border rounded-full transition-all duration-300 shadow-sm group/btin">
+                <button className=" align-center justify-center flex items-center p-1.5 pr-5  border rounded-full transition-all duration-300 shadow-sm group/btin">
                   <span className="text-[10px] text-slate-400 font-normal">
                     Employment Tax
                   </span>
@@ -122,22 +122,22 @@ export default function OurServices() {
             Data-driven insight to inform every decision. From baseline surveys to impact evaluations, we give you clarity on what's working and what's not.
            </p>
            <div className="mt-8 grid grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
-              <button className=" align-center justify-center flex items-center p-1.5 pr-5 bg-white border rounded-full transition-all duration-300 shadow-sm group/btin">
+              <button className=" align-center justify-center flex items-center p-1.5 pr-5  border rounded-full transition-all duration-300 shadow-sm group/btin">
                   <span className="text-[10px] text-slate-400 font-normal">
                     Market Surveys
                   </span>
                 </button>
-                <button className=" align-center justify-center flex items-center p-1.5 pr-5 bg-white border rounded-full transition-all duration-300 shadow-sm group/btin">
+                <button className=" align-center justify-center flex items-center p-1.5 pr-5  border rounded-full transition-all duration-300 shadow-sm group/btin">
                   <span className="text-[10px] text-slate-400 font-normal">
                     Impact Evaluations
                   </span>
                 </button>
-                  <button className=" align-center justify-center flex items-center p-1.5 pr-5 bg-white border rounded-full transition-all duration-300 shadow-sm group/btin">
+                  <button className=" align-center justify-center flex items-center p-1.5 pr-5  border rounded-full transition-all duration-300 shadow-sm group/btin">
                   <span className="text-[10px] text-slate-400 font-normal">
                    Baseline Data
                   </span>
                 </button>
-                  <button className=" align-center justify-center flex items-center p-1.5 pr-5 bg-white border rounded-full transition-all duration-300 shadow-sm group/btin">
+                  <button className=" align-center justify-center flex items-center p-1.5 pr-5 b border rounded-full transition-all duration-300 shadow-sm group/btin">
                   <span className="text-[10px] text-slate-400 font-normal">
                     End-line Surveys
                   </span>
