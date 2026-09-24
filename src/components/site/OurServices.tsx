@@ -120,6 +120,29 @@ export default function OurServices() {
            <p className="text-slate-400 mt-6">
             Data-driven insight to inform every decision. From baseline surveys to impact evaluations, we give you clarity on what's working and what's not.
            </p>
+           <div className="mt-8 grid grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
+              <button className=" align-center justify-center flex items-center p-1.5 pr-5 bg-white border rounded-full transition-all duration-300 shadow-sm group/btin">
+                  <span className="text-[10px] text-slate-400 font-normal">
+                    Market Surveys
+                  </span>
+                </button>
+                <button className=" align-center justify-center flex items-center p-1.5 pr-5 bg-white border rounded-full transition-all duration-300 shadow-sm group/btin">
+                  <span className="text-[10px] text-slate-400 font-normal">
+                    Impact Evaluations
+                  </span>
+                </button>
+                  <button className=" align-center justify-center flex items-center p-1.5 pr-5 bg-white border rounded-full transition-all duration-300 shadow-sm group/btin">
+                  <span className="text-[10px] text-slate-400 font-normal">
+                   Baseline Data
+                  </span>
+                </button>
+                  <button className=" align-center justify-center flex items-center p-1.5 pr-5 bg-white border rounded-full transition-all duration-300 shadow-sm group/btin">
+                  <span className="text-[10px] text-slate-400 font-normal">
+                   End-line Surveys
+                  </span>
+                </button>
+                
+           </div>
           </div>
         </div>
         
