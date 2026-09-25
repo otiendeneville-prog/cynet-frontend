@@ -51,7 +51,7 @@ export const Route = createFileRoute("/course/$slug")({
       const course = await api.getCourse(params.slug);
 
       const seoTitle =
-        course.seo_title || `${course.title} | Bluestron Institute`;
+        course.seo_title || `${course.title} | Cynet East Africa Consultancy Institute`;
       console.log("The seo title is: ", course.seo_description);
       const seoDescription =
         course.seo_description ||
@@ -85,7 +85,7 @@ export const Route = createFileRoute("/course/$slug")({
     } catch (error) {
       console.error("Failed to load SEO data:", error);
       return {
-        meta: [{ title: "Course Details | Bluestron Institute" }],
+        meta: [{ title: "Course Details | Cynet East Africa Consultancy Institute" }],
       };
     }
   },

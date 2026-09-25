@@ -149,13 +149,9 @@ export default function OurServices() {
              <img src={cynet} alt="Cynet" />
            </div>
            <div className="align-center  content-center">
-             <img src={nita} alt="Nita" />
-           </div>
-          
+             <img className=""src={nita} alt="Nita" />
+           </div> 
         </div>
-        
-
-
       </div>
     </section>
   )
