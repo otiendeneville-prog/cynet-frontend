@@ -419,7 +419,7 @@ const categories = [
 
 export const Route = createFileRoute("/our-gallery")({
   head: () => ({
-    meta: [{ title: "Our Gallery | Bluestron Institute" }],
+    meta: [{ title: "Our Gallery | Cynet East Africa" }],
   }),
   component: OurGallery,
 });

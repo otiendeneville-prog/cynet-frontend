@@ -59,7 +59,7 @@ export const Route = createFileRoute("/course/$slug")({
 
       const canonicalUrl =
         course.seo_canonical ||
-        `https://bluestroninstitute.com/course/${params.slug}`;
+        `https://cyneteastafrica.com/course/${params.slug}`;
 
       return {
         meta: [

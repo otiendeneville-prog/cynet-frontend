@@ -35,16 +35,16 @@ We may also collect non-personal data such as browser type, IP address, pages vi
   {
     icon: Scale,
     title: "Disclosure of Your Information",
-    content: `Bluestron Institute treats your personal information with the utmost discretion. We do not sell, trade, or rent your data to third parties for commercial purposes. However, we may disclose your information in the following limited circumstances:
+    content: `Cynet East Africa Consultancy treats your personal information with the utmost discretion. We do not sell, trade, or rent your data to third parties for commercial purposes. However, we may disclose your information in the following limited circumstances:
 
-By Law or to Protect Rights: Where required by law or where we believe disclosure is necessary to respond to legal processes, investigate potential violations of our policies, or protect the rights, property, and safety of Bluestron Institute, our clients, or the public.
+By Law or to Protect Rights: Where required by law or where we believe disclosure is necessary to respond to legal processes, investigate potential violations of our policies, or protect the rights, property, and safety of Cynet East Africa Consultancy, our clients, or the public.
 
 Service Providers: We may share information with trusted third-party vendors who assist us in operating our website or conducting our business, provided they agree to keep your information confidential.`,
   },
   {
     icon: Lock,
     title: "Security of Your Information",
-    content: `Bluestron Institute employs administrative, technical, and physical security measures designed to safeguard your personal information against unauthorized access, disclosure, alteration, or destruction.
+    content: `Cynet East Africa Consultancy employs administrative, technical, and physical security measures designed to safeguard your personal information against unauthorized access, disclosure, alteration, or destruction.
 
 We use industry-standard protocols including encrypted data transmission and secure server infrastructure. However, please be aware that no method of electronic storage or data transmission over the Internet is entirely foolproof. While we strive to use commercially acceptable means to protect your personal data, we cannot guarantee its absolute security.`,
   },
@@ -66,7 +66,7 @@ You may contact us at info@bluestroninstitute.com or call us on +254 715 113 519
 
 export const Route = createFileRoute("/privacy-policy")({
   head: () => ({
-    meta: [{ title: "Privacy Policy | Bluestron Institute" }],
+    meta: [{ title: "Privacy Policy | Cynet East Africa Consultancy" }],
   }),
   component: PrivacyPolicy,
 });
@@ -85,7 +85,7 @@ function PrivacyPolicy() {
             Your <span className="text-gradient">privacy</span> matters to us.
           </h1>
           <p className="mt-5 text-lg text-muted-foreground max-w-3xl">
-            Bluestron Institute is committed to protecting your personal
+            Cynet East Africa Consultancy is committed to protecting your personal
             information and being transparent about how we collect, use, and
             safeguard your data. This Privacy Policy applies to all visitors and
             users of our website and services. By accessing our site, you agree
@@ -122,7 +122,7 @@ function PrivacyPolicy() {
             </div>
             <p className="text-sm font-semibold">Data Protection</p>
             <p className="text-xs text-muted-foreground mt-1">
-              Bluestron Institute handles all personal data in accordance with
+              Cynet East Africa Consultancy handles all personal data in accordance with
               applicable Kenyan data protection laws.
             </p>
           </div>
