@@ -30,11 +30,6 @@ export const Route = createRootRoute({
         title: "Cynet East Africa Consultancy-Cynet East Africa Consultancy",
       },
 
-      <img
-        src="/assets/Logo-cynet.png"
-        alt="Cynet East Africa Consultancy"
-        className="h-`7.5` w-auto object-contain"
-      />,
 
       {
         name: "description",
@@ -70,6 +65,7 @@ export const Route = createRootRoute({
         name: "twitter:image",
         content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/...",
       },
+      
       {
         name: "google-site-verification",
         content: "pdOAd7qjHCoS3jbyiLvqgOJf4F6cp3hRyZ3vpYwIKTo",
@@ -82,6 +78,11 @@ export const Route = createRootRoute({
         rel: "preconnect",
         href: "https://fonts.gstatic.com",
         crossOrigin: "anonymous",
+      },
+        { 
+        rel: "icon", 
+        type: "image/png", 
+        href: "/assets/Logo-cynet.png" 
       },
       {
         rel: "stylesheet",
