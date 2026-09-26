@@ -31,7 +31,7 @@ const App = () => (
       <TooltipProvider>
         <FloatingWhatsApp
           phoneNumber="+254 715 113 519"
-          accountName="Bluestron Institute"
+          accountName="Cynet East Africa Consultancy"
           avatar="assets/bluestroninstitute-primary-logo.png"
           statusMessage="Typically replies within 1 hour"
           chatMessage="Hello! 👋 How can we help you today?"
