@@ -82,7 +82,7 @@ export const Route = createRootRoute({
         { 
         rel: "icon", 
         type: "image/png", 
-        href: "/assets/Logo-cynet.png" 
+        href: "/assets/favicon-cynet.png" 
       },
       {
         rel: "stylesheet",
