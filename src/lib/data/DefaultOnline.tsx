@@ -1,7 +1,7 @@
 const defaultOnlineSessions = [
   {
-    start: "May 18",
-    end: "May 22",
+    start: "Sep 28",
+    end: "August 02",
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 1200",
   },
