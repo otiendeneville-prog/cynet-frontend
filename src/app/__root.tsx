@@ -107,6 +107,8 @@ function RootLayout() {
               <div className="min-h-screen flex flex-col bg-background text-foreground">
                 <SiteHeader />
                 <main className="flex-1">
+                  <div>
+                  </div>
                   <Outlet />
                 </main>
                 <Footer />
