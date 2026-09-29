@@ -72,7 +72,7 @@ function Contact() {
           className="rounded-2xl border border-border bg-card p-6 lg:p-8 space-y-5"
         >
           <div className="grid  sm:grid-cols-2 gap-5">
-            <Field label="Full name" name="name" required />
+            <Field label=" Full name" name="name" required />
             <Field label="Email" name="email" type="email" required />
           </div>
           <div className="grid sm:grid-cols-2 gap-5">
