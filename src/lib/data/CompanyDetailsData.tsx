@@ -16,7 +16,6 @@ const CompanyDetailsData = [
   { icon: Hash, label: "Registration Number", value: "PVT-9XUGZ293" },
   { icon: CalendarCheck, label: "Date Incorporated", value: "16 Jun 2022" },
   { icon: FileText, label: "Business Type", value: "Private Limited Company" },
-  { icon: Shield, label: "KRA PIN", value: "P052128279L" },
   {
     icon: BadgeCheck,
     label: "NITA Accreditation No",
