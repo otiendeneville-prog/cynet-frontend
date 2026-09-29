@@ -58,7 +58,7 @@ function Contact() {
           Get in touch
         </p>
         <h1 className="text-3xl lg:text-4xl font-bold mt-2">
-          Talk to a Bluestron advisor
+          Talk to a Cynet East Africa advisor
         </h1>
         <p className="mt-3 text-muted-foreground">
           Tell us about your training, research, or consultancy needs and we'll
