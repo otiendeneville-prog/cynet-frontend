@@ -85,7 +85,7 @@ function Contact() {
               name="message"
               required
               rows={5}
-              className="mt-1.5 w-full px-3.5 py-2.5 rounded-lg bg-secondary  border border-border text-sm focus:outline-none focus:ring-2 focus:ring-ring/40"
+              className="mt-1.5 w-full px-3.5 py-2.5 rounded-lg  text-sm focus:outline-none focus:ring-2 focus:ring-ring/40"
             />
           </div>
           <button
