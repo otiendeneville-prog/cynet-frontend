@@ -51,7 +51,7 @@ const feedback = [
   {
     id: "6",
     content:
-      "Cynet East Africa has the best service in terms of delivery of training content and their trainers have a practical aspect in the industry.",
+      "I found excellent service in data management, customer experience, and emotional intelligence in workplace.",
     name: "Sang Cosmas",
     title: "2 years ago",
     img: "S",
