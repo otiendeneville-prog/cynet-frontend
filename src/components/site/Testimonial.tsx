@@ -3,6 +3,8 @@ import { Carousel as NukaCarousel } from "nuka-carousel";
 
 const Carousel = NukaCarousel as any;
 
+
+
 const feedback = [
   {
     id: "1",
@@ -85,12 +87,12 @@ const Testimonials = () => (
         ))}
       </Carousel>
     </div>
-
-    {/* <div className="w-full max-w-[1200px] mx-auto px-6 flex justify-end mt-6">
+    
+ <div className="w-full max-w-[1200px] mx-auto px-6 flex justify-end mt-6">
       <div className="bg-[#006f42] text-white px-3 py-1.5 rounded-md text-xs font-semibold flex items-center gap-1 shadow-sm">
         <span>Verified by Trustindex</span>
       </div>
-    </div> */}
+    </div> 
   </section>
 );
 
