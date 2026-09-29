@@ -57,7 +57,20 @@ const feedback = [
     img: "S",
   },
   {
-    id: "7"
+    id: "7",
+    content:
+      "Very relevant and Iformative training sessions",
+    name: "Benedict Ataro",
+    title: "2 years",
+    img: "B",
+  },
+  {
+    id: "8",
+    content: 
+     "I want to express my gratitude to Engineer Ochieng for his outstanding Data Analysis using Python training. His clear explanations and hands-on exercises made the learning process enjoyable and effective. Highly recommend this course!",
+     name: "Gilbert Jumaa",
+     title: "2years",
+     img: "G"
   }
 ];
 
