@@ -53,8 +53,8 @@ const Testimonials = () => (
     className="sm:py-16 py-6 flex justify-center items-center flex-col relative bg-slate-50 w-full"
   >
     <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1] max-w-[1200px] mx-auto px-6">
-      <h2 className="font-poppins font-semibold xs:text-[48px] text-[40px] text-secondary xs:leading-[76.8px] leading-[66.8px] w-full">
-        What Our Clients <br className="sm:block hidden" /> Say About Us
+      <h2 className="font-poppins font-semibold xs:text-[48px] text-[40px] text-primary xs:leading-[76.8px] leading-[66.8px] w-full">
+        What Our <h2 className="text-gray-900">Clients</h2> <br className="sm:block hidden" /> <h2 className="text-secondary">Say About Us</h2>
       </h2>
       <div className="w-full md:mt-0 mt-6 md:flex justify-end">
         <a
