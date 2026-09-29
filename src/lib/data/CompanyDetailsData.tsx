@@ -20,7 +20,7 @@ const CompanyDetailsData = [
   {
     icon: BadgeCheck,
     label: "NITA Accreditation No",
-    value: "NITA/TRN/1515/VOL.1[8b]",
+    value: "NITA/TRN/1512",
   },
 ];
 
