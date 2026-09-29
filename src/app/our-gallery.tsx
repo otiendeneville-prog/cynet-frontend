@@ -114,19 +114,19 @@ const galleryItems = [
     id: 19,
     title: "Data Management  ",
     category: "Workshop",
-    image: "img-14.webp",
+    image: "img-14.jpeg",
   },
   {
     id: 20,
     title: "Mobile Data Collection  ",
     category: "Workshop",
-    image: "bluestron-mobile-data-collection.webp",
+    image: "img-15.jpeg",
   },
   {
     id: 21,
     title: "Monitoring and Evalution  ",
     category: "Engagement",
-    image: "bluestron-monitoring-evalution (1).webp",
+    image: "img-16.jpeg",
   },
   {
     id: 22,

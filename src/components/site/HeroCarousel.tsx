@@ -6,7 +6,8 @@ import hero4 from "/assets/hero-4.webp";
 import hero6 from "/assets/hero-6.jpeg";
 import hero7 from "/assets/hero-7.jpeg";
 import hero8 from "/assets/hero-8.jpeg";
-import hero9 from "/assets/hero-9.jpeg"
+import hero9 from "/assets/hero-9.jpeg";
+import hero10 from "/assets/hero-10.jpeg"; 
 const slides = [
   { src: hero1, alt: "Professional training classroom" },
   { src: hero2, alt: "Strategy session with charts" },
@@ -16,6 +17,7 @@ const slides = [
   { src: hero7, alt: "Accounting and Finance"},
   { src: hero8, alt: "Data analysis and Management"},
   { src: hero9, alt: "Procurement"},
+  {src:hero10, alt: "Procurement"},
 
 
 ];
