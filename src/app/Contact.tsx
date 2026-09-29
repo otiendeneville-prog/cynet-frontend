@@ -106,9 +106,9 @@ function Contact() {
           <InfoCard
             icon={Mail}
             title="Email"
-            text="info@bluestroninstitute.com"
+            text="info@"
           />
-          <InfoCard icon={Phone} title="Phone" text="+254 715 113 519" />
+          <InfoCard icon={Phone} title="Phone" text="+254(7) 92972525 " />
           <div className="rounded-2xl border border-border bg-gradient-card p-6">
             <p className="text-sm font-semibold">Office hours</p>
             <p className="text-sm text-muted-foreground mt-1">
