@@ -71,7 +71,7 @@ function Contact() {
           onSubmit={onSubmit}
           className="rounded-2xl border border-border bg-card p-6 lg:p-8 space-y-5"
         >
-          <div className="grid sm:grid-cols-2 gap-5">
+          <div className="grid  sm:grid-cols-2 gap-5">
             <Field label="Full name" name="name" required />
             <Field label="Email" name="email" type="email" required />
           </div>
@@ -106,7 +106,7 @@ function Contact() {
           <InfoCard
             icon={Mail}
             title="Email"
-            text="info@"
+            text="info@cyneteastafrica.com"
           />
           <InfoCard icon={Phone} title="Phone" text="+254(7) 92972525 " />
           <div className="rounded-2xl border border-border bg-gradient-card p-6">
