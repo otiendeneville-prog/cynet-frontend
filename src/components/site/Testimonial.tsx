@@ -1,3 +1,4 @@
+import { id } from "date-fns/locale";
 import FeedbackCard from "../FeedbackCard.tsx";
 import { Carousel as NukaCarousel } from "nuka-carousel";
 
@@ -47,6 +48,17 @@ const feedback = [
     title: "2 years ago",
     img: "C",
   },
+  {
+    id: "6",
+    content:
+      "Cynet East Africa has the best service in terms of delivery of training content and their trainers have a practical aspect in the industry.",
+    name: "Sang Cosmas",
+    title: "2 years ago",
+    img: "S",
+  },
+  {
+    id: "7"
+  }
 ];
 
 const Testimonials = () => (
