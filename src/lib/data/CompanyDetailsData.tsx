@@ -14,7 +14,7 @@ const CompanyDetailsData = [
     value: "Cynet East Africa Consultancy",
   },
   { icon: Hash, label: "Registration Number", value: "PVT-Y2U3QMR" },
-  { icon: CalendarCheck, label: "Date Incorporated", value: "16 Jun 2022" },
+  { icon: CalendarCheck, label: "Date Incorporated", value: "7th May 2018" },
   { icon: FileText, label: "Business Type", value: "Private Limited Company" },
   {
     icon: BadgeCheck,
