@@ -85,7 +85,7 @@ const Testimonials = () => (
       </h2>
       <div className="w-full md:mt-0 mt-6 md:flex justify-end">
         <a
-          href="http://localhost:3001/"
+          href="https://cyneteastafrica.com/"
           target="_blank"
           rel="noreferrer"
           className="justify-center items-center flex bg-[#0f2a4a] text-white px-6 py-3 rounded-xl font-poppins font-medium shadow-md hover:bg-slate-800 transition"
