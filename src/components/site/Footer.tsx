@@ -3,9 +3,7 @@ import { Link } from "@tanstack/react-router";
 import { email } from "zod";
 
 
-const handleClick = () =>{
-  <p className="text-2xl-primary font-bold justify-center align-center lg:size-max">Email submitted succesfully</p>
-}
+
 const quickLinks = [
   { to: "/about", label: "About Us" },
   { to: "/our-clients", label: "Our Clients" },
@@ -189,7 +187,7 @@ export function Footer() {
                 placeholder="Your email"
                 className="h-11 flex-1 rounded-lg border border-border bg-background px-3 text-sm text-foreground placeholder:text-muted-foreground outline-none ring-0 focus:border-primary"
               />
-              <button onClick={handleClick} className="inline-flex h-11 items-center justify-center rounded-lg bg-gradient-primary px-4 text-sm font-medium text-primary-foreground shadow-glow">
+              <button  className="inline-flex h-11 items-center justify-center rounded-lg bg-gradient-primary px-4 text-sm font-medium text-primary-foreground shadow-glow">
                 Subscribe
               </button>
             </div>

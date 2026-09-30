@@ -17,6 +17,7 @@ import { Route as OurClientsRouteImport } from './app/our-clients'
 import { Route as AboutRouteImport } from './app/about'
 import { Route as CoursesRouteImport } from './app/Courses'
 import { Route as ContactRouteImport } from './app/Contact'
+import { Route as CarRouteImport } from './app/Car'
 import { Route as CalendarRouteImport } from './app/Calendar'
 import { Route as AccreditationRouteImport } from './app/Accreditation'
 import { Route as IndexRouteImport } from './app/index'
@@ -64,6 +65,11 @@ const ContactRoute = ContactRouteImport.update({
   path: '/Contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CarRoute = CarRouteImport.update({
+  id: '/Car',
+  path: '/Car',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CalendarRoute = CalendarRouteImport.update({
   id: '/Calendar',
   path: '/Calendar',
@@ -100,6 +106,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/Accreditation': typeof AccreditationRoute
   '/Calendar': typeof CalendarRoute
+  '/Car': typeof CarRoute
   '/Contact': typeof ContactRoute
   '/Courses': typeof CoursesRoute
   '/about': typeof AboutRoute
@@ -116,6 +123,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/Accreditation': typeof AccreditationRoute
   '/Calendar': typeof CalendarRoute
+  '/Car': typeof CarRoute
   '/Contact': typeof ContactRoute
   '/Courses': typeof CoursesRoute
   '/about': typeof AboutRoute
@@ -133,6 +141,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/Accreditation': typeof AccreditationRoute
   '/Calendar': typeof CalendarRoute
+  '/Car': typeof CarRoute
   '/Contact': typeof ContactRoute
   '/Courses': typeof CoursesRoute
   '/about': typeof AboutRoute
@@ -151,6 +160,7 @@ export interface FileRouteTypes {
     | '/'
     | '/Accreditation'
     | '/Calendar'
+    | '/Car'
     | '/Contact'
     | '/Courses'
     | '/about'
@@ -167,6 +177,7 @@ export interface FileRouteTypes {
     | '/'
     | '/Accreditation'
     | '/Calendar'
+    | '/Car'
     | '/Contact'
     | '/Courses'
     | '/about'
@@ -183,6 +194,7 @@ export interface FileRouteTypes {
     | '/'
     | '/Accreditation'
     | '/Calendar'
+    | '/Car'
     | '/Contact'
     | '/Courses'
     | '/about'
@@ -200,6 +212,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AccreditationRoute: typeof AccreditationRoute
   CalendarRoute: typeof CalendarRoute
+  CarRoute: typeof CarRoute
   ContactRoute: typeof ContactRoute
   CoursesRoute: typeof CoursesRoute
   AboutRoute: typeof AboutRoute
@@ -271,6 +284,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/Car': {
+      id: '/Car'
+      path: '/Car'
+      fullPath: '/Car'
+      preLoaderRoute: typeof CarRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/Calendar': {
       id: '/Calendar'
       path: '/Calendar'
@@ -320,6 +340,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AccreditationRoute: AccreditationRoute,
   CalendarRoute: CalendarRoute,
+  CarRoute: CarRoute,
   ContactRoute: ContactRoute,
   CoursesRoute: CoursesRoute,
   AboutRoute: AboutRoute,
