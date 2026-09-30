@@ -89,9 +89,9 @@ function HeroSection() {
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               to={hero?.cta_url ?? "/courses"}
-              className="inline-flex items-center gap-2 px-5 h-12 rounded-lg bg-primary hsl(194, 66%, 49%) text-black font-medium shadow-glow hover:opacity-95 transition"
+              className="inline-flex items-center gap-2 px-5 h-12 rounded-lg bg-primary  hsl(194, 66%, 49%) text-black font-medium shadow-glow hover:opacity-95 transition"
             >
-              <BookOpen className="size-4" />
+              <BookOpen className="size-4 hover:primary" />
               {hero?.cta_label ?? "View Courses"}
             </Link>
             <Link
