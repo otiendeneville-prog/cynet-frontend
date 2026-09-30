@@ -4,7 +4,7 @@ import { email } from "zod";
 
 
 const handleClick = () =>{
-  console.log("We will reach out to you in a few")
+  <p className="text-2xl-primary font-bold justify-center align-center lg:size-max">Email submitted succesfully</p>
 }
 const quickLinks = [
   { to: "/about", label: "About Us" },
