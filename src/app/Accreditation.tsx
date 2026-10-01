@@ -4,7 +4,7 @@ import { BadgeCheck } from "lucide-react";
 
 export const Route = createFileRoute("/Accreditation")({
   head: () => ({
-    meta: [{ title: "Accreditation | Bluestron Institute" }],
+    meta: [{ title: "Accreditation | Cynet East Africa Consultancy" }],
   }),
   component: Accreditation,
 });

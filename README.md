@@ -1,4 +1,4 @@
-# Bluestron Institute Learning Portal
+#Cynet East Africa Learning Portal 
 
 A professional training and consultancy platform built with a cutting-edge React stack for maximum performance and SEO.
 
