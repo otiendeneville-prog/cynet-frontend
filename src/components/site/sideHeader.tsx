@@ -14,7 +14,7 @@ export function SiteHeader() {
           <img
             src="/assets/Logo-cynet.png"
             alt="Cynet East Africa Consultancy"
-            className="h-[80px] w-auto object-contain"
+            className="h-[30px] w-auto object-contain"
           />
         </Link>
 

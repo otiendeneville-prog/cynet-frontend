@@ -22,70 +22,20 @@ const categories = [
 export function Footer() {
   return (
     <>
-      <section className="bg-hero">
-        <div className="max-w-7xl mx-auto px-5 lg:px-8 py-12 lg:py-16">
-          <div className="grid gap-6 lg:grid-cols-[1.2fr_1fr_1fr_1fr_1fr] items-center">
-            <div className="lg:col-span-2">
-              <a
-                href="https://cyneteastafrica.com/courses/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 h-12 rounded-lg bg-gradient-primary text-primary-foreground font-medium shadow-glow"
-              >
-                Start Learning, Choose a course
-              </a>
-            </div>
 
-            <div className="flex items-center gap-3 text-sm text-muted-foreground">
-              <Link
-                to="/about"
-                className="font-medium text-foreground hover:text-primary"
-              >
-                Our Mission
-              </Link>
-            </div>
-
-            <div className="flex items-center gap-3 text-sm text-muted-foreground">
-              <Link
-                to="/about"
-                className="font-medium text-foreground hover:text-primary"
-              >
-                Our Vision
-              </Link>
-            </div>
-
-            <div className="flex items-center gap-3 text-sm text-muted-foreground">
-              <Link
-                to="/about"
-                className="font-medium text-foreground hover:text-primary"
-              >
-                Our Values
-              </Link>
-            </div>
-
-            <div className="flex items-center gap-3 text-sm text-muted-foreground">
-              <Link
-                to="/about"
-                className="font-medium text-foreground hover:text-primary"
-              >
-                Our Journey
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <footer className="border-t border-border bg-card">
+      <footer className="border-t-4 bg-[#0b1d36] border-primary bg-card">
         <div className="max-w-7xl mx-auto px-5 lg:px-8 py-12 grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_0.9fr_0.9fr_1.2fr]">
           <div>
             <div className="flex items-center gap-3">
-              <div className="rounded-xl bg-primary/10 text-primary border border-primary/20 px-3 py-2 text-sm font-semibold tracking-[0.18em] uppercase">
-                Cynet
+              <div>
+                <img
+                  src="/assets/Logo-cynet.png"
+                  alt="Cynet East Africa Consultancy"
+                  className="h-[50px] w-auto object-contain"
+                />
               </div>
               <div>
-                <div className="text-lg font-bold leading-none">
-                  East Africa
-                </div>
+                <div className="text-lg font-bold leading-none"></div>
               </div>
             </div>
 

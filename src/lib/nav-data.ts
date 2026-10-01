@@ -155,7 +155,7 @@ export const navSections: NavSection[] = [
       },
       {
         title: "All cities",
-        description: "Browse the full Bluestron map.",
+        description: "Browse the full Cynet map.",
         icon: Plane,
         href: "https://drive.google.com/file/d/1TqaD4jHUqqFSqMgV5zePqF-uGg9rm4AE/view",
       },
@@ -196,9 +196,9 @@ export const navSections: NavSection[] = [
     ],
   },
   {
-    label: "Why Bluestron",
+    label: "Why Cynet",
     feature: {
-      title: "Why Bluestron Institute",
+      title: "Cynet East Africa ",
       description:
         "Delivering high-quality training solutions that empower organizations to operate efficiently.",
       href: "/about",

@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site/sideHeader";
 
+
 const clients = [
   {
     name: "Oasis Health Group",
@@ -122,11 +123,13 @@ const clients = [
 
 export const Route = createFileRoute("/our-clients")({
   head: () => ({
-    meta: [{ title: "Our Clients | Bluestron Institute" }],
+    meta: [{ title: "Our Clients | Cynet East Africa" }],
   }),
   component: OurClients,
 });
 export function OurClients() {
+ 
+   
   return (
     <div className="min-h-screen bg-background text-foreground">
       <main className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
@@ -138,8 +141,8 @@ export function OurClients() {
             Trusted by leading organisations across East Africa and beyond.
           </p>
         </div>
-
-        <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+        
+          <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 ">
           {clients.map((client) => (
             <div
               key={client.name}
@@ -148,7 +151,7 @@ export function OurClients() {
               <img
                 src={`/client-logos/${client.logo}`}
                 alt={client.name}
-                className="h-full w-full object-fit rounded-sm opacity-60 grayscale transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0"
+                className=" h-full w-full object-fit rounded-sm opacity-60 grayscale transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0"
               />
 
               {/* <span className="text-lg font-semibold tracking-tight text-muted-foreground/40 transition-colors duration-300 group-hover:text-muted-foreground/70">

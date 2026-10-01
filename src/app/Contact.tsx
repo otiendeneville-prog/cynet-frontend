@@ -5,7 +5,7 @@ import { toast } from "sonner";
 
 export const Route = createFileRoute("/Contact")({
   head: () => ({
-    meta: [{ title: "Contact Us | Bluestron Institute" }],
+    meta: [{ title: "Contact Us | Cynet East Africa Consultancy Institute" }],
   }),
   component: Contact,
 });
@@ -58,7 +58,7 @@ function Contact() {
           Get in touch
         </p>
         <h1 className="text-3xl lg:text-4xl font-bold mt-2">
-          Talk to a Bluestron advisor
+          Talk to a Cynet East Africa advisor
         </h1>
         <p className="mt-3 text-muted-foreground">
           Tell us about your training, research, or consultancy needs and we'll
@@ -71,7 +71,7 @@ function Contact() {
           onSubmit={onSubmit}
           className="rounded-2xl border border-border bg-card p-6 lg:p-8 space-y-5"
         >
-          <div className="grid sm:grid-cols-2 gap-5">
+          <div className="grid  sm:grid-cols-2 gap-5">
             <Field label="Full name" name="name" required />
             <Field label="Email" name="email" type="email" required />
           </div>
@@ -85,7 +85,7 @@ function Contact() {
               name="message"
               required
               rows={5}
-              className="mt-1.5 w-full px-3.5 py-2.5 rounded-lg bg-secondary border border-border text-sm focus:outline-none focus:ring-2 focus:ring-ring/40"
+              className="mt-1.5 w-full border px-3.5 py-2.5 rounded-lg rouded-full justify-content-center align-center text-sm focus:outline-none focus:ring-2 focus:ring-ring/40"
             />
           </div>
           <button
@@ -106,9 +106,9 @@ function Contact() {
           <InfoCard
             icon={Mail}
             title="Email"
-            text="info@bluestroninstitute.com"
+            text="info@cyneteastafrica.com"
           />
-          <InfoCard icon={Phone} title="Phone" text="+254 715 113 519" />
+          <InfoCard icon={Phone} title="Phone" text="+254(7) 92972525 " />
           <div className="rounded-2xl border border-border bg-gradient-card p-6">
             <p className="text-sm font-semibold">Office hours</p>
             <p className="text-sm text-muted-foreground mt-1">
