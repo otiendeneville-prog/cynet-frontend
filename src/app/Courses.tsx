@@ -16,7 +16,7 @@ const searchSchema = z.object({
 
 export const Route = createFileRoute("/Courses")({
   head: () => ({
-    meta: [{ title: "Courses | Bluestron Institute" }],
+    meta: [{ title: "Courses | Cynet East Africa" }],
   }),
   validateSearch: searchSchema,
   component: Courses,

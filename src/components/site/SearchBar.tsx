@@ -98,7 +98,7 @@ function SearchInput() {
     <div className="relative w-full" ref={searchRef}>
       <InputGroup>
         <InputGroupInput
-          placeholder="Search Bluestron Institute"
+          placeholder="Search Cynet East Africa"
           className="py-2 border-0"
           value={searchTerm}
           onClick={() => setIsDropdownVisible(true)}

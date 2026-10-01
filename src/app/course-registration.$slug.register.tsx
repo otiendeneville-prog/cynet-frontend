@@ -80,7 +80,7 @@ const Field = ({
 
 export const Route = createFileRoute("/course-registration/$slug/register")({
   head: () => ({
-    meta: [{ title: "Register | Bluestron Institute" }],
+    meta: [{ title: "Register | Cynet East Africa Consultancy" }],
   }),
   component: RegisterPage,
 });
