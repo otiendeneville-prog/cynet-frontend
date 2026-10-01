@@ -122,7 +122,7 @@ const clients = [
 
 export const Route = createFileRoute("/our-clients")({
   head: () => ({
-    meta: [{ title: "Our Clients | Bluestron Institute" }],
+    meta: [{ title: "Our Clients | Cynet East Africa" }],
   }),
   component: OurClients,
 });

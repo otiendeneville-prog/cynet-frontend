@@ -136,7 +136,7 @@ const destinations: Item[] = [
   },
   {
     title: "All cities",
-    description: "Browse the full Bluestron map.",
+    description: "Browse the full Cynet East Africa map.",
     icon: Plane,
     href: "https://drive.google.com/file/d/1TqaD4jHUqqFSqMgV5zePqF-uGg9rm4AE/view",
   },
@@ -170,7 +170,7 @@ const teams: Item[] = [
 
 const aboutUs: Item[] = [
   {
-    title: "Who We Are",
+    title: "About Cynet",
     description: "Our story, mission, and the team behind it.",
     icon: Users,
     href: "/about",
@@ -315,12 +315,12 @@ export function MegaMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Why Bluestron</NavigationMenuTrigger>
+          <NavigationMenuTrigger>About Us</NavigationMenuTrigger>
           <NavigationMenuContent>
             <MenuGrid
               items={aboutUs}
               feature={{
-                title: "Why Bluestron Institute",
+                title: "Cynet East Africa",
                 description:
                   "Deliver high-quality, reliable, and timely supply solutions that empower organizations to operate efficiently and focus on their core objectives..",
                 href: "/contact",
