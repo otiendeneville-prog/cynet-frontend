@@ -1,14 +1,25 @@
 import { useEffect, useState } from "react";
-import hero1 from "/assets/hero-1.webp";
-import hero2 from "/assets/hero-2.webp";
-import hero3 from "/assets/hero-3.webp";
+import hero1 from "/assets/hero-1.jpeg";
+import hero2 from "/assets/hero-2.jpeg";
+import hero3 from "/assets/hero-3.jpeg";
 import hero4 from "/assets/hero-4.webp";
-
+import hero6 from "/assets/hero-6.jpeg";
+import hero7 from "/assets/hero-7.jpeg";
+import hero8 from "/assets/hero-8.jpeg";
+import hero9 from "/assets/hero-9.jpeg";
+import hero10 from "/assets/hero-10.jpeg"; 
 const slides = [
   { src: hero1, alt: "Professional training classroom" },
   { src: hero2, alt: "Strategy session with charts" },
   { src: hero3, alt: "Team collaborating on data" },
   { src: hero4, alt: "Seminars" },
+  { src: hero6, alt: "Governance and Leadership"},
+  { src: hero7, alt: "Accounting and Finance"},
+  { src: hero8, alt: "Data analysis and Management"},
+  { src: hero9, alt: "Procurement"},
+  {src:hero10, alt: "Procurement"},
+
+
 ];
 
 interface Props {
@@ -48,7 +59,6 @@ export const HeroCarousel = ({ intervalMs = 5500 }: Props) => {
             }}
           />
         ))}
-        {/* Brand color overlays for legibility */}
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/40" />
         <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-background/30" />
       </div>
