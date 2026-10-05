@@ -132,25 +132,25 @@ const galleryItems = [
     id: 22,
     title: "Customer Experience  ",
     category: "Engagement",
-    image: "bluestron-customer-experience (1).webp",
+    image: "img-14.webp",
   },
   {
     id: 23,
     title: "GIS and Information Technology  ",
     category: "Engagement",
-    image: "bluestron-gis-information-technology.webp",
+    image: "img-15.webp",
   },
   {
     id: 24,
     title: "Humanitarian Course ",
     category: "Engagement",
-    image: "bluestron-humanitarian-courses.webp",
+    image: "img-16.webp",
   },
   {
     id: 25,
     title: "GIS and Technology ",
     category: "Engagement",
-    image: "blustrone-gis-technology.webp",
+    image: "img-17.webp",
   },
   {
     id: 26,
@@ -451,11 +451,10 @@ export function OurGallery() {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`rounded-full border px-4 py-1.5 text-sm font-medium transition-all duration-200 ${
-                activeCategory === cat
-                  ? "border-primary bg-primary text-primary-foreground"
-                  : "border-border/50 bg-card text-muted-foreground hover:border-primary/30 hover:text-foreground"
-              }`}
+              className={`rounded-full border px-4 py-1.5 text-sm font-medium transition-all duration-200 ${activeCategory === cat
+                ? "border-primary bg-primary text-primary-foreground"
+                : "border-border/50 bg-card text-muted-foreground hover:border-primary/30 hover:text-foreground"
+                }`}
             >
               {cat}
             </button>
