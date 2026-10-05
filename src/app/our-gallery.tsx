@@ -153,12 +153,6 @@ const galleryItems = [
     image: "img-17.webp",
   },
   {
-    id: 26,
-    title: "Data Management ",
-    category: "Engagement",
-    image: "img-18.webp",
-  },
-  {
     id: 27,
     title: "Governance and Leadership ",
     category: "Engagement",
@@ -171,10 +165,16 @@ const galleryItems = [
     image: "img-20.webp",
   },
   {
+    id: 26,
+    title: "Data Management ",
+    category: "Engagement",
+    image: "img-21.webp",
+  },
+  {
     id: 29,
     title: "Climate Change Management ",
     category: "Engagement",
-    image: "img-21.webp",
+    image: "",
   },
   {
     id: 30,
