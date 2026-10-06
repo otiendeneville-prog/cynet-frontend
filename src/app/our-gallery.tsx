@@ -228,13 +228,13 @@ const galleryItems = [
     id: 38,
     title: "Customer Experience",
     category: "Seminar",
-    image: "img-31.webp",
+    image: "img-37.webp",
   },
   {
     id: 39,
     title: "Project Management",
     category: "Training",
-    image: "img-31.webp",
+    image: "img-38.webp",
   },
   {
     id: 40,
@@ -264,7 +264,7 @@ const galleryItems = [
     id: 44,
     title: "Strategic Learn Six",
     category: "Bootcamp",
-    image: "img-35.webp",
+    image: "img-39.webp",
   },
   {
     id: 45,
@@ -276,19 +276,19 @@ const galleryItems = [
     id: 46,
     title: "Project Monitoring and Evalution",
     category: "Bootcamp",
-    image: "img-37.webp",
+    image: "",
   },
   {
     id: 47,
     title: "Data Management",
     category: "Bootcamp",
-    image: "img-38.webp",
+    image: "",
   },
   {
     id: 48,
     title: "Data Management",
     category: "Bootcamp",
-    image: "img-39.webp",
+    image: "",
   },
   {
     id: 49,
