@@ -302,3 +302,11 @@
 @utility shadow-card {
   box-shadow: var(--shadow-card);
 }
+
+/* --- Add this at the bottom of your CSS file --- */
+@utility bg-team-hero {
+  background-image: url("https://cyneteastafrica.com");
+  background-size: cover;
+  background-position: 65% center;
+  background-repeat: no-repeat;
+}
