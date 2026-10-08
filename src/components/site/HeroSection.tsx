@@ -105,7 +105,7 @@ function HeroSection() {
         )}
         <Link
           to="/courses"
-          className="mt-6 inline-flex items-center gap-1 text-2xl text-primary hover:underline"
+          className="mt-6 inline-flex items-center gap-1 text-2xl text-secondary hover:underline"
         >
           Booking a course for yourself? Find your course{" "}
           <span aria-hidden>→</span>
