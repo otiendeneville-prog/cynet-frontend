@@ -1,4 +1,6 @@
 import HeroSection from "@/components/site/HeroSection";
+import { createServerFn } from "@tanstack/react-start";
+import { email } from "zod";
 
 const WP_BASE = "https://cyneteastafrica.com/wp-json/wp/v2";
 
@@ -135,12 +137,29 @@ export interface HeroSection {
   is_active: boolean;
 }
 
+type CourseRegistrationInput = {
+  firstName: string
+  lastName: string
+  email: string
+  phone: string
+  organization: string
+  jobTitle: string
+  trainingMode: string
+  participants: string
+  startDate: string
+  endDate: string
+  message: string
+  courseSlug: string
+  courseName: string
+  courseCategory: string
+}
+
 const stripHtml = (value?: string) =>
   value
     ? value
-        .replace(/<[^>]*>/g, "")
-        .replace(/&nbsp;/g, " ")
-        .trim()
+      .replace(/<[^>]*>/g, "")
+      .replace(/&nbsp;/g, " ")
+      .trim()
     : "";
 
 const mapCourse = (item: WPCourseItem): Course => {
@@ -300,11 +319,11 @@ export const api = {
     const page = items[0];
     return page
       ? {
-          id: page.id,
-          slug: page.slug,
-          title: page.title.rendered,
-          content: page.content.rendered,
-        }
+        id: page.id,
+        slug: page.slug,
+        title: page.title.rendered,
+        content: page.content.rendered,
+      }
       : null;
   },
 
@@ -383,25 +402,43 @@ export const api = {
     };
   },
 
-  registerForCourse: (payload: {
-    firstName: string;
-    lastName: string;
-    email: string;
-    phone: string;
-    organization: string;
-    jobTitle: string;
-    trainingMode: string;
-    participants: string;
-    startDate: string;
-    endDate: string;
-    message: string;
-    courseSlug: string;
-    courseName: string;
-    courseCategory: string;
-  }): Promise<string> =>
-    Promise.reject(
-      new Error(
-        "Course registration is not available through the current Cynet API endpoint.",
-      ),
-    ),
-};
+  registerForCourse: (payLoad: CourseRegistrationInput): Promise<string> =>
+    registerForCourseFn({ data: payLoad }),
+
+}
+
+export const registerForCourseFn = createServerFn({ method: 'POST' })
+  .inputValidator((d: CourseRegistrationInput) => d)
+  .handler(async ({ data }): Promise<string> => {
+    const response = await fetch(
+      ' https://api.cyneteastafrica.com/wp-json/tcr/v1/register',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json'
+        },
+        body: JSON.stringify({
+          firstName: data.firstName,
+          lastName: data.lastName,
+          email: data.email,
+          phone: data.phone,
+          organization: data.organization,
+          jobTitle: data.jobTitle,
+          courseName: data.courseName,
+          courseCategory: data.courseCategory,
+          trainingMode: data.trainingMode,
+          participants: Number(data.participants),
+          message: data.message,
+          startDate: data.startDate,
+          endDate: data.endDate,
+        }),
+      },
+    )
+
+    const body = await response.json().catch(() => (({})))
+    if (!response.ok) {
+      throw new Error(body?.message ?? `Registration failed ($response.status)`)
+    }
+    return body.message ?? 'Registration received will be intouch shortly'
+  })
