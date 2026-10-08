@@ -50,7 +50,6 @@ const BLANK: FormData = {
   endDate: "",
   message: "",
 };
-
 const inputCls =
   "w-full rounded-lg border bg-background px-3 py-2 text-sm outline-none " +
   "focus:ring-2 focus:ring-primary/40 transition placeholder:text-muted-foreground/60";
@@ -80,7 +79,7 @@ const Field = ({
 
 export const Route = createFileRoute("/course-registration/$slug/register")({
   head: () => ({
-    meta: [{ title: "Register | Bluestron Institute" }],
+    meta: [{ title: "Register | Cynet East Africa Consultancy" }],
   }),
   component: RegisterPage,
 });
@@ -102,14 +101,14 @@ function RegisterPage() {
 
   const set =
     (k: keyof FormData) =>
-    (
-      e: React.ChangeEvent<
-        HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-      >,
-    ) => {
-      setForm((f) => ({ ...f, [k]: e.target.value }));
-      setErrors((err) => ({ ...err, [k]: "" }));
-    };
+      (
+        e: React.ChangeEvent<
+          HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+        >,
+      ) => {
+        setForm((f) => ({ ...f, [k]: e.target.value }));
+        setErrors((err) => ({ ...err, [k]: "" }));
+      };
 
   const validate = (): boolean => {
     const e: Partial<FormData> = {};

@@ -29,10 +29,10 @@ export const Route = createFileRoute("/category/$slug")({
     try {
       const { category } = await api.getCategoryCourses(params.slug);
 
-      const title = `${category.name} Courses in Nairobi | Bluestron Institute`;
+      const title = `${category.name} Courses in Nairobi | Cynet East Africa Consultancy`;
       const description = category.description
         ? stripHtml(category.description)
-        : `Browse ${category.name.toLowerCase()} training programs at Bluestron Institute. Classroom, virtual, or in-house delivery in Nairobi.`;
+        : `Browse ${category.name.toLowerCase()} training programs at Cynet East Africa Consultancy. Classroom, virtual, or in-house delivery in Nairobi.`;
 
       return {
         meta: [
@@ -55,7 +55,7 @@ export const Route = createFileRoute("/category/$slug")({
     } catch (error) {
       console.error("Failed to load SEO data:", error);
       return {
-        meta: [{ title: "Course Category | Bluestron Institute" }],
+        meta: [{ title: "Course Category | Cynet East Africa Consultancy" }],
       };
     }
   },
