@@ -1,5 +1,8 @@
 import { Mail, MapPin, Phone, Users, MessageCircle } from "lucide-react";
 import { Link } from "@tanstack/react-router";
+import { email } from "zod";
+
+
 
 const quickLinks = [
   { to: "/about", label: "About Us" },
@@ -184,7 +187,7 @@ export function Footer() {
                 placeholder="Your email"
                 className="h-11 flex-1 rounded-lg border border-border bg-background px-3 text-sm text-foreground placeholder:text-muted-foreground outline-none ring-0 focus:border-primary"
               />
-              <button className="inline-flex h-11 items-center justify-center rounded-lg bg-gradient-primary px-4 text-sm font-medium text-primary-foreground shadow-glow">
+              <button  className="inline-flex h-11 items-center justify-center rounded-lg bg-gradient-primary px-4 text-sm font-medium text-primary-foreground shadow-glow">
                 Subscribe
               </button>
             </div>
