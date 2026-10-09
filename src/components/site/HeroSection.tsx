@@ -95,7 +95,7 @@ function HeroSection() {
               {hero?.cta_label ?? "View Courses"}
             </Link>
             <Link
-              to="https://drive.google.com/file/d/1TqaD4jHUqqFSqMgV5zePqF-uGg9rm4AE/view"
+              to="https://claude.ai/artifact/4LcHz4fufGRXRKLoSHNGxf"
               className="inline-flex items-center gap-2 px-5 h-12 rounded-lg bg-secondary border border-border font-medium hover:bg-muted transition"
             >
               <Calendar className="size-4" />

@@ -94,7 +94,9 @@ function CategoryPage() {
             Courses → {category?.name}
           </p>
           <h1 className="mt-2 text-3xl font-bold leading-tight tracking-tight md:text-5xl">
-            NITA-approved {category?.name.toLowerCase()} in Nairobi
+            {category?.name
+              ? category.name.charAt(0).toUpperCase() + category.name.slice(1).toLowerCase()
+              : ""} in Nairobi
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
             Classroom, virtual, or in-house at your offices. Certificates issued
