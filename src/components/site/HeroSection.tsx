@@ -50,14 +50,28 @@ function HeroSection() {
       <div className="absolute -right-40 -top-40 size-[28rem] rounded-full bg-primary/20 blur-3xl pointer-events-none z-0" />
       <div className="absolute -left-32 bottom-0 size-80 rounded-full bg-primary/15 blur-3xl pointer-events-none z-0" />
       <div className="absolute z-10 w-full max-w-7xl mx-auto px-5 lg:px-8 pt-16 lg:pt-24 pb-24 lg:pb-28">
-        {isLoading ? (
+        {/* {isLoading ? (
           <div className="h-6 w-40 rounded-full bg-muted animate-pulse" />
         ) : (
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/15 border border-primary/30 text-primary text-xs font-medium">
-            <Sparkles className="size-3" />{" "}
-            {hero?.badge_text ?? "Professional Training Excellence"}
+            
+            Professional Training Excellence
           </span>
-        )}
+        )} */}
+        <div>
+          <button className="">
+            <span>
+
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/15 border border-primary/30 text-primary text-xs font-medium">
+                <Sparkles className="size-3" />{" "}
+                Professional Training Excellence
+              </span>
+            </span>
+
+          </button>
+        </div>
+
+
         {/* {isLoading ? (
           <div className="mt-5 space-y-3">
             <div className="h-12 w-full max-w-3xl rounded-md bg-muted animate-pulse" />
@@ -118,7 +132,7 @@ function HeroSection() {
                 {hero?.cta_label ?? "View Courses"}
               </Link>
               <Link
-                to="https://claude.ai/artifact/4LcHz4fufGRXRKLoSHNGxf"
+                to=""
                 className="inline-flex items-center gap-2 px-5 h-12 rounded-lg bg-secondary border border-border font-medium hover:bg-muted transition"
               >
                 <Calendar className="size-4" />
