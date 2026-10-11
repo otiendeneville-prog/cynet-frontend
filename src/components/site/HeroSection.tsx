@@ -58,7 +58,7 @@ function HeroSection() {
             {hero?.badge_text ?? "Professional Training Excellence"}
           </span>
         )}
-        {isLoading ? (
+        {/* {isLoading ? (
           <div className="mt-5 space-y-3">
             <div className="h-12 w-full max-w-3xl rounded-md bg-muted animate-pulse" />
             <div className="h-12 w-2/3 max-w-xl rounded-md bg-muted animate-pulse" />
@@ -102,7 +102,32 @@ function HeroSection() {
               View 2026 calendar
             </Link>
           </div>
-        )}
+        )} */}
+        <div className="justify-center align-middle">
+          <div>
+            <h1 className="mt-5 text-4xl sm:text-5xl text-primary lg:text-6xl font-bold leading-[1.05] max-w-4xl">Empowering Professionals Through Expert Training & Consultancy</h1>
+            <p className="mt-6 text-base lg:text-lg text-muted-foreground max-w-2xl">
+              At Cynet East Africa, we specialize in providing high-impact training, research, and consultancy services to individuals and organizations across various industries.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link
+                to={hero?.cta_url ?? "/courses"}
+                className="inline-flex items-center gap-2 px-5 h-12 rounded-lg bg-primary hover:text-white hsl(194, 66%, 49%) text-black font-medium shadow-glow hover:opacity-95 transition ease-in-out"
+              >
+                <BookOpen className="size-4" />
+                {hero?.cta_label ?? "View Courses"}
+              </Link>
+              <Link
+                to="https://claude.ai/artifact/4LcHz4fufGRXRKLoSHNGxf"
+                className="inline-flex items-center gap-2 px-5 h-12 rounded-lg bg-secondary border border-border font-medium hover:bg-muted transition"
+              >
+                <Calendar className="size-4" />
+                View 2026 calendar
+              </Link>
+            </div>
+
+          </div>
+        </div>
         <Link
           to="/courses"
           className="mt-6 inline-flex items-center gap-1 text-2xl text-secondary hover:underline"
