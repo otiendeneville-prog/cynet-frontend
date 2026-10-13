@@ -57,7 +57,7 @@ function BestPatner() {
 
           <div className="lg:col-span-2">
             <a
-              href="https://cyneteastafrica.com/courses/"
+              href="https://cyneteastafricaconsultancy.cynet-learn.workers.dev/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 h-12 rounded-lg bg-[#1e293b] text-primary-foreground hover:text-amber-50 font-medium shadow-glow"
