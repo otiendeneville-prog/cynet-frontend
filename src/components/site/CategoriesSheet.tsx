@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 import {
   Sheet,
   SheetContent,
@@ -14,9 +15,10 @@ import { HiMenuAlt4 } from "react-icons/hi";
 
 export default function CategoriesSheet() {
   const categories = useCategories();
+  const [open, setOpen] = useState(false)
 
   return (
-    <Sheet>
+    <Sheet open={open} onOpenChange={setOpen} >
       <SheetTrigger
         render={(props) => (
           <Button
@@ -30,9 +32,9 @@ export default function CategoriesSheet() {
           </Button>
         )}
       />{" "}
-      <SheetContent side="left" showCloseButton={false}>
+      <SheetContent side="left" showCloseButton={true}>
         <SheetHeader>
-          <SheetTitle className="text-2xl font-bold">Categories</SheetTitle>
+          <SheetTitle className="text-2xl font-bold">categories</SheetTitle>
         </SheetHeader>
 
         {categories.data && (
@@ -47,7 +49,7 @@ export default function CategoriesSheet() {
                     <GraduationCapIcon />{" "}
                   </div>
 
-                  <Link to="/category/$slug" params={{ slug: category.slug }}>
+                  <Link to="/category/$slug" params={{ slug: category.slug }} onClick={() => setOpen(false)}>
                     <div className="font-semibold">{category.name}</div>
                   </Link>
                 </div>
