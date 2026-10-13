@@ -48,7 +48,7 @@ export const Route = createFileRoute("/category/$slug")({
         links: [
           {
             rel: "canonical",
-            href: `https://bluestroninstitute.com/category/${params.slug}`,
+            href: `https://cyneteastafricaconsultancy.cynet-learn.workers.dev/courses?page=1&q=/${params.slug}`,
           },
         ],
       };
