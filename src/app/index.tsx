@@ -16,8 +16,8 @@ export const Route = createFileRoute("/")({
 
       const title = hero?.headline
         ? `${hero.headline} ${hero.headline_highlight ?? ""} ${hero.second_headline ?? ""} | Cynet East Africa`
-            .replace(/\s+/g, " ")
-            .trim()
+          .replace(/\s+/g, " ")
+          .trim()
         : "Cynet East Africa — Empowering Professionals Through Expert Training & Consultancy";
 
       const description =
@@ -44,11 +44,11 @@ function Home() {
   return (
     <div>
       <HeroSection />
-      <ClientCarousel />
-       <OurServices />
-      <CompanyDetails />
-      <FeaturedCourses />
       <CategoriesSection />
+      <OurServices />
+      <FeaturedCourses />
+      <ClientCarousel />
+      <CompanyDetails />
       <Testimonials />
       <BestPatner />
     </div>

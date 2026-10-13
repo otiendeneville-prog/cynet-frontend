@@ -128,8 +128,8 @@ export const Route = createFileRoute("/our-clients")({
   component: OurClients,
 });
 export function OurClients() {
- 
-   
+
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <main className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
@@ -141,8 +141,8 @@ export function OurClients() {
             Trusted by leading organisations across East Africa and beyond.
           </p>
         </div>
-        
-          <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 ">
+
+        <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 ">
           {clients.map((client) => (
             <div
               key={client.name}
