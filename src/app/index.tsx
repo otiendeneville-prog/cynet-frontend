@@ -48,7 +48,7 @@ function Home() {
       <OurServices />
       <FeaturedCourses />
       <ClientCarousel />
-      <CompanyDetails />
+      {/* <CompanyDetails /> */}
       <Testimonials />
       <BestPatner />
     </div>
