@@ -21,7 +21,7 @@ function LogoCard({
         <img
           src={`/client-logos/${client.logo}`}
           alt={client.name}
-          className="h-full w-full object-contain rounded-sm opacity-60 grayscale transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0"
+          className="h-full w-full object-contain rounded-sm transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0"
         />
       </div>
       <span className="text-xs text-gray-400 font-medium truncate w-full text-center">
