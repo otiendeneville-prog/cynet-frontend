@@ -308,11 +308,12 @@ export function MegaMenu() {
           <NavigationMenuTrigger>Our Services</NavigationMenuTrigger>
           <NavigationMenuContent>
             <MenuGrid
-              items={destinations}
+              items={aboutUs}
               feature={{
-                title: "Train where the world meets",
-                description: "World-class learning across four continents.",
-                href: "https://drive.google.com/file/d/1TqaD4jHUqqFSqMgV5zePqF-uGg9rm4AE/view",
+                title: "Cynet East Africa",
+                description:
+                  "Deliver high-quality, reliable, and timely supply solutions that empower organizations to operate efficiently and focus on their core objectives..",
+                href: "/contact",
               }}
             />
           </NavigationMenuContent>
