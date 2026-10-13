@@ -249,16 +249,8 @@ export function MegaMenu() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
-        <NavigationMenuItem>
-          <NavigationMenuLink asChild>
-            <Link
-              to="/courses"
-              className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-foreground hover:text-primary"
-            >
-              <Search className="h-4 w-4" /> Course Finder
-            </Link>
-          </NavigationMenuLink>
-        </NavigationMenuItem>
+
+        <NavigationMenuItem><a href="https://cyneteastafricaconsultancy.cynet-learn.workers.dev/">Home</a></NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Courses</NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -273,6 +265,17 @@ export function MegaMenu() {
             />
           </NavigationMenuContent>
         </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuLink asChild>
+            <Link
+              to="/courses"
+              className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-foreground hover:text-primary"
+            >
+              <Search className="h-4 w-4" /> Course Finder
+            </Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+
         <NavigationMenuItem>
           <NavigationMenuTrigger>For Organizations</NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -302,7 +305,7 @@ export function MegaMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Destinations</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Our Services</NavigationMenuTrigger>
           <NavigationMenuContent>
             <MenuGrid
               items={destinations}
