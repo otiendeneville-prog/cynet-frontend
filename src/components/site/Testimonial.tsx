@@ -66,11 +66,11 @@ const feedback = [
   },
   {
     id: "8",
-    content: 
-     "I want to express my gratitude to Engineer Ochieng for his outstanding Data Analysis using Python training. His clear explanations and hands-on exercises made the learning process enjoyable and effective. Highly recommend this course!",
-     name: "Gilbert Jumaa",
-     title: "2years",
-     img: "G"
+    content:
+      "I want to express my gratitude to Engineer Ochieng for his outstanding Data Analysis using Python training. His clear explanations and hands-on exercises made the learning process enjoyable and effective. Highly recommend this course!",
+    name: "Gilbert Jumaa",
+    title: "2years",
+    img: "G"
   }
 ];
 
@@ -81,7 +81,7 @@ const Testimonials = () => (
   >
     <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1] max-w-[1200px] mx-auto px-6">
       <h2 className="font-poppins font-semibold xs:text-[48px] text-[40px] text-primary xs:leading-[76.8px] leading-[66.8px] w-full">
-        What Our <h2 className="text-gray-900">Clients</h2> <br className="sm:block hidden" /> <h2 className="text-secondary">Say About Us</h2>
+        What Our Say About Us
       </h2>
       <div className="w-full md:mt-0 mt-6 md:flex justify-end">
         <a
@@ -112,7 +112,7 @@ const Testimonials = () => (
         ))}
       </Carousel>
     </div>
-{/* <div className="w-full max-w-[1200px] mx-auto px-6 flex justify-end mt-6">
+    {/* <div className="w-full max-w-[1200px] mx-auto px-6 flex justify-end mt-6">
       <div className="bg-[#006f42] text-white px-3 py-1.5 rounded-md text-xs font-semibold flex items-center gap-1 shadow-sm">
         <span>Verified by Trustindex</span>
       </div> 

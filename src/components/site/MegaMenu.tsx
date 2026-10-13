@@ -70,7 +70,7 @@ const courses: Item[] = [
     href: "/courses?category=14",
   },
   {
-    title: "Procurement & Logistics Training",
+    title: "Procurement & Logistics Courses",
     description:
       "Master supply chain management, procurement ethics, and logistics frameworks for operational excellence.",
     icon: Package,
