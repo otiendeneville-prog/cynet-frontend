@@ -6,18 +6,16 @@ import hero4 from "/assets/hero-4.webp";
 import hero6 from "/assets/hero-6.jpeg";
 import hero7 from "/assets/hero-7.jpeg";
 import hero8 from "/assets/hero-8.jpeg";
-import hero9 from "/assets/hero-9.jpeg";
-import hero10 from "/assets/hero-10.jpeg"; 
+import hero10 from "/assets/hero-10.jpeg";
 const slides = [
   { src: hero1, alt: "Professional training classroom" },
   { src: hero2, alt: "Strategy session with charts" },
   { src: hero3, alt: "Team collaborating on data" },
   { src: hero4, alt: "Seminars" },
-  { src: hero6, alt: "Governance and Leadership"},
-  { src: hero7, alt: "Accounting and Finance"},
-  { src: hero8, alt: "Data analysis and Management"},
-  { src: hero9, alt: "Procurement"},
-  {src:hero10, alt: "Procurement"},
+  { src: hero6, alt: "Governance and Leadership" },
+  { src: hero7, alt: "Accounting and Finance" },
+  { src: hero8, alt: "Data analysis and Management" },
+  { src: hero10, alt: "Procurement" },
 
 
 ];
@@ -49,9 +47,8 @@ export const HeroCarousel = ({ intervalMs = 5500 }: Props) => {
             width={1920}
             height={1080}
             loading={i === 0 ? "eager" : "lazy"}
-            className={`absolute inset-0 size-full object-cover transition-opacity duration-[1400ms] ease-in-out ${
-              i === active ? "opacity-100 scale-105" : "opacity-0"
-            }`}
+            className={`absolute inset-0 size-full object-cover transition-opacity duration-[1400ms] ease-in-out ${i === active ? "opacity-100 scale-105" : "opacity-0"
+              }`}
             style={{
               transitionProperty: "opacity, transform",
               transitionDuration:
@@ -70,11 +67,10 @@ export const HeroCarousel = ({ intervalMs = 5500 }: Props) => {
             key={i}
             onClick={() => setActive(i)}
             aria-label={`Show slide ${i + 1}`}
-            className={`h-1.5 rounded-full transition-all ${
-              i === active
-                ? "w-8 bg-primary shadow-glow"
-                : "w-4 bg-foreground/30 hover:bg-foreground/50"
-            }`}
+            className={`h-1.5 rounded-full transition-all ${i === active
+              ? "w-8 bg-primary shadow-glow"
+              : "w-4 bg-foreground/30 hover:bg-foreground/50"
+              }`}
           />
         ))}
       </div>
