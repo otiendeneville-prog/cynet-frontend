@@ -77,11 +77,11 @@ const feedback = [
 const Testimonials = () => (
   <section
     id="clients"
-    className="sm:py-16 py-6 flex justify-center items-center flex-col relative bg-slate-50 w-full"
+    className="sm:py-16  flex justify-center items-center flex-col relative bg-slate-50 w-full"
   >
-    <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1] max-w-[1200px] mx-auto px-6">
+    <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-8  relative z-[1] max-w-[1200px] mx-auto px-6">
       <h2 className="font-poppins font-semibold xs:text-[48px] text-[40px] text-primary xs:leading-[76.8px] leading-[66.8px] w-full">
-        What Our Say About Us
+        What Clients Say About Us
       </h2>
       <div className="w-full md:mt-0 mt-6 md:flex justify-end">
         <a
