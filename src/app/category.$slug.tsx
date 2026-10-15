@@ -183,7 +183,7 @@ function CategoryPage() {
           title="Training a group of 5 or more?"
         >
           <p className="max-w-xl text-muted-foreground">
-            Cynet East Africa do train groups of 5 or more
+            In house Training for teams
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Button asChild>
