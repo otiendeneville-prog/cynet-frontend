@@ -88,22 +88,16 @@
     --navy-deep: 0 0% 0%;
     --radius: 0.875rem;
 
-    --gradient-hero: linear-gradient(
-      135deg,
-      hsl(0 0% 100%) 0%,
-      hsl(210 25% 97%) 55%,
-      hsl(194 100% 41% / 0.14) 100%
-    );
-    --gradient-primary: linear-gradient(
-      135deg,
-      hsl(194 100% 41%),
-      hsl(77 80% 42%)
-    );
-    --gradient-card: linear-gradient(
-      160deg,
-      hsl(0 0% 100% / 0.96),
-      hsl(210 25% 97% / 0.9)
-    );
+    --gradient-hero: linear-gradient(135deg,
+        hsl(0 0% 100%) 0%,
+        hsl(210 25% 97%) 55%,
+        hsl(194 100% 41% / 0.14) 100%);
+    --gradient-primary: linear-gradient(135deg,
+        hsl(194 100% 41%),
+        hsl(77 80% 42%));
+    --gradient-card: linear-gradient(160deg,
+        hsl(0 0% 100% / 0.96),
+        hsl(210 25% 97% / 0.9));
     --shadow-glow: 0 10px 40px -10px hsl(194 100% 41% / 0.25);
     --shadow-card: 0 8px 30px -12px hsl(0 0% 0% / 0.12);
 
@@ -141,22 +135,16 @@
     --ring: 194 100% 41%;
     --navy: 0 0% 0%;
     --navy-deep: 0 0% 0%;
-    --gradient-hero: linear-gradient(
-      135deg,
-      hsl(0 0% 0%) 0%,
-      hsl(194 100% 18%) 55%,
-      hsl(77 80% 42% / 0.18) 100%
-    );
-    --gradient-primary: linear-gradient(
-      135deg,
-      hsl(194 100% 41%),
-      hsl(77 80% 42%)
-    );
-    --gradient-card: linear-gradient(
-      160deg,
-      hsl(0 0% 10% / 0.9),
-      hsl(0 0% 7% / 0.72)
-    );
+    --gradient-hero: linear-gradient(135deg,
+        hsl(0 0% 0%) 0%,
+        hsl(194 100% 18%) 55%,
+        hsl(77 80% 42% / 0.18) 100%);
+    --gradient-primary: linear-gradient(135deg,
+        hsl(194 100% 41%),
+        hsl(77 80% 42%));
+    --gradient-card: linear-gradient(160deg,
+        hsl(0 0% 10% / 0.9),
+        hsl(0 0% 7% / 0.72));
     --shadow-card: 0 8px 30px -12px hsl(0 0% 0% / 0.7);
 
     /* Sidebar Variables */
@@ -199,6 +187,7 @@
   /* WordPress rendered content spacing */
   .wp-content,
   .prose-neutral {
+
     /* Paragraphs */
     p {
       margin-bottom: 1.25rem;
@@ -244,6 +233,7 @@
     ul {
       list-style-type: disc;
     }
+
     ol {
       list-style-type: decimal;
     }
@@ -254,8 +244,8 @@
     }
 
     /* Nested lists */
-    li > ul,
-    li > ol {
+    li>ul,
+    li>ol {
       margin-top: 0.4rem;
       margin-bottom: 0.4rem;
     }
@@ -299,6 +289,7 @@
 @utility bg-gradient-card {
   background: var(--gradient-card);
 }
+
 @utility shadow-card {
   box-shadow: var(--shadow-card);
 }
@@ -309,4 +300,22 @@
   background-size: cover;
   background-position: 65% center;
   background-repeat: no-repeat;
+}
+
+@import "tailwindcss";
+
+@theme {
+
+
+  @keyframes loop-scroll {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  --animate-loop-scroll: loop-scroll 50s linear infinite;
 }

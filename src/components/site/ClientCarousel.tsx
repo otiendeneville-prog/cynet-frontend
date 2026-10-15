@@ -131,12 +131,17 @@ function ClientCarousel() {
       className="max-w-7xl mx-auto px-5 lg:px-8 py-8 lg:py-16"
     >
       <div className="scrollbar-none flex overflow-x-scroll" ref={scrollerRef}>
-        <div className="grid auto-cols-[minmax(12.5rem,2fr)] grid-flow-col">
+        <div className="grid auto-cols-[minmax(12.5rem,2fr)] grid-flow-col animate-loop-scroll">
           {clients.map((client) => (
             <LogoCard key={client.name} client={client} />
           ))}
         </div>
-      </div>2
+        <div className="grid auto-cols-[minmax(12.5rem,2fr)] grid-flow-col animate-loop-scroll">
+          {clients.map((client) => (
+            <LogoCard key={client.name} client={client} />
+          ))}
+        </div>
+      </div>
     </Section>
   );
 }
