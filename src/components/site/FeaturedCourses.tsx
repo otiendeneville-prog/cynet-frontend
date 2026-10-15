@@ -32,7 +32,7 @@ function FeaturedCourses() {
       )}
       {courses.data && (
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {courses?.data?.slice(0, 3).map((c, i) => (
+          {courses?.data?.slice(0, 6).map((c, i) => (
             <CourseCard key={c.id} course={c} index={i} />
           ))}
         </div>
