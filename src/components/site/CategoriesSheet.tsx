@@ -32,7 +32,7 @@ export default function CategoriesSheet() {
           </Button>
         )}
       />{" "}
-      <SheetContent side="left" showCloseButton={true}>
+      <SheetContent side="left" showCloseButton={false}>
         <SheetHeader>
           <SheetTitle className="text-2xl font-bold">categories</SheetTitle>
         </SheetHeader>
