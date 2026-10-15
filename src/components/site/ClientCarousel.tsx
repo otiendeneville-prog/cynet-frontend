@@ -136,7 +136,7 @@ function ClientCarousel() {
             <LogoCard key={client.name} client={client} />
           ))}
         </div>
-      </div>
+      </div>2
     </Section>
   );
 }
