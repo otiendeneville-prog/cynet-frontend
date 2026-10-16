@@ -200,25 +200,25 @@ const OurServices: Item[] = [
     title: "Business Strategy",
     description: "We help organizations build resilient strategies aligned to long-term goals",
     icon: Users,
-    href: "services/business-strategy",
+    href: "/accreditation",
   },
   {
     title: "Team building Services",
     description: "Strengthen your organization from the inside.",
     icon: Lightbulb,
-    href: "/services/business-strategy",
+    href: "/about",
   },
   {
     title: "Tax and financial issues",
     description: "Navigate complex tax landscapes ",
     icon: Wallet,
-    href: "/services/team-building",
+    href: "/accreditation",
   },
   {
     title: "Research Services",
     description: "Data-driven insight to inform every decision.",
     icon: Search,
-    href: "/services/research",
+    href: "/our-gallery",
   },
 ];
 
