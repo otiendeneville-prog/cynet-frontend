@@ -29,6 +29,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
+import OurServicesComponents from "./OurServices";
 
 type Item = {
   title: string;
@@ -194,6 +195,33 @@ const aboutUs: Item[] = [
     href: "/our-clients",
   },
 ];
+const OurServices: Item[] = [
+  {
+    title: "Business Strategy",
+    description: "Our story, mission, and the team behind it.",
+    icon: Users,
+    href: "services/business-strategy",
+  },
+  {
+    title: "Team building Services",
+    description: "A visual look at our work and experiences.",
+    icon: Lightbulb,
+    href: "/services/business-strategy",
+  },
+  {
+    title: "Tax and financial issues",
+    description: "Our certifications and industry recognition.",
+    icon: Wallet,
+    href: "/services/team-building",
+  },
+  {
+    title: "Research Services",
+    description: "Trusted by organisations across the region.",
+    icon: Search,
+    href: "/services/research",
+  },
+];
+
 
 function MenuGrid({
   items,
@@ -308,12 +336,12 @@ export function MegaMenu() {
           <NavigationMenuTrigger>Our Services</NavigationMenuTrigger>
           <NavigationMenuContent>
             <MenuGrid
-              items={aboutUs}
+              items={OurServices}
               feature={{
                 title: "Cynet East Africa",
                 description:
                   "Deliver high-quality, reliable, and timely supply solutions that empower organizations to operate efficiently and focus on their core objectives..",
-                href: "/contact",
+                href: "/services",
               }}
             />
           </NavigationMenuContent>
