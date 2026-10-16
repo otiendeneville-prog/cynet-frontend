@@ -43,39 +43,39 @@ const courses: Item[] = [
     title: "Governance & Leadership",
     description: "Lead teams with confidence and clarity.",
     icon: Users,
-    href: "/courses?category=4",
+    href: "/Courses?category=27&q=&page=1",
   },
   {
     title: "Accounting & Finance",
     description: "Budgeting to advanced financial analysis.",
     icon: Wallet,
-    href: "/courses?category=12",
+    href: "/Courses?category=57&q=&page=1",
   },
   {
     title: "Project Management",
     description: "PMP, Agile, and modern delivery.",
     icon: ChartBar,
-    href: "/courses?category=1",
+    href: "/Courses?category=51&q=&page=11",
   },
   {
     title: "Data Analysis & Management",
     description: "Turn data into decisions.",
     icon: LayoutGrid,
-    href: "/courses?category=9",
+    href: "/Courses?category=55&q=&page=1",
   },
   {
     title: "Monitoring & Evaluation Training",
     description:
       "Build skills to track, assess, and improve program performance with industry-recognized M&E frameworks.",
     icon: BarChart2,
-    href: "/courses?category=14",
+    href: "/Courses?category=53&q=&page=1",
   },
   {
     title: "Procurement & Logistics Courses",
     description:
       "Master supply chain management, procurement ethics, and logistics frameworks for operational excellence.",
     icon: Package,
-    href: "/courses?category=6",
+    href: "/Courses?category=60&q=&page=1",
   },
 ];
 const formats: Item[] = [
