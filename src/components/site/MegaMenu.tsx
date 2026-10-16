@@ -198,25 +198,25 @@ const aboutUs: Item[] = [
 const OurServices: Item[] = [
   {
     title: "Business Strategy",
-    description: "Our story, mission, and the team behind it.",
+    description: "We help organizations build resilient strategies aligned to long-term goals",
     icon: Users,
     href: "services/business-strategy",
   },
   {
     title: "Team building Services",
-    description: "A visual look at our work and experiences.",
+    description: "Strengthen your organization from the inside.",
     icon: Lightbulb,
     href: "/services/business-strategy",
   },
   {
     title: "Tax and financial issues",
-    description: "Our certifications and industry recognition.",
+    description: "Navigate complex tax landscapes ",
     icon: Wallet,
     href: "/services/team-building",
   },
   {
     title: "Research Services",
-    description: "Trusted by organisations across the region.",
+    description: "Data-driven insight to inform every decision.",
     icon: Search,
     href: "/services/research",
   },
