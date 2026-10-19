@@ -30,7 +30,7 @@ export default function OurServices() {
         </div>
 
         <div className="mt-12 grid grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className=" rounded-3xl p-8 shadow-sm border">
+          <div className=" rounded-xl p-8  border border-border bg-card">
             <h1 className="text-xl  font-bold text-secondary">
               Business Strategy Services
             </h1>
@@ -38,30 +38,25 @@ export default function OurServices() {
               We help organizations build resilient strategies aligned to long-term goals — from operational frameworks to performance excellence.
             </p>
             <div className="mt-8 grid grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
-              <button className="f flex items-center h-8  justify-center p-1.5 pr-5 hover:border-secondary border  rounded-3xl transition-all duration-300 shadow-sm group/btn">
-                <div className="flex flex-col items-start ml-3 text-left">
-                  <span className="text-[10px] text-slate-400 font-normal">Strategic Planning</span>
-                </div>
+              <button className=" flex items-center  p-1.5 justify-center rounded-3xl transition-all duration-300 border border-border shadow-md">
+
+                <span className="text-[10px] text-slate-400 font-normal">Strategic Planning</span>
+
               </button>
-              <button className="flex items-center h-8  justify-center p-1.5 pr-5  border hover:border-secondary  rounded-full transition-all duration-300 shadow-sm group/btn">
-                <div className="flex flex-col items-start ml-3 text-left">
-                  <span className="text-[10px] text-slate-400 font-normal">Balance Scorecard</span>
-                </div>
+              <button className="flex items-center  p-1.5 justify-center rounded-3xl transition-all duration-300 border border-border shadow-md">
+                <span className="text-[10px] text-slate-400 font-normal">Balance Scorecard</span>
+
               </button>
-              <button className=" flex align-center h-8 justify-center items-center p-1.5 pr-5  border hover:border-secondary rounded-full transition-all duration-300 shadow-sm group/btn">
-                <div className="flex flex-col items-start ml-3 text-left">
-                  <span className="text-[10px] text-slate-400 font-normal">Operations</span>
-                </div>
+              <button className=" flex items-center  p-1.5 justify-center rounded-3xl transition-all duration-300 border border-border shadow-md">
+                <span className="text-[10px] text-slate-400 font-normal">Operations</span>
               </button>
-              <button className=" align-center h-8 justify-center flex items-center p-1.5 pr-5  border hover:border-secondary rounded-full transition-all duration-300 shadow-sm group/btn">
-                <div className="flex flex-col items-start ml-3 text-left">
-                  <span className="text-[10px] text-slate-400 font-normal">Performance Management</span>
-                </div>
+              <button className=" flex items-center  p-1.5 justify-center rounded-3xl transition-all duration-300 border border-border shadow-md">
+                <span className="text-[10px] text-slate-400 font-normal">Performance Management</span>
               </button>
             </div>
 
           </div>
-          <div className="rounded-3xl p-8 shadow-sm border">
+          <div className="rounded-xl p-8  border border-border bg-card">
             <h1 className="text-xl font-bold text-secondary">
               Team Building Services
             </h1>
@@ -69,24 +64,18 @@ export default function OurServices() {
               Strengthen your organization from the inside. We design interventions that improve team dynamics, culture, and collective problem-solving capability.
             </p>
             <div className="mt-8 grid grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
-              <button className="f align-center h-8 justify-center flex items-center p-1.5 pr-5  border hover:border-secondary rounded-full transition-all duration-300 shadow-sm group/btn">
-                <div className="flex flex-col items-start ml-3 text-left">
-                  <span className="text-[10px] text-slate-400 font-normal">Team Dynamics</span>
-                </div>
+              <button className="flex items-center  p-1.5 justify-center rounded-3xl transition-all duration-300 border border-border shadow-md">
+                <span className="text-[10px] text-slate-400 font-normal">Team Dynamics</span>
               </button>
-              <button className="align-center h-8  justify-center flex items-center p-1.5 pr-5  border hover:border-secondary rounded-full transition-all duration-300 shadow-sm group/btn">
-                <div className="flex flex-col items-start ml-3 text-left">
-                  <span className="text-[10px] text-slate-400 font-normal">Productivity</span>
-                </div>
+              <button className="flex items-center  p-1.5 justify-center rounded-3xl transition-all duration-300 border border-border shadow-md">
+                <span className="text-[10px] text-slate-400 font-normal">Productivity</span>
               </button>
-              <button className="f align-center h-8  justify-center flex items-center p-1.5 pr-5  border hover:border-secondary rounded-full transition-all duration-300 shadow-sm group/btn">
-                <div className="flex flex-col items-start ml-3 text-left">
-                  <span className="text-[10px] text-slate-400 font-normal">Culture Alignment</span>
-                </div>
+              <button className="flex items-center  p-1.5 justify-center rounded-3xl transition-all duration-300 border border-border shadow-md">
+                <span className="text-[10px] text-slate-400 font-normal">Culture Alignment</span>
               </button>
             </div>
           </div>
-          <div className="rounded-3xl p-8 shadow-sm border">
+          <div className="rounded-xl p-8  border border-border bg-card">
             <h1 className="text-xl font-bold text-secondary">
               Tax and Financial Issues
             </h1>
@@ -115,7 +104,7 @@ export default function OurServices() {
 
             </div>
           </div>
-          <div className="rounded-3xl p-8 shadow-sm border lg:min-h-[380px]`">
+          <div className="rounded-xl p-8  border border-border bg-card">
             <h1 className="text-xl font-bold text-secondary">
               Research Services
             </h1>
