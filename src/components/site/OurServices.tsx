@@ -105,7 +105,7 @@ export default function OurServices() {
                   Capital Advisory
                 </span>
               </button>
-              <button className=" align-center h-8 justify-center flex items-center p-1.5 pr-5  border hover:border-secondary rounded-full transition-all duration-300 shadow-sm group/btin">
+              <button className=" align-center h-8 justify-center flex items-center p-1.5 pr-5  border hover:border-secondary rounded-full transition-all duration-300 shadow-sm group/btn">
                 <span className="text-[10px] text-slate-400 font-normal justify-center">
                   Employment Tax
                 </span>
@@ -115,7 +115,7 @@ export default function OurServices() {
 
             </div>
           </div>
-          <div className="rounded-3xl p-8 shadow-sm border">
+          <div className="rounded-3xl p-8 shadow-sm border lg:min-h-[380px]`">
             <h1 className="text-xl font-bold text-secondary">
               Research Services
             </h1>

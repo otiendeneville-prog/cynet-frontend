@@ -77,9 +77,9 @@ const feedback = [
 const Testimonials = () => (
   <section
     id="clients"
-    className="sm:py-16  flex justify-center items-center flex-col relative bg-slate-50 w-full"
+    className="max-w-7xl mx-auto px-5 lg:px-8 pb-16 lg:pb-2"
   >
-    <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-8  relative z-[1] max-w-[1200px] mx-auto px-6">
+    <div className="flex items-end justify-between mb-8">
       <h2 className="font-poppins font-semibold xs:text-[48px] text-[40px] text-primary xs:leading-[76.8px] leading-[66.8px] w-full">
         What Clients Say About Us
       </h2>
@@ -95,23 +95,23 @@ const Testimonials = () => (
       </div>
     </div>
 
-    <div className="w-full max-w-[1200px] mx-auto px-6 relative z-[1]">
-      <Carousel
-        autoplay={true}
-        autoplayInterval={4000}
-        wrapMode="wrap"
-        scrollDistance="slide"
-      >
-        {feedback.map((card) => (
-          <div
-            key={card.id}
-            className="w-full sm:w-1/2 lg:w-1/3 px-3 flex-shrink-0"
-          >
-            <FeedbackCard {...card} />
-          </div>
-        ))}
-      </Carousel>
-    </div>
+    {/* <div className="w-full max-w-[1200px] mx-auto px-6 relative z-[1]"> */}
+    <Carousel
+      autoplay={true}
+      autoplayInterval={4000}
+      wrapMode="wrap"
+      scrollDistance="slide"
+    >
+      {feedback.map((card) => (
+        <div
+          key={card.id}
+          className="w-full sm:w-1/2 lg:w-1/3 px-3 flex-shrink-0"
+        >
+          <FeedbackCard {...card} />
+        </div>
+      ))}
+    </Carousel>
+    {/* </div> */}
     {/* <div className="w-full max-w-[1200px] mx-auto px-6 flex justify-end mt-6">
       <div className="bg-[#006f42] text-white px-3 py-1.5 rounded-md text-xs font-semibold flex items-center gap-1 shadow-sm">
         <span>Verified by Trustindex</span>
