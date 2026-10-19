@@ -41,10 +41,10 @@ export default function OurServices() {
             </p>
             <div className="mt-8 align md:grid-cols-2 lg:grid-cols-3 gap-2">
               <ol className="cursor-pointer">
-                <li className="font-normal text-slate-500 underline hover:underline-offset-0 hover:text-secondary">Strategic Planning</li>
-                <li className="font-normal text-slate-500 underline hover:underline-offset-0 hover:text-secondary">Balance Scorecard</li>
-                <li className="font-normal text-slate-500 underline hover:underline-offset-0 hover:text-secondary">Operations</li>
-                <li className=" font-normal text-slate-500 underline hover:underline-offset-0 hover:text-secondary">Performance Management</li>
+                <li className="font-normal text-slate-500 underline text-sm hover:underline-offset-0 hover:text-secondary">Strategic Planning</li>
+                <li className="font-normal text-slate-500 underline text-sm hover:underline-offset-0 hover:text-secondary">Balance Scorecard</li>
+                <li className="font-normal text-slate-500 underline text-sm hover:underline-offset-0 hover:text-secondary">Operations</li>
+                <li className=" font-normal text-slate-500 underline text-sm hover:underline-offset-0 hover:text-secondary">Performance Management</li>
               </ol>
 
             </div>
@@ -59,9 +59,9 @@ export default function OurServices() {
             </p>
             <div className="mt-8 grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
               <ol className="cursor-pointer">
-                <li className=" font-normal text-slate-500 underline hover:underline-offset-0 hover:text-secondary">Team Dynamics</li>
-                <li className=" font-normal text-slate-500 underline hover:underline-offset-0 hover:text-secondary">Productivity</li>
-                <li className=" font-normal text-slate-500 underline hover:underline-offset-0 hover:text-secondary">Culture Alignment</li>
+                <li className=" font-normal text-slate-500 underline text-sm hover:underline-offset-0 hover:text-secondary">Team Dynamics</li>
+                <li className=" font-normal text-slate-500 underline text-sm hover:underline-offset-0 hover:text-secondary">Productivity</li>
+                <li className=" font-normal text-slate-500 underline text-sm hover:underline-offset-0 hover:text-secondary">Culture Alignment</li>
               </ol>
 
             </div>
@@ -75,12 +75,12 @@ export default function OurServices() {
             </p>
             <div className="mt-8  grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
               <ol className="cursor-pointer">
-                <li className=" font-normal text-slate-500 underline hover:underline-offset-0 hover:text-secondary">Business Tax</li>
-                <li className=" font-normal text-slate-500 underline hover:underline-offset-0 hover:text-secondary">Risk Management</li>
-                <li className="  font-normal text-slate-500 underline hover:underline-offset-0 hover:text-secondary">
+                <li className=" font-normal text-slate-500 text-sm underline hover:underline-offset-0 hover:text-secondary">Business Tax</li>
+                <li className=" font-normal text-slate-500 text-sm underline hover:underline-offset-0 hover:text-secondary">Risk Management</li>
+                <li className="  font-normal text-slate-500 text-sm underline hover:underline-offset-0 hover:text-secondary">
                   Capital Advisory
                 </li>
-                <li className="font-normal text-slate-500 underline hover:underline-offset-0 hover:text-secondaryr">
+                <li className="font-normal text-slate-500 underline text-sm hover:underline-offset-0 hover:text-secondaryr">
                   Employment Tax
                 </li>
               </ol>
@@ -100,16 +100,16 @@ export default function OurServices() {
             </p>
             <div className="mt-8  grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
               <ol className="cursor-pointer">
-                <li className="font-normal text-slate-500 underline hover:underline-offset-0 hover:text-secondary">
+                <li className="font-normal text-slate-500 underline text-sm hover:underline-offset-0 hover:text-secondary">
                   Market Surveys
                 </li>
-                <li className="font-normal text-slate-500 underline hover:underline-offset-0 hover:text-secondary">
+                <li className="font-normal text-slate-500 underline text-sm hover:underline-offset-0 hover:text-secondary">
                   Impact Evaluations
                 </li>
-                <li className="font-normal text-slate-500 underline hover:underline-offset-0 hover:text-secondary">
+                <li className="font-normal text-slate-500 underline text-sm hover:underline-offset-0 hover:text-secondary">
                   Baseline Data
                 </li>
-                <li className="font-normal text-slate-500 underline hover:underline-offset-0 hover:text-secondary">
+                <li className="font-normal text-slate-500 underline text-sm hover:underline-offset-0 hover:text-secondary">
                   End-line Surveys
                 </li>
               </ol>
