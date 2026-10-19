@@ -40,12 +40,12 @@ export default function OurServices() {
               We help organizations build resilient strategies aligned to long-term goals — from operational frameworks to performance excellence.
             </p>
             <div className="mt-8 align md:grid-cols-2 lg:grid-cols-3 gap-2">
-              <ul className="text-underline">
-                <p className="font-normal text-slate-400">Strategic Planning</p>
-                <p className="font-normal text-slate-400">Balance Scorecard</p>
-                <p className="text-slate-400 font-normal">Operations</p>
-                <p className=" text-slate-400 font-normal">Performance Management</p>
-              </ul>
+              <ol className="cursor-pointer">
+                <li className="font-normal text-slate-400 underline hover:underline-offset-0 hover:text-secondary">Strategic Planning</li>
+                <li className="font-normal text-slate-400 underline hover:underline-offset-0 hover:text-secondary">Balance Scorecard</li>
+                <li className="font-normal text-slate-400 underline hover:underline-offset-0 hover:text-secondary">Operations</li>
+                <li className=" font-normal text-slate-400 underline hover:underline-offset-0 hover:text-secondary">Performance Management</li>
+              </ol>
 
             </div>
 
@@ -58,9 +58,12 @@ export default function OurServices() {
               Strengthen your organization from the inside. We design interventions that improve team dynamics, culture, and collective problem-solving capability.
             </p>
             <div className="mt-8 grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
-              <p className=" text-slate-400 font-normal">Team Dynamics</p>
-              <p className=" text-slate-400 font-normal">Productivity</p>
-              <p className=" text-slate-400 font-normal">Culture Alignment</p>
+              <ol className="cursor-pointer">
+                <li className=" font-normal text-slate-400 underline hover:underline-offset-0">Team Dynamics</li>
+                <li className=" font-normal text-slate-400 underline hover:underline-offset-0">Productivity</li>
+                <li className=" font-normal text-slate-400 underline hover:underline-offset-0">Culture Alignment</li>
+              </ol>
+
             </div>
           </div>
           <div className="rounded-xl p-8  border border-border bg-card">
