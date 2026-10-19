@@ -45,7 +45,7 @@ function HeroSection() {
   }
 
   return (
-    <section className="relative  overflow-hidden border-b border-border min-h-[680px] lg:min-h-[760px] flex items-center">
+    <section className="relative  justify-center align-center overflow-hidden border-b border-border min-h-[680px] lg:min-h-[760px] flex items-center">
       <HeroCarousel />
       <div className="absolute -right-40 -top-40 size-[28rem] rounded-full bg-primary/20 blur-3xl pointer-events-none z-0" />
       <div className="absolute -left-32 bottom-0 size-80 rounded-full bg-primary/15 blur-3xl pointer-events-none z-0" />
