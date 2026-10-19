@@ -26,8 +26,8 @@ export function Footer() {
   return (
     <>
 
-      <footer className="border-t-4 bg-[#0b1d36] border-primary bg-card">
-        <div className="max-w-7xl mx-auto px-5 lg:px-8 py-12 grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_0.9fr_0.9fr_1.2fr]">
+      <footer className="border-t-4 bg-[#0b1d36] justify-center align-center content-center border-primary bg-card">
+        <div className="max-w-7xl justify-center mx-auto px-5 lg:px-8 py-12 grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_0.9fr_0.9fr_1.2fr]">
           <div>
             <div className="flex items-center gap-3">
               <div>
@@ -187,7 +187,7 @@ export function Footer() {
                 placeholder="Your email"
                 className="h-11 flex-1 rounded-lg border border-border bg-background px-3 text-sm text-foreground placeholder:text-muted-foreground outline-none ring-0 focus:border-primary"
               />
-              <button  className="inline-flex h-11 items-center justify-center rounded-lg bg-gradient-primary px-4 text-sm font-medium text-primary-foreground shadow-glow">
+              <button className="inline-flex h-11 items-center justify-center rounded-lg bg-gradient-primary px-4 text-sm font-medium text-primary-foreground shadow-glow">
                 Subscribe
               </button>
             </div>
