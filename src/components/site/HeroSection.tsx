@@ -117,7 +117,7 @@ function HeroSection() {
             </Link>
           </div>
         )} */}
-        <div className="justify-center align-middle content--center"
+        <div className="justify-center align-middle content-center"
         >
           <div className="justify-center align-center content-center">
             <h1 className="mt-5 text-4xl sm:text-5xl text-primary lg:text-6xl font-bold leading-[1.05] max-w-4xl">Empowering Professionals Through Expert Training & Consultancy</h1>
