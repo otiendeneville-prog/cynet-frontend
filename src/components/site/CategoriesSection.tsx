@@ -36,7 +36,7 @@ function CategoriesSection() {
               <Link
                 key={c.id}
                 to={`/courses?category=${c.id}`}
-                className="group flex items-center gap-4 rounded-xl border border-border bg-card p-4 hover:border-primary/40 hover:bg-secondary transition"
+                className="group flex items-center gap-4 rounded-xl border border-border bg-card p-4 hover:border-primary/40transition"
               >
                 <div className="size-11 rounded-lg bg-primary/10 text-primary grid place-items-center shrink-0">
                   <BookOpen className="size-5" />
