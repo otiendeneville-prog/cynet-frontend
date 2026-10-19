@@ -1,5 +1,7 @@
 import nita from "/assets/nita.webp"
 import cynet from "/assets/cert.jpg"
+import { Button } from "@/components/ui/button";
+
 export default function OurServices() {
   return (
     <section className="relative overflow-hidden py-16 md:py-24">
@@ -8,7 +10,7 @@ export default function OurServices() {
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 pb-12 border-b border-slate-100">
 
           <h2 className="font-bold text-3xl lg:text-5xl tracking-tight">
-            Our <span className="text-primary">Services</span>
+            Our <p className="text-primary">Services</p>
           </h2>
           <div className="flex-col lg:flex-row ml-0 gap-4 lg:gap-16">
             <p className="text-base leading-relaxed">
@@ -16,13 +18,13 @@ export default function OurServices() {
             </p>
 
             <button className="flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
-              <span className="flex items-center justify-center h-9 w-9 bg-secondary group-hover:bg-emerald-600 text-white rounded-full
+              <p className="flex items-center justify-center h-9 w-9 bg-secondary group-hover:bg-emerald-600 text-white rounded-full
               font-bold text-xs tracking-wider transition-colors">
                 11+
-              </span>
+              </p>
               <div className="flex flex-col items-start ml-3 text-left">
-                <span className="text-xs  justify-center content-center font-bold text-slate-800">Explore Solutions</span>
-                <span className="text-[10px] text-slate-400 font-normal">View consultancy frameworks</span>
+                <p className="text-xs  justify-center content-center font-bold text-slate-800">Explore Solutions</p>
+                <p className="text-[10px] text-slate-400 font-normal">View consultancy frameworks</p>
               </div>
             </button>
           </div>
@@ -37,22 +39,14 @@ export default function OurServices() {
             <p className="text-slate-400 mt-6">
               We help organizations build resilient strategies aligned to long-term goals — from operational frameworks to performance excellence.
             </p>
-            <div className="mt-8 grid grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
-              <button className=" flex items-center  p-1.5 justify-center rounded-3xl transition-all duration-300 border border-border shadow-md">
+            <div className="mt-8 align md:grid-cols-2 lg:grid-cols-3 gap-2">
+              <ul className="text-underline">
+                <p className="font-normal text-slate-400">Strategic Planning</p>
+                <p className="font-normal text-slate-400">Balance Scorecard</p>
+                <p className="text-slate-400 font-normal">Operations</p>
+                <p className=" text-slate-400 font-normal">Performance Management</p>
+              </ul>
 
-                <span className="text-[10px] text-slate-400 font-normal">Strategic Planning</span>
-
-              </button>
-              <button className="flex items-center  p-1.5 justify-center rounded-3xl transition-all duration-300 border border-border shadow-md">
-                <span className="text-[10px] text-slate-400 font-normal">Balance Scorecard</span>
-
-              </button>
-              <button className=" flex items-center  p-1.5 justify-center rounded-3xl transition-all duration-300 border border-border shadow-md">
-                <span className="text-[10px] text-slate-400 font-normal">Operations</span>
-              </button>
-              <button className=" flex items-center  p-1.5 justify-center rounded-3xl transition-all duration-300 border border-border shadow-md">
-                <span className="text-[10px] text-slate-400 font-normal">Performance Management</span>
-              </button>
             </div>
 
           </div>
@@ -63,16 +57,10 @@ export default function OurServices() {
             <p className="text-slate-400 mt-6">
               Strengthen your organization from the inside. We design interventions that improve team dynamics, culture, and collective problem-solving capability.
             </p>
-            <div className="mt-8 grid grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
-              <button className="flex items-center  p-1.5 justify-center rounded-3xl transition-all duration-300 border border-border shadow-md">
-                <span className="text-[10px] text-slate-400 font-normal">Team Dynamics</span>
-              </button>
-              <button className="flex items-center  p-1.5 justify-center rounded-3xl transition-all duration-300 border border-border shadow-md">
-                <span className="text-[10px] text-slate-400 font-normal">Productivity</span>
-              </button>
-              <button className="flex items-center  p-1.5 justify-center rounded-3xl transition-all duration-300 border border-border shadow-md">
-                <span className="text-[10px] text-slate-400 font-normal">Culture Alignment</span>
-              </button>
+            <div className="mt-8 grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
+              <p className=" text-slate-400 font-normal">Team Dynamics</p>
+              <p className=" text-slate-400 font-normal">Productivity</p>
+              <p className=" text-slate-400 font-normal">Culture Alignment</p>
             </div>
           </div>
           <div className="rounded-xl p-8  border border-border bg-card">
@@ -82,23 +70,15 @@ export default function OurServices() {
             <p className="text-slate-400 mt-6">
               Navigate complex tax landscapes and optimize your financial position with expert advisory tailored to your sector and scale
             </p>
-            <div className="mt-8 grid grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
-              <button className="align-center h-8 justify-center flex items-center p-1.5 pr-5  border hover:border-secondary  rounded-full transition-all duration-300 shadow-sm group/btn">
-                <span className="text-[10px] text-slate-400 font-normal">Business Tax</span>
-              </button>
-              <button className="align-center h-8 justify-center flex items-center p-1.5 pr-5  border hover:border-secondary  rounded-full transition-all duration-300 shadow-sm group/btn">
-                <span className="text-[10px] text-slate-400 font-normal">Risk Management</span>
-              </button>
-              <button className="align-center h-8 justify-center flex items-center p-1.5 pr-5  border hover:border-secondary rounded-full transition-all duration-300 shadow-sm group/btn">
-                <span className="text-[10px] text-slate-400 font-normal">
-                  Capital Advisory
-                </span>
-              </button>
-              <button className=" align-center h-8 justify-center flex items-center p-1.5 pr-5  border hover:border-secondary rounded-full transition-all duration-300 shadow-sm group/btn">
-                <span className="text-[10px] text-slate-400 font-normal justify-center">
-                  Employment Tax
-                </span>
-              </button>
+            <div className="mt-8  grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
+              <p className="text-slate-400 font-normal">Business Tax</p>
+              <p className="] text-slate-400 font-normal">Risk Management</p>
+              <p className=" text-slate-400 font-normal">
+                Capital Advisory
+              </p>
+              <p className="text-slate-400 font-normal justify-center">
+                Employment Tax
+              </p>
             </div>
             <div>
 
@@ -111,27 +91,19 @@ export default function OurServices() {
             <p className="text-slate-400 mt-6">
               Data-driven insight to inform every decision. From baseline surveys to impact evaluations, we give you clarity on what's working and what's not.
             </p>
-            <div className="mt-8 grid grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
-              <button className=" align-center h-8 justify-center flex items-center p-1.5 pr-5  border hover:border-secondary rounded-full transition-all duration-300 shadow-sm group/btin">
-                <span className="text-[10px] text-slate-400 font-normal">
-                  Market Surveys
-                </span>
-              </button>
-              <button className=" align-center justify-center h-8 flex items-center p-1.5 pr-5  border hover:border-secondary rounded-full transition-all duration-300 shadow-sm group/btin">
-                <span className="text-[10px] text-slate-400 font-normal">
-                  Impact Evaluations
-                </span>
-              </button>
-              <button className=" align-center h-8 justify-center flex items-center p-1.5 pr-5  border hover:border-secondary rounded-full transition-all duration-300 shadow-sm group/btin">
-                <span className="text-[10px] text-slate-400 font-normal">
-                  Baseline Data
-                </span>
-              </button>
-              <button className=" align-center h-8 justify-center flex items-center p-1.5 pr-5 b border hover:border-secondary rounded-full transition-all duration-300 shadow-sm group/btin">
-                <span className="text-[10px] text-slate-400 font-normal">
-                  End-line Surveys
-                </span>
-              </button>
+            <div className="mt-8  grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
+              <p className="text-slate-400 font-normal">
+                Market Surveys
+              </p>
+              <p className="text-slate-400 font-normal">
+                Impact Evaluations
+              </p>
+              <p className="text-slate-400 font-normal">
+                Baseline Data
+              </p>
+              <p className="text-slate-400 font-normal">
+                End-line Surveys
+              </p>
             </div>
           </div>
           <div>
