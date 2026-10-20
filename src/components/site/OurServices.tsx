@@ -92,7 +92,7 @@ export default function OurServices() {
 
             </div>
           </div>
-          <div className="rounded-xl p-8 mb-17 justify-center content-center  border border-border bg-card">
+          <div className="rounded-xl p-8 mb-17  border border-border bg-card">
             <h1 className="font-semibold leading-snug line-clamp-2">
               Research Services
             </h1>
