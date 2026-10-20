@@ -14,7 +14,7 @@ function FeaturedCourses() {
           <p className="text-xs font-semibold uppercase tracking-widest text-primary">
             Latest Programs
           </p>
-          <h2 className="text-2xl lg:text-3xl font-bold mt-2 text-secondary">
+          <h2 className="text-2xl lg:text-3xl font-bold mt-2 ">
             Featured Training Courses
           </h2>
         </div>

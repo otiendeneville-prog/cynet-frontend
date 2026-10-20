@@ -9,8 +9,8 @@ export default function OurServices() {
 
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 pb-12 border-b border-slate-100">
 
-          <h2 className="font-bold text-3xl lg:text-5xl tracking-tight">
-            Our <p className="text-primary">Services</p>
+          <h2 className="font-bold text-2xl lg:text-4xl tracking-tight">
+            Our Services
           </h2>
           <div className="flex-col lg:flex-row ml-0 gap-4 lg:gap-16">
             <p className="text-base leading-relaxed mb-5">

@@ -80,7 +80,7 @@ const Testimonials = () => (
     className="max-w-7xl mx-auto px-5 lg:px-8 pb-16 lg:pb-2"
   >
     <div className="flex items-end justify-between mb-8">
-      <h2 className="font-poppins font-semibold xs:text-[48px] text-[40px] text-primary xs:leading-[76.8px] leading-[66.8px] w-full">
+      <h2 className="font-poppins font-semibold xs:text-[48px] text-[33px] xs:leading-[76.8px] leading-[66.8px] w-full">
         What Clients Say About Us
       </h2>
       <div className="w-full md:mt-0 mt-6 md:flex justify-end">
@@ -88,7 +88,7 @@ const Testimonials = () => (
           href="https://cyneteastafricaconsultancy.cynet-learn.workers.dev/"
           target="_blank"
           rel="noreferrer"
-          className="justify-center items-center flex bg-[#0f2a4a] text-white px-6 py-3 rounded-xl font-poppins font-medium shadow-md hover:bg-slate-800 transition"
+          className="justify-center items-center flex bg-primary text-white px-6 py-3 rounded-xl font-poppins font-medium shadow-md hover:bg-secondary transition"
         >
           Leave a Review
         </a>
