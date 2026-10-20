@@ -1,6 +1,8 @@
 import nita from "/assets/nita.webp"
 import cynet from "/assets/cert.jpg"
 import { Button } from "@/components/ui/button";
+import { ArrowUpRight } from "lucide-react";
+
 
 export default function OurServices() {
   return (
@@ -33,55 +35,54 @@ export default function OurServices() {
 
         <div className="mt-12 grid grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className=" rounded-xl p-8  border border-border bg-card">
-            <h1 className="text-xl  font-bold text-secondary underline">
+            <h1 className="font-semibold leading-snug line-clamp-2">
               Business Strategy Services
             </h1>
-            <p className="text-slate-400 mt-6">
+            <p className="mt-6 text-sm text-muted-foreground line-clamp-3">
               We help organizations build resilient strategies aligned to long-term goals — from operational frameworks to performance excellence.
             </p>
-            <div className="mt-8 align md:grid-cols-2 lg:grid-cols-3 gap-2">
-              <ol className="cursor-pointer">
-                <li className="font-normal text-slate-500 underline text-sm hover:underline-offset-0 hover:text-secondary">Strategic Planning</li>
-                <li className="font-normal text-slate-500 underline text-sm hover:underline-offset-0 hover:text-secondary">Balance Scorecard</li>
-                <li className="font-normal text-slate-500 underline text-sm hover:underline-offset-0 hover:text-secondary">Operations</li>
-                <li className=" font-normal text-slate-500 underline text-sm hover:underline-offset-0 hover:text-secondary">Performance Management</li>
+            <div className="mt-8">
+              <ol className="cursor-pointer flex flex-col">
+                <li className="inline-flex items-center gap-1.5 text-xs hover:text-primary text-muted-foreground">Strategic Planning <ArrowUpRight className="size-2.5" /></li>
+                <li className="inline-flex items-center gap-1.5 text-xs hover:text-primary text-muted-foreground">Balance Scorecard <ArrowUpRight className="size-2.5" /></li>
+                <li className="inline-flex items-center gap-1.5 text-xs hover:text-primary text-muted-foreground">Operations <ArrowUpRight className="size-2.5" /></li>
+                <li className=" inline-flex items-center gap-1.5 text-xs hover:text-primary text-muted-foreground">Performance Management <ArrowUpRight className="size-2.5" /></li>
               </ol>
 
             </div>
 
           </div>
           <div className="rounded-xl p-8  border border-border bg-card">
-            <h1 className="text-xl font-bold text-secondary underline">
+            <h1 className="font-semibold leading-snug line-clamp-2">
               Team Building Services
             </h1>
-            <p className="text-slate-400 mt-6">
+            <p className="mt-6 text-sm text-muted-foreground line-clamp-3">
               Strengthen your organization from the inside. We design interventions that improve team dynamics, culture, and collective problem-solving capability.
             </p>
-            <div className="mt-8 grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
-              <ol className="cursor-pointer">
-                <li className=" font-normal text-slate-500 underline text-sm hover:underline-offset-0 hover:text-secondary">Team Dynamics</li>
-                <li className=" font-normal text-slate-500 underline text-sm hover:underline-offset-0 hover:text-secondary">Productivity</li>
-                <li className=" font-normal text-slate-500 underline text-sm hover:underline-offset-0 hover:text-secondary">Culture Alignment</li>
+            <div className="mt-8">
+              <ol className="cursor-pointer flex flex-col">
+                <li className=" inline-flex items-center gap-1.5 text-xs hover:text-primary text-muted-foreground">Team Dynamics <ArrowUpRight className="size-2.5" /></li>
+                <li className=" inline-flex items-center gap-1.5 text-xs hover:text-primary text-muted-foreground">Productivity <ArrowUpRight className="size-2.5" /></li>
+                <li className=" inline-flex items-center gap-1.5 text-xs hover:text-primary text-muted-foreground">Culture Alignment <ArrowUpRight className="size-2.5" /></li>
               </ol>
-
             </div>
           </div>
           <div className="rounded-xl p-8  border border-border bg-card">
-            <h1 className="text-xl font-bold text-secondary underline">
+            <h1 className="font-semibold leading-snug line-clamp-2 ">
               Tax and Financial Issues
             </h1>
-            <p className="text-slate-400 mt-6">
+            <p className="mt-6 text-sm text-muted-foreground line-clamp-3">
               Navigate complex tax landscapes and optimize your financial position with expert advisory tailored to your sector and scale
             </p>
-            <div className="mt-8  grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
-              <ol className="cursor-pointer">
-                <li className=" font-normal text-slate-500 text-sm underline hover:underline-offset-0 hover:text-secondary">Business Tax</li>
-                <li className=" font-normal text-slate-500 text-sm underline hover:underline-offset-0 hover:text-secondary">Risk Management</li>
-                <li className="  font-normal text-slate-500 text-sm underline hover:underline-offset-0 hover:text-secondary">
-                  Capital Advisory
+            <div className="mt-8">
+              <ol className="cursor-pointer flex flex-col">
+                <li className=" inline-flex items-center gap-1.5 text-xs hover:text-primary text-muted-foreground">Business Tax <ArrowUpRight className="size-2.5" /></li>
+                <li className=" inline-flex items-center gap-1.5 text-xs hover:text-primary text-muted-foreground">Risk Management <ArrowUpRight className="size-2.5" /></li>
+                <li className="  inline-flex items-center gap-1.5 text-xs hover:text-primary text-muted-foreground">
+                  Capital Advisory <ArrowUpRight className="size-2.5" />
                 </li>
-                <li className="font-normal text-slate-500 underline text-sm hover:underline-offset-0 hover:text-secondaryr">
-                  Employment Tax
+                <li className="inline-flex items-center gap-1.5 text-xs hover:text-primary text-muted-foregroundr">
+                  Employment Tax <ArrowUpRight className="size-2.5" />
                 </li>
               </ol>
 
@@ -91,26 +92,26 @@ export default function OurServices() {
 
             </div>
           </div>
-          <div className="rounded-xl p-8  border border-border bg-card">
-            <h1 className="text-xl font-bold text-secondary underline">
+          <div className="rounded-xl p-8 mb-17 justify-center content-center  border border-border bg-card">
+            <h1 className="font-semibold leading-snug line-clamp-2">
               Research Services
             </h1>
-            <p className="text-slate-400 mt-6">
+            <p className="mt-6 text-sm text-muted-foreground line-clamp-3">
               Data-driven insight to inform every decision. From baseline surveys to impact evaluations, we give you clarity on what's working and what's not.
             </p>
-            <div className="mt-8  grid-cols-1 align md:grid-cols-2 lg:grid-cols-3 gap-2">
-              <ol className="cursor-pointer">
-                <li className="font-normal text-slate-500 underline text-sm hover:underline-offset-0 hover:text-secondary">
-                  Market Surveys
+            <div className="mt-8">
+              <ol className="cursor-pointer flex flex-col">
+                <li className="inline-flex items-center gap-1.5 text-xs hover:text-primary text-muted-foreground">
+                  Market Surveys <ArrowUpRight className="size-2.5" />
                 </li>
-                <li className="font-normal text-slate-500 underline text-sm hover:underline-offset-0 hover:text-secondary">
-                  Impact Evaluations
+                <li className="inline-flex items-center gap-1.5 text-xs hover:text-primary text-muted-foreground">
+                  Impact Evaluations <ArrowUpRight className="size-2.5" />
                 </li>
-                <li className="font-normal text-slate-500 underline text-sm hover:underline-offset-0 hover:text-secondary">
+                <li className="inline-flex items-center gap-1.5 text-xs hover:text-primary text-muted-foreground">
                   Baseline Data
                 </li>
-                <li className="font-normal text-slate-500 underline text-sm hover:underline-offset-0 hover:text-secondary">
-                  End-line Surveys
+                <li className="inline-flex items-center gap-1.5 text-xs hover:text-primary text-muted-foreground">
+                  End-line Surveys <ArrowUpRight className="size-2.5" />
                 </li>
               </ol>
 
