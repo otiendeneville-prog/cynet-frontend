@@ -13,11 +13,11 @@ export default function OurServices() {
             Our <p className="text-primary">Services</p>
           </h2>
           <div className="flex-col lg:flex-row ml-0 gap-4 lg:gap-16">
-            <p className="text-base leading-relaxed">
+            <p className="text-base leading-relaxed mb-5">
               Tailored solutions to help organizations succeed — from <br />growth strategy and financial advisory to team building <br /> and research. We drive measurable outcomes at every stage.
             </p>
 
-            <button className="flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
+            <Button className="flex items-center p-1.5 pr-5 bg-white border  rounded-full transition-all duration-300 shadow-sm group/btn">
               <p className="flex items-center justify-center h-9 w-9 bg-secondary group-hover:bg-emerald-500 text-white rounded-full
               font-bold text-xs tracking-wider transition-colors">
                 11+
@@ -26,7 +26,7 @@ export default function OurServices() {
                 <p className="text-xs  justify-center content-center font-bold text-slate-800">Explore Solutions</p>
                 <p className="text-[10px] text-slate-400 font-normal">View consultancy frameworks</p>
               </div>
-            </button>
+            </Button>
           </div>
 
         </div>
