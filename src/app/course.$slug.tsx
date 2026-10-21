@@ -229,11 +229,11 @@ function CourseDetail() {
             {/* Hero image / quick CTA card */}
             <aside className="space-y-4">
               {course.featured_image && (
-                <div className="overflow-hidden rounded-2xl border shadow-sm aspect-video w-full bg-muted">
+                <div className="mt-15  rounded-2xl  shadow-sm aspect-video w-full bg-muted">
                   <img
                     src={course.featured_image}
                     alt={title}
-                    className="h-full w-full object-cover object-center transition duration-300 hover:scale-105"
+                    className="h-full w-full object-cover rounded-2xl  object-center transition duration-300 hover:scale-105"
                     loading="eager"
                   />
                 </div>
