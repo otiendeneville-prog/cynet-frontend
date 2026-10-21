@@ -44,7 +44,7 @@ function TrainingOptions({ slug }: TrainingOptionsProps) {
                   <th className="px-4 py-3">End</th>
                   <th className="px-4 py-3">Schedule</th>
                   <th className="px-4 py-3">Fee</th>
-                  <th className="px-4 py-3"></th>
+                  <th className="px-4 py-3">Ksh</th>
                 </tr>
               </thead>
               <tbody className="divide-y">

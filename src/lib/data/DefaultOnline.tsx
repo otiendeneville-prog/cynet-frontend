@@ -4,18 +4,22 @@ const defaultOnlineSessions = [
     end: "9 Oct ",
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 1200",
+    Ksh: "110,000"
+
   },
   {
     start: "26 Oct",
     end: "30Oct",
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 1200",
+    Ksh: " Ksh 110,000"
   },
   {
     start: "9 Nov",
     end: "13 Nov",
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 1200",
+    Ksh: "Ksh 110,000",
   },
   {
     start: "23 Nov",
