@@ -106,6 +106,7 @@ function TrainingOptions({ slug }: TrainingOptionsProps) {
                     <span className="font-semibold text-primary">{s.fee}</span>
                   </div>
 
+
                   <Button asChild size="sm">
                     <Link
                       to="/course-registration/$slug/register"
