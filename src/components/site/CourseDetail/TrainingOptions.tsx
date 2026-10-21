@@ -59,7 +59,7 @@ function TrainingOptions({ slug }: TrainingOptionsProps) {
                       {s.schedule}
                     </td>
                     <td className="px-4 py-3 font-semibold">{s.fee}</td>
-                    <td className="px-4 py-3 font-semibold">{s.fee}</td>
+                    <td className="px-4 py-3 font-semibold">{s.ksh}</td>
 
                     <td className="px-4 py-3 text-right">
                       <Button asChild size="sm">
