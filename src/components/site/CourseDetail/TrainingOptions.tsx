@@ -179,7 +179,7 @@ function TrainingOptions({ slug }: TrainingOptionsProps) {
                     ))}
                   </ol>
                   <Button className="mt-6 w-full" asChild>
-                    <a href="#enquire">Get a free team quote</a>
+                    <a href="/contact/">Get a free team quote</a>
                   </Button>
                 </div>
               </div>
