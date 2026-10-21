@@ -226,6 +226,7 @@ function CourseDetail() {
               {/* ... */}
             </div>
 
+            {/* Hero image / quick CTA card */}
             <aside className="space-y-4">
               {course.featured_image && (
                 <div className="overflow-hidden rounded-2xl border shadow-sm aspect-video w-full bg-muted">
