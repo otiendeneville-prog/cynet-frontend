@@ -104,10 +104,6 @@ function TrainingOptions({ slug }: TrainingOptionsProps) {
                     <span className="text-muted-foreground">Fee</span>
                     <span className="font-semibold text-primary">{s.fee}</span>
                   </div>
-                  <div className="fex  justify-between">
-                    <span className="text-muted-foreground">ksh</span>
-                    <span className="font-semibold text-primary">{s.fee}</span>
-                  </div>
                   <Button asChild size="sm">
                     <Link
                       to="/course-registration/$slug/register"

@@ -12,6 +12,7 @@ const defaultClassroom = [
     schedule: "Mon - Fri",
     duration: "5 Days",
     fee: "USD 1,900",
+    Ksh: "ks 110,000"
   },
   {
     city: "Dubai",
