@@ -43,8 +43,8 @@ function TrainingOptions({ slug }: TrainingOptionsProps) {
                   <th className="px-4 py-3">Start</th>
                   <th className="px-4 py-3">End</th>
                   <th className="px-4 py-3">Schedule</th>
-                  <th className="px-4 py-3">Fee</th>
-                  <th className="px-4 py-3">Ksh</th>
+                  <th className="px-4 py-3">Non Kenyan Price</th>
+                  <th className="px-4 py-3">Kenyan Price</th>
                 </tr>
               </thead>
               <tbody className="divide-y">
@@ -60,7 +60,6 @@ function TrainingOptions({ slug }: TrainingOptionsProps) {
                     </td>
                     <td className="px-4 py-3 font-semibold">{s.fee}</td>
                     <td className="px-4 py-3 font-semibold">{s.ksh}</td>
-
                     <td className="px-4 py-3 text-right">
                       <Button asChild size="sm">
                         <Link
