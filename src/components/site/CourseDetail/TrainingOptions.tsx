@@ -59,6 +59,8 @@ function TrainingOptions({ slug }: TrainingOptionsProps) {
                       {s.schedule}
                     </td>
                     <td className="px-4 py-3 font-semibold">{s.fee}</td>
+                    <td className="px-4 py-3 font-semibold">{s.fee}</td>
+
                     <td className="px-4 py-3 text-right">
                       <Button asChild size="sm">
                         <Link
@@ -104,6 +106,7 @@ function TrainingOptions({ slug }: TrainingOptionsProps) {
                     <span className="text-muted-foreground">Fee</span>
                     <span className="font-semibold text-primary">{s.fee}</span>
                   </div>
+
                   <Button asChild size="sm">
                     <Link
                       to="/course-registration/$slug/register"

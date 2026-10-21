@@ -86,7 +86,6 @@ export interface OnlineSession {
   end: string;
   schedule: string;
   fee: string;
-  Ksh: string;
 }
 
 export interface ClassroomSession {
