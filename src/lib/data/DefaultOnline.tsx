@@ -5,6 +5,8 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
+    classroom: "USD 120,000",
+    foreign: "110,000"
   },
   {
     start: "26 Oct",
@@ -12,6 +14,10 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
+    classroom: "USD 120,000",
+    foreign: "110,000"
+
+
 
   },
   {
@@ -20,6 +26,10 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
+    classroom: "USD 120,000",
+    foreign: "110,000"
+
+
 
   },
   {
@@ -28,13 +38,21 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
+    classroom: "USD 120,000",
+    foreign: "110,000"
+
+
   },
   {
     start: "14 Dec",
     end: "18 Dec",
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
-    ksh: "110,000",
+    ksh: "165,000",
+    classroom: "USD 120,000",
+    foreign: "110,000"
+
+
 
   },
   {
@@ -43,6 +61,10 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
+    classroom: "USD 120,000",
+    foreign: "110,000"
+
+
 
   },
   {
@@ -51,6 +73,10 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
+    classroom: "USD 120,000",
+    foreign: "110,000"
+
+
 
   },
   {
@@ -59,6 +85,10 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
+    classroom: "USD 120,000",
+    foreign: "110,000"
+
+
   },
   {
     start: "12 Jan",
@@ -66,6 +96,10 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
+    classroom: "USD 120,000",
+    foreign: "110,000"
+
+
 
   },
   {
@@ -74,6 +108,10 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
+    classroom: "USD 120,000",
+    foreign: "110,000"
+
+
   },
   {
     start: "27 Jan",
@@ -81,6 +119,10 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
+    classroom: "USD 120,000",
+    foreign: "110,000"
+
+
   },
   {
     start: "3 Feb",
@@ -88,6 +130,10 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
+    classroom: "USD 120,000",
+    foreign: "110,000"
+
+
 
   },
   {
@@ -96,6 +142,10 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
+    classroom: "USD 120,000",
+    foreign: "110,000"
+
+
 
   },
   {
@@ -104,6 +154,10 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
+    classroom: "USD 120,000",
+    foreign: "110,000"
+
+
 
 
 
@@ -115,6 +169,10 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
+    classroom: "USD 120,000",
+    foreign: "110,000"
+
+
   },
   {
     start: "3 Mar",
@@ -122,6 +180,10 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
+    classroom: "USD 120,000",
+    foreign: "110,000"
+
+
   },
 ];
 

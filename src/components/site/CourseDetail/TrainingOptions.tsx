@@ -29,7 +29,7 @@ function TrainingOptions({ slug }: TrainingOptionsProps) {
 
       <Tabs defaultValue="online" className="w-full">
         <TabsList className="grid w-full max-w-xl grid-cols-3">
-          <TabsTrigger value="online">Live Online</TabsTrigger>
+          <TabsTrigger value="online">Timetable</TabsTrigger>
           <TabsTrigger value="classroom">Classroom</TabsTrigger>
           <TabsTrigger value="inhouse">Fly Me a Trainer</TabsTrigger>
         </TabsList>
@@ -39,12 +39,16 @@ function TrainingOptions({ slug }: TrainingOptionsProps) {
           <div className="overflow-x-auto rounded-xl border">
             <table className="w-full text-left text-sm">
               <thead className="bg-muted/50 text-xs uppercase tracking-wide text-muted-foreground">
-                <tr>
+                <tr className="justify-center align-middle content-center">
                   <th className="px-4 py-3">Start</th>
                   <th className="px-4 py-3">End</th>
                   <th className="px-4 py-3">Schedule</th>
-                  <th className="px-4 py-3">Non Kenyan Price</th>
-                  <th className="px-4 py-3">Kenyan Price</th>
+                  <th className="px-4 py-3">Non Kenyan Price(online) </th>
+                  <th className="px-4 py-3">Kenyan Price(online)</th>
+                  <th className="px-4 py-3">Non Price(classroom)</th>
+                  <th className="px-4 py-3">Kenyan Price(classroom)</th>
+
+
                 </tr>
               </thead>
               <tbody className="divide-y">
@@ -60,6 +64,8 @@ function TrainingOptions({ slug }: TrainingOptionsProps) {
                     </td>
                     <td className="px-4 py-3 font-semibold">{s.fee}</td>
                     <td className="px-4 py-3 font-semibold">{s.ksh}</td>
+                    <td className="px-4 py-3 font-semibold">{s.classroom}</td>
+                    <td className="px-4 py-3 font-semibold">{s.foreign}</td>
                     <td className="px-4 py-3 text-right">
                       <Button asChild size="sm">
                         <Link
