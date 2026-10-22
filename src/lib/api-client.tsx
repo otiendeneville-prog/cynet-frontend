@@ -88,7 +88,7 @@ export interface OnlineSession {
   fee: string;
   ksh: string;
   classroom: string;
-  foreing: string;
+  foreign: string;
 }
 
 export interface ClassroomSession {
@@ -97,9 +97,9 @@ export interface ClassroomSession {
   schedule: string;
   duration: string;
   fee: string;
-  ksh: string;
-  classroom: string;
-  foreign: string;
+  ksh?: string;
+  classroom?: string;
+  foreign?: string;
 }
 
 export interface Faq {

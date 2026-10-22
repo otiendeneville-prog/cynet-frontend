@@ -30,6 +30,7 @@ interface FormData {
   phone: string;
   organization: string;
   jobTitle: string;
+  placeofRegistration: string;
   trainingMode: string;
   participants: string;
   startDate: string;
@@ -44,6 +45,7 @@ const BLANK: FormData = {
   phone: "",
   organization: "",
   jobTitle: "",
+  placeofRegistration: "",
   trainingMode: "",
   participants: "1",
   startDate: "",
@@ -263,6 +265,17 @@ function RegisterPage() {
                     placeholder="Your role"
                     value={form.jobTitle}
                     onChange={set("jobTitle")}
+                  />
+                </div>
+              </Field>
+              <Field label="Place of registration">
+                <div className="relative">
+                  <Briefcase className="absolute left-3 top-2.5 h-4 w-4 text-muted-foreground" />
+                  <input
+                    className={`${inputCls} pl-9`}
+                    placeholder="country"
+                    value={form.placeofRegistration}
+                    onChange={set("placeofRegistration")}
                   />
                 </div>
               </Field>
