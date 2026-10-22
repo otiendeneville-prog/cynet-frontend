@@ -45,7 +45,7 @@ function TrainingOptions({ slug }: TrainingOptionsProps) {
                   <th className="px-4 py-3">Schedule</th>
                   <th className="px-4 py-3">Non Kenyan Price(online) </th>
                   <th className="px-4 py-3">Kenyan Price(online)</th>
-                  <th className="px-4 py-3">Non Price(classroom)</th>
+                  <th className="px-4 py-3">Non Kenyan Price(classroom)</th>
                   <th className="px-4 py-3">Kenyan Price(classroom)</th>
 
 
