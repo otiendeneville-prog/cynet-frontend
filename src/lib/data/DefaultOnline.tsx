@@ -26,7 +26,7 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
-    classroom: "USD 120,000",
+    classroom: "USD 1,200",
     foreign: "110,000"
 
 
@@ -38,7 +38,7 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
-    classroom: "USD 120,000",
+    classroom: "USD 1,200",
     foreign: "110,000"
 
 
@@ -49,7 +49,7 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "165,000",
-    classroom: "USD 120,000",
+    classroom: "USD 1,200",
     foreign: "110,000"
 
 
@@ -61,7 +61,7 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
-    classroom: "USD 120,000",
+    classroom: "USD 1,200",
     foreign: "110,000"
 
 
@@ -73,7 +73,7 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
-    classroom: "USD 120,000",
+    classroom: "USD 1,200",
     foreign: "110,000"
 
 
@@ -85,7 +85,7 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
-    classroom: "USD 120,000",
+    classroom: "USD 1,200",
     foreign: "110,000"
 
 
@@ -96,7 +96,7 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
-    classroom: "USD 120,000",
+    classroom: "USD 1,200",
     foreign: "110,000"
 
 
@@ -108,7 +108,7 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
-    classroom: "USD 120,000",
+    classroom: "USD 1,200",
     foreign: "110,000"
 
 
@@ -119,7 +119,7 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
-    classroom: "USD 120,000",
+    classroom: "USD 1,200",
     foreign: "110,000"
 
 
@@ -130,7 +130,7 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
-    classroom: "USD 120,000",
+    classroom: "USD 1,200",
     foreign: "110,000"
 
 
@@ -142,7 +142,7 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
-    classroom: "USD 120,000",
+    classroom: "USD 1,200",
     foreign: "110,000"
 
 
@@ -154,7 +154,7 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
-    classroom: "USD 120,000",
+    classroom: "USD 1,200",
     foreign: "110,000"
 
 
@@ -169,7 +169,7 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
-    classroom: "USD 120,000",
+    classroom: "USD 1,200",
     foreign: "110,000"
 
 
@@ -180,7 +180,7 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
-    classroom: "USD 120,000",
+    classroom: "USD 1,200",
     foreign: "110,000"
 
 
