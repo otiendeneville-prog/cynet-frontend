@@ -14,7 +14,7 @@ const defaultOnlineSessions = [
     schedule: "Mon - Fri (5 Days)",
     fee: "USD 710",
     ksh: "65,000",
-    classsrom: "USD 1,200",
+    classroom: "USD 1,200",
     foreign: "110,000"
 
 
