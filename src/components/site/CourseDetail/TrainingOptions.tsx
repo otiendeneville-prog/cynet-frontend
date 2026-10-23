@@ -32,6 +32,8 @@ function TrainingOptions({ slug }: TrainingOptionsProps) {
           <TabsTrigger value="online">Timetable</TabsTrigger>
           <TabsTrigger value="classroom">Classroom</TabsTrigger>
           <TabsTrigger value="inhouse">Fly Me a Trainer</TabsTrigger>
+          <TabsTrigger value="country">Country</TabsTrigger>
+
         </TabsList>
 
         {/* Online */}

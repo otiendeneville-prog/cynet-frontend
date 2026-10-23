@@ -89,6 +89,7 @@ export interface OnlineSession {
   ksh: string;
   classroom: string;
   foreign: string;
+
 }
 
 export interface ClassroomSession {
@@ -159,7 +160,6 @@ type CourseRegistrationInput = {
   courseName: string
   courseCategory: string
 }
-
 const stripHtml = (value?: string) =>
   value
     ? value
