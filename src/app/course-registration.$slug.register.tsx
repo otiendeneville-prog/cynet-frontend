@@ -30,7 +30,9 @@ interface FormData {
   phone: string;
   organization: string;
   jobTitle: string;
+  placeofRegistration: string;
   trainingMode: string;
+  trainingVenueopreference: string;
   participants: string;
   startDate: string;
   endDate: string;
@@ -44,7 +46,9 @@ const BLANK: FormData = {
   phone: "",
   organization: "",
   jobTitle: "",
+  placeofRegistration: "",
   trainingMode: "",
+  trainingVenueopreference: "",
   participants: "1",
   startDate: "",
   endDate: "",
@@ -266,6 +270,17 @@ function RegisterPage() {
                   />
                 </div>
               </Field>
+              <Field label="Place of registration">
+                <div className="relative">
+                  <Briefcase className="absolute left-3 top-2.5 h-4 w-4 text-muted-foreground" />
+                  <input
+                    className={`${inputCls} pl-9`}
+                    placeholder="country"
+                    value={form.placeofRegistration}
+                    onChange={set("placeofRegistration")}
+                  />
+                </div>
+              </Field>
 
               <Field label="Training Mode">
                 <div className="relative">
@@ -280,6 +295,17 @@ function RegisterPage() {
                     <option value="In-Person">In-Person</option>
                     <option value="Hybrid">Hybrid</option>
                   </select>
+                </div>
+              </Field>
+              <Field label="training Venue of preference">
+                <div className="relative">
+                  <Briefcase className="absolute left-3 top-2.5 h-4 w-4 text-muted-foreground" />
+                  <input
+                    className={`${inputCls} pl-9`}
+                    placeholder="venue"
+                    value={form.trainingVenueopreference}
+                    onChange={set("trainingVenueopreference")}
+                  />
                 </div>
               </Field>
 

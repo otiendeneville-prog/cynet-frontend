@@ -77,7 +77,7 @@ export const Route = createFileRoute("/course/$slug")({
           { name: "twitter:title", content: course.og_title },
           { name: "twitter:description", content: seoDescription },
           ...(course.featured_image
-            ? [{ property: "og:image", content: `/${course.featured_image}` }]
+            ? [{ property: "og:image", content: course.featured_image }]
             : []),
         ],
         links: [{ rel: "canonical", href: canonicalUrl }],
@@ -131,10 +131,10 @@ function CourseDetail() {
   const intro = course.excerpt ? stripHtml(course.excerpt) : "";
   const cats = course.categories ?? [];
   const firstCat = cats[0]?.name ?? "";
-  const duration = course.duration ?? "5 Days";
+  const duration = course.duration ?? "5 /10 Days";
   const certificate = "Included";
   const delivery = "Instructor-Led";
-  const level = "Foundation to Intermediate";
+  const level = "Foundation to Advance";
 
   const curriculum: { title: string; items: string[] }[] = [];
   const objectives: string[] = [];
@@ -229,15 +229,17 @@ function CourseDetail() {
             {/* Hero image / quick CTA card */}
             <aside className="space-y-4">
               {course.featured_image && (
-                <div className="overflow-hidden rounded-2xl border shadow-sm">
+                <div className="mt-15  rounded-2xl  shadow-sm aspect-video w-full bg-muted">
                   <img
-                    src={`/${course.featured_image}`}
-                    alt={stripHtml(title)}
-                    className="h-full w-full object-cover"
+                    src={course.featured_image}
+                    alt={title}
+                    className="h-full w-full object-cover rounded-2xl  object-center transition duration-300 hover:scale-105"
+                    loading="eager"
                   />
                 </div>
               )}
-              {/* CTA card unchanged */}
+
+              {/* Rest of your Quick CTA / Quick Facts Card elements go underneath */}
             </aside>
           </div>
 

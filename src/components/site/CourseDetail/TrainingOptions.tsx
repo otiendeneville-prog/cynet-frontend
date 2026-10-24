@@ -8,7 +8,8 @@ import { Bullet } from "./Bullet";
 import { ArrowRight, MapPin } from "lucide-react";
 import { ClassroomSession, OnlineSession } from "@/lib/api-client";
 import { Link } from "@tanstack/react-router";
-
+import { Globe } from "lucide-react";
+import { CountryApi } from "@/components/ui/countryApi";
 interface TrainingOptionsProps {
   slug: string;
 }
@@ -28,10 +29,14 @@ function TrainingOptions({ slug }: TrainingOptionsProps) {
       </p>
 
       <Tabs defaultValue="online" className="w-full">
-        <TabsList className="grid w-full max-w-xl grid-cols-3">
-          <TabsTrigger value="online">Live Online</TabsTrigger>
-          <TabsTrigger value="classroom">Classroom</TabsTrigger>
-          <TabsTrigger value="inhouse">Fly Me a Trainer</TabsTrigger>
+        <TabsList className="flex w-full items-center justify-start overflow-x-auto whitespace-nowrap md:grid md:grid-cols-4 md:max-w-2xl">
+          <TabsTrigger value="online" className="flex-1 md:flex-none">Timetable</TabsTrigger>
+          <TabsTrigger value="classroom" className="flex-1 md:flex-none">Classroom</TabsTrigger>
+          <TabsTrigger value="inhouse" className="flex-1 md:flex-none">Fly Me a Trainer</TabsTrigger>
+          <TabsTrigger value="country" className="flex-1 md:flex-none flex items-center justify-center gap-2">
+            <Globe className="h-4 w-4" />
+            Countries
+          </TabsTrigger>
         </TabsList>
 
         {/* Online */}
@@ -39,12 +44,16 @@ function TrainingOptions({ slug }: TrainingOptionsProps) {
           <div className="overflow-x-auto rounded-xl border">
             <table className="w-full text-left text-sm">
               <thead className="bg-muted/50 text-xs uppercase tracking-wide text-muted-foreground">
-                <tr>
+                <tr className="justify-center align-middle content-center">
                   <th className="px-4 py-3">Start</th>
                   <th className="px-4 py-3">End</th>
                   <th className="px-4 py-3">Schedule</th>
-                  <th className="px-4 py-3">Fee</th>
-                  <th className="px-4 py-3"></th>
+                  <th className="px-4 py-3">Non Kenyan Price(online) </th>
+                  <th className="px-4 py-3">Kenyan Price(online)</th>
+                  <th className="px-4 py-3">Non Kenyan Price(classroom)</th>
+                  <th className="px-4 py-3">Kenyan Price(classroom)</th>
+
+
                 </tr>
               </thead>
               <tbody className="divide-y">
@@ -59,11 +68,14 @@ function TrainingOptions({ slug }: TrainingOptionsProps) {
                       {s.schedule}
                     </td>
                     <td className="px-4 py-3 font-semibold">{s.fee}</td>
+                    <td className="px-4 py-3 font-semibold">{s.ksh}</td>
+                    <td className="px-4 py-3 font-semibold">{s.classroom}</td>
+                    <td className="px-4 py-3 font-semibold">{s.foreign}</td>
                     <td className="px-4 py-3 text-right">
                       <Button asChild size="sm">
                         <Link
                           to="/course-registration/$slug/register"
-                          params={{ slug }}
+                          params={{ slug } as any}
                         >
                           Register <ArrowRight className="ml-1 h-3 w-3" />
                         </Link>
@@ -104,10 +116,12 @@ function TrainingOptions({ slug }: TrainingOptionsProps) {
                     <span className="text-muted-foreground">Fee</span>
                     <span className="font-semibold text-primary">{s.fee}</span>
                   </div>
+
+
                   <Button asChild size="sm">
                     <Link
                       to="/course-registration/$slug/register"
-                      params={{ slug }}
+                      params={{ slug } as any}
                     >
                       Enrol <ArrowRight className="ml-1 h-3 w-3" />
                     </Link>
@@ -176,12 +190,15 @@ function TrainingOptions({ slug }: TrainingOptionsProps) {
                     ))}
                   </ol>
                   <Button className="mt-6 w-full" asChild>
-                    <a href="#enquire">Get a free team quote</a>
+                    <a href="/contact/">Get a free team quote</a>
                   </Button>
                 </div>
               </div>
             </CardContent>
           </Card>
+        </TabsContent>
+        <TabsContent value="country" className="mt-6">
+          <CountryApi slug={slug} />
         </TabsContent>
       </Tabs>
     </Section>

@@ -86,6 +86,10 @@ export interface OnlineSession {
   end: string;
   schedule: string;
   fee: string;
+  ksh: string;
+  classroom: string;
+  foreign: string;
+
 }
 
 export interface ClassroomSession {
@@ -94,6 +98,9 @@ export interface ClassroomSession {
   schedule: string;
   duration: string;
   fee: string;
+  ksh?: string;
+  classroom?: string;
+  foreign?: string;
 }
 
 export interface Faq {
@@ -153,7 +160,6 @@ type CourseRegistrationInput = {
   courseName: string
   courseCategory: string
 }
-
 const stripHtml = (value?: string) =>
   value
     ? value
