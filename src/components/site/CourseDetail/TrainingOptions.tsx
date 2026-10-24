@@ -39,7 +39,6 @@ function TrainingOptions({ slug }: TrainingOptionsProps) {
           </TabsTrigger>
         </TabsList>
 
-
         {/* Online */}
         <TabsContent value="online" className="mt-6">
           <div className="overflow-x-auto rounded-xl border">
@@ -76,7 +75,7 @@ function TrainingOptions({ slug }: TrainingOptionsProps) {
                       <Button asChild size="sm">
                         <Link
                           to="/course-registration/$slug/register"
-                          params={{ slug }}
+                          params={{ slug } as any}
                         >
                           Register <ArrowRight className="ml-1 h-3 w-3" />
                         </Link>
@@ -122,7 +121,7 @@ function TrainingOptions({ slug }: TrainingOptionsProps) {
                   <Button asChild size="sm">
                     <Link
                       to="/course-registration/$slug/register"
-                      params={{ slug }}
+                      params={{ slug } as any}
                     >
                       Enrol <ArrowRight className="ml-1 h-3 w-3" />
                     </Link>
