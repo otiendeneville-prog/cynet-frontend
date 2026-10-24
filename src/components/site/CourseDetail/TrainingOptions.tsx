@@ -8,7 +8,8 @@ import { Bullet } from "./Bullet";
 import { ArrowRight, MapPin } from "lucide-react";
 import { ClassroomSession, OnlineSession } from "@/lib/api-client";
 import { Link } from "@tanstack/react-router";
-
+import { Globe } from "lucide-react";
+import { CountryApi } from "@/components/ui/countryApi";
 interface TrainingOptionsProps {
   slug: string;
 }
@@ -28,13 +29,16 @@ function TrainingOptions({ slug }: TrainingOptionsProps) {
       </p>
 
       <Tabs defaultValue="online" className="w-full">
-        <TabsList className="grid w-full max-w-xl grid-cols-3">
-          <TabsTrigger value="online">Timetable</TabsTrigger>
-          <TabsTrigger value="classroom">Classroom</TabsTrigger>
-          <TabsTrigger value="inhouse">Fly Me a Trainer</TabsTrigger>
-          <TabsTrigger value="country">Country</TabsTrigger>
-
+        <TabsList className="flex w-full items-center justify-start overflow-x-auto whitespace-nowrap md:grid md:grid-cols-4 md:max-w-2xl">
+          <TabsTrigger value="online" className="flex-1 md:flex-none">Timetable</TabsTrigger>
+          <TabsTrigger value="classroom" className="flex-1 md:flex-none">Classroom</TabsTrigger>
+          <TabsTrigger value="inhouse" className="flex-1 md:flex-none">Fly Me a Trainer</TabsTrigger>
+          <TabsTrigger value="country" className="flex-1 md:flex-none flex items-center justify-center gap-2">
+            <Globe className="h-4 w-4" />
+            Countries
+          </TabsTrigger>
         </TabsList>
+
 
         {/* Online */}
         <TabsContent value="online" className="mt-6">
@@ -193,6 +197,9 @@ function TrainingOptions({ slug }: TrainingOptionsProps) {
               </div>
             </CardContent>
           </Card>
+        </TabsContent>
+        <TabsContent value="country" className="mt-6">
+          <CountryApi slug={slug} />
         </TabsContent>
       </Tabs>
     </Section>

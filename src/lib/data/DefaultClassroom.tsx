@@ -1,3 +1,4 @@
+
 const defaultClassroom = [
   {
     city: "Nairobi",
@@ -42,6 +43,5 @@ const defaultClassroom = [
     fee: "USD 2,500",
   },
 ];
-
 
 export default defaultClassroom;
