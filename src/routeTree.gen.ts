@@ -14,7 +14,6 @@ import { Route as TermsAndConditionsRouteImport } from './app/terms-and-conditio
 import { Route as PrivacyPolicyRouteImport } from './app/privacy-policy'
 import { Route as OurGalleryRouteImport } from './app/our-gallery'
 import { Route as OurClientsRouteImport } from './app/our-clients'
-import { Route as CountryCodeRouteImport } from './app/countryCode'
 import { Route as AboutRouteImport } from './app/about'
 import { Route as CoursesRouteImport } from './app/Courses'
 import { Route as ContactRouteImport } from './app/Contact'
@@ -48,11 +47,6 @@ const OurGalleryRoute = OurGalleryRouteImport.update({
 const OurClientsRoute = OurClientsRouteImport.update({
   id: '/our-clients',
   path: '/our-clients',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CountryCodeRoute = CountryCodeRouteImport.update({
-  id: '/countryCode',
-  path: '/countryCode',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -109,7 +103,6 @@ export interface FileRoutesByFullPath {
   '/Contact': typeof ContactRoute
   '/Courses': typeof CoursesRoute
   '/about': typeof AboutRoute
-  '/countryCode': typeof CountryCodeRoute
   '/our-clients': typeof OurClientsRoute
   '/our-gallery': typeof OurGalleryRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
@@ -126,7 +119,6 @@ export interface FileRoutesByTo {
   '/Contact': typeof ContactRoute
   '/Courses': typeof CoursesRoute
   '/about': typeof AboutRoute
-  '/countryCode': typeof CountryCodeRoute
   '/our-clients': typeof OurClientsRoute
   '/our-gallery': typeof OurGalleryRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
@@ -144,7 +136,6 @@ export interface FileRoutesById {
   '/Contact': typeof ContactRoute
   '/Courses': typeof CoursesRoute
   '/about': typeof AboutRoute
-  '/countryCode': typeof CountryCodeRoute
   '/our-clients': typeof OurClientsRoute
   '/our-gallery': typeof OurGalleryRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
@@ -163,7 +154,6 @@ export interface FileRouteTypes {
     | '/Contact'
     | '/Courses'
     | '/about'
-    | '/countryCode'
     | '/our-clients'
     | '/our-gallery'
     | '/privacy-policy'
@@ -180,7 +170,6 @@ export interface FileRouteTypes {
     | '/Contact'
     | '/Courses'
     | '/about'
-    | '/countryCode'
     | '/our-clients'
     | '/our-gallery'
     | '/privacy-policy'
@@ -197,7 +186,6 @@ export interface FileRouteTypes {
     | '/Contact'
     | '/Courses'
     | '/about'
-    | '/countryCode'
     | '/our-clients'
     | '/our-gallery'
     | '/privacy-policy'
@@ -215,7 +203,6 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   CoursesRoute: typeof CoursesRoute
   AboutRoute: typeof AboutRoute
-  CountryCodeRoute: typeof CountryCodeRoute
   OurClientsRoute: typeof OurClientsRoute
   OurGalleryRoute: typeof OurGalleryRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
@@ -261,13 +248,6 @@ declare module '@tanstack/react-router' {
       path: '/our-clients'
       fullPath: '/our-clients'
       preLoaderRoute: typeof OurClientsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/countryCode': {
-      id: '/countryCode'
-      path: '/countryCode'
-      fullPath: '/countryCode'
-      preLoaderRoute: typeof CountryCodeRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -343,7 +323,6 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   CoursesRoute: CoursesRoute,
   AboutRoute: AboutRoute,
-  CountryCodeRoute: CountryCodeRoute,
   OurClientsRoute: OurClientsRoute,
   OurGalleryRoute: OurGalleryRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
