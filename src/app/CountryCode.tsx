@@ -6,6 +6,7 @@ const PhoneInput = (RawPhoneInput as any).default || RawPhoneInput;
 
 interface CountryCodeProps {
     value: string;
+    className: string;
     onChange: (value: string) => void;
 }
 

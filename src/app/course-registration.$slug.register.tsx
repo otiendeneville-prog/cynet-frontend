@@ -283,6 +283,7 @@ function RegisterPage() {
                       setForm((f) => ({ ...f, phone: value }));
                       setErrors((err) => ({ ...err, phone: "" }));
                     }}
+                    className={`${inputCls} pl-9`}
                   />
                 </div>
               </Field>
