@@ -275,18 +275,17 @@ function RegisterPage() {
                   />
                 </div>
               </Field>
-              <Field label="Country">
-                <div className="relative">
-                  <CountryCode
-                    value={form.phone}
-                    onChange={(value) => {
-                      setForm((f) => ({ ...f, phone: value }));
-                      setErrors((err) => ({ ...err, phone: "" }));
-                    }}
-                    className={`${inputCls} pl-9`}
-                  />
-                </div>
+              <Field label="Phone Number" error={errors.phone}>
+                <CountryCode
+                  value={form.phone}
+                  onChange={(value) => {
+                    setForm((f) => ({ ...f, phone: value }));
+                    setErrors((err) => ({ ...err, phone: "" }));
+                  }}
+                />
               </Field>
+
+
 
 
               <Field label="Training Mode">
