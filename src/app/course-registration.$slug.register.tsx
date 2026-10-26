@@ -22,7 +22,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useCourse } from "@/hooks/use-courses";
 import { api } from "@/lib/api-client";
-import { CountryCode } from "@/app/CountryCode"
+import CountryCode from "@/app/CountryCode"
 
 
 interface FormData {
