@@ -22,6 +22,8 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useCourse } from "@/hooks/use-courses";
 import { api } from "@/lib/api-client";
+import { Countries } from "@/lib/Countries.tsx";
+
 
 
 interface FormData {
@@ -274,7 +276,17 @@ function RegisterPage() {
                   />
                 </div>
               </Field>
-
+              <Field label="Phone Number" error={errors.phone}>
+                <div className="relative">
+                  <Countries
+                    value={form.phone}
+                    onChange={(value) => {
+                      setForm((f) => ({ ...f, phone: value }));
+                      setErrors((err) => ({ ...err, phone: "" }));
+                    }}
+                  />
+                </div>
+              </Field>
 
 
 
@@ -304,9 +316,6 @@ function RegisterPage() {
                     onChange={set("trainingVenueopreference")}
                   />
                 </div>
-              </Field>
-              <Field label="Phone Number">
-
               </Field>
 
               <Field label="No. of Participants">
