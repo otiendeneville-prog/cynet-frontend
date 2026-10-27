@@ -12,10 +12,10 @@ import { Route as rootRouteImport } from './app/__root'
 import { Route as TestRouteImport } from './app/test'
 import { Route as TermsAndConditionsRouteImport } from './app/terms-and-conditions'
 import { Route as PrivacyPolicyRouteImport } from './app/privacy-policy'
-import { Route as PhoneFieldRouteImport } from './app/phoneField'
 import { Route as OurGalleryRouteImport } from './app/our-gallery'
 import { Route as OurClientsRouteImport } from './app/our-clients'
 import { Route as AboutRouteImport } from './app/about'
+import { Route as PhoneFieldRouteImport } from './app/PhoneField'
 import { Route as CoursesRouteImport } from './app/Courses'
 import { Route as ContactRouteImport } from './app/Contact'
 import { Route as CalendarRouteImport } from './app/Calendar'
@@ -40,11 +40,6 @@ const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
   path: '/privacy-policy',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PhoneFieldRoute = PhoneFieldRouteImport.update({
-  id: '/phoneField',
-  path: '/phoneField',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const OurGalleryRoute = OurGalleryRouteImport.update({
   id: '/our-gallery',
   path: '/our-gallery',
@@ -58,6 +53,11 @@ const OurClientsRoute = OurClientsRouteImport.update({
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PhoneFieldRoute = PhoneFieldRouteImport.update({
+  id: '/PhoneField',
+  path: '/PhoneField',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CoursesRoute = CoursesRouteImport.update({
@@ -108,10 +108,10 @@ export interface FileRoutesByFullPath {
   '/Calendar': typeof CalendarRoute
   '/Contact': typeof ContactRoute
   '/Courses': typeof CoursesRoute
+  '/PhoneField': typeof PhoneFieldRoute
   '/about': typeof AboutRoute
   '/our-clients': typeof OurClientsRoute
   '/our-gallery': typeof OurGalleryRoute
-  '/phoneField': typeof PhoneFieldRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/test': typeof TestRoute
@@ -125,10 +125,10 @@ export interface FileRoutesByTo {
   '/Calendar': typeof CalendarRoute
   '/Contact': typeof ContactRoute
   '/Courses': typeof CoursesRoute
+  '/PhoneField': typeof PhoneFieldRoute
   '/about': typeof AboutRoute
   '/our-clients': typeof OurClientsRoute
   '/our-gallery': typeof OurGalleryRoute
-  '/phoneField': typeof PhoneFieldRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/test': typeof TestRoute
@@ -143,10 +143,10 @@ export interface FileRoutesById {
   '/Calendar': typeof CalendarRoute
   '/Contact': typeof ContactRoute
   '/Courses': typeof CoursesRoute
+  '/PhoneField': typeof PhoneFieldRoute
   '/about': typeof AboutRoute
   '/our-clients': typeof OurClientsRoute
   '/our-gallery': typeof OurGalleryRoute
-  '/phoneField': typeof PhoneFieldRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/test': typeof TestRoute
@@ -162,10 +162,10 @@ export interface FileRouteTypes {
     | '/Calendar'
     | '/Contact'
     | '/Courses'
+    | '/PhoneField'
     | '/about'
     | '/our-clients'
     | '/our-gallery'
-    | '/phoneField'
     | '/privacy-policy'
     | '/terms-and-conditions'
     | '/test'
@@ -179,10 +179,10 @@ export interface FileRouteTypes {
     | '/Calendar'
     | '/Contact'
     | '/Courses'
+    | '/PhoneField'
     | '/about'
     | '/our-clients'
     | '/our-gallery'
-    | '/phoneField'
     | '/privacy-policy'
     | '/terms-and-conditions'
     | '/test'
@@ -196,10 +196,10 @@ export interface FileRouteTypes {
     | '/Calendar'
     | '/Contact'
     | '/Courses'
+    | '/PhoneField'
     | '/about'
     | '/our-clients'
     | '/our-gallery'
-    | '/phoneField'
     | '/privacy-policy'
     | '/terms-and-conditions'
     | '/test'
@@ -214,10 +214,10 @@ export interface RootRouteChildren {
   CalendarRoute: typeof CalendarRoute
   ContactRoute: typeof ContactRoute
   CoursesRoute: typeof CoursesRoute
+  PhoneFieldRoute: typeof PhoneFieldRoute
   AboutRoute: typeof AboutRoute
   OurClientsRoute: typeof OurClientsRoute
   OurGalleryRoute: typeof OurGalleryRoute
-  PhoneFieldRoute: typeof PhoneFieldRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
   TermsAndConditionsRoute: typeof TermsAndConditionsRoute
   TestRoute: typeof TestRoute
@@ -249,13 +249,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PrivacyPolicyRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/phoneField': {
-      id: '/phoneField'
-      path: '/phoneField'
-      fullPath: '/phoneField'
-      preLoaderRoute: typeof PhoneFieldRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/our-gallery': {
       id: '/our-gallery'
       path: '/our-gallery'
@@ -275,6 +268,13 @@ declare module '@tanstack/react-router' {
       path: '/about'
       fullPath: '/about'
       preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/PhoneField': {
+      id: '/PhoneField'
+      path: '/PhoneField'
+      fullPath: '/PhoneField'
+      preLoaderRoute: typeof PhoneFieldRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/Courses': {
@@ -342,10 +342,10 @@ const rootRouteChildren: RootRouteChildren = {
   CalendarRoute: CalendarRoute,
   ContactRoute: ContactRoute,
   CoursesRoute: CoursesRoute,
+  PhoneFieldRoute: PhoneFieldRoute,
   AboutRoute: AboutRoute,
   OurClientsRoute: OurClientsRoute,
   OurGalleryRoute: OurGalleryRoute,
-  PhoneFieldRoute: PhoneFieldRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
   TermsAndConditionsRoute: TermsAndConditionsRoute,
   TestRoute: TestRoute,
