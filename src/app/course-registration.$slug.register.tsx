@@ -22,7 +22,9 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useCourse } from "@/hooks/use-courses";
 import { api } from "@/lib/api-client";
+import { COUNTRIES } from "@/lib/Countries"
 
+import PhoneField from "@/app/PhoneField.tsx";
 
 
 interface FormData {
@@ -275,17 +277,15 @@ function RegisterPage() {
                   />
                 </div>
               </Field>
-              {/* <Field label="Phone Number" error={errors.phone}>
-                <div className="relative">
-                  <Countries
-                    value={form.phone}
-                    onChange={(value) => {
-                      setForm((f) => ({ ...f, phone: value }));
-                      setErrors((err) => ({ ...err, phone: "" }));
-                    }}
-                  />
-                </div>
-              </Field> */}
+              <Field label="Phone Number" required error={errors.phone}>
+                <PhoneField
+                  value={form.phone}
+                  onChange={(value) => {
+                    setForm((f) => ({ ...f, phone: value }));
+                    setErrors((err) => ({ ...err, phone: "" }));
+                  }}
+                />
+              </Field>
 
               <Field label="Training Mode">
                 <div className="relative">

@@ -149,7 +149,7 @@ function CategoryPage() {
                   </p>
                 </div>
                 <Button asChild size="sm" className="mt-4 w-full">
-                  <Link to="/course/$slug" params={{ slug: c.slug }}>
+                  <Link to="/course/$slug" params={{ slug: c.slug } as any}>
                     See dates
                   </Link>
                 </Button>
