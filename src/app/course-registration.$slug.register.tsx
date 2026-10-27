@@ -22,7 +22,6 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useCourse } from "@/hooks/use-courses";
 import { api } from "@/lib/api-client";
-import { Countries } from "@/lib/Countries.tsx";
 
 
 
@@ -276,7 +275,7 @@ function RegisterPage() {
                   />
                 </div>
               </Field>
-              <Field label="Phone Number" error={errors.phone}>
+              {/* <Field label="Phone Number" error={errors.phone}>
                 <div className="relative">
                   <Countries
                     value={form.phone}
@@ -286,10 +285,7 @@ function RegisterPage() {
                     }}
                   />
                 </div>
-              </Field>
-
-
-
+              </Field> */}
 
               <Field label="Training Mode">
                 <div className="relative">

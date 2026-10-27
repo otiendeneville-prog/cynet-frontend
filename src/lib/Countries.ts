@@ -209,7 +209,6 @@ export const flagOf = (name: string) => {
     return iso ? `https://flagcdn.com/w40/${iso}.png` : undefined
 }
 
-// "0712 345 678" -> "712345678"
 export const cleanPhone = (v: string) => v.replace(/\D/g, '').replace(/^0+/, '')
 
 export const isValidPhone = (v: string) => {
