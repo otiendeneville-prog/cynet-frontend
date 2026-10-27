@@ -69,7 +69,7 @@ function Contact() {
       <div className="mt-10 grid lg:grid-cols-[1fr_360px] gap-8">
         <form
           onSubmit={onSubmit}
-          className="rounded-2xl border border-border bg-card p-6 lg:p-8 space-y-5"
+          className="rounded-2xl border border-border p-6 lg:p-8 space-y-5"
         >
           <div className="grid  sm:grid-cols-2 gap-5">
             <Field label="Full name" name="name" required />
@@ -141,7 +141,7 @@ const Field = ({
       name={name}
       type={type}
       required={required}
-      className="mt-1.5 w-full h-11 px-3.5 rounded-lg bg-secondary border border-border text-sm focus:outline-none focus:ring-2 focus:ring-ring/40"
+      className="mt-1.5 w-full h-11 px-3.5 rounded-lg  border border-border text-sm focus:outline-none focus:ring-2 focus:ring-ring/40"
     />
   </div>
 );
