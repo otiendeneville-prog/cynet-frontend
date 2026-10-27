@@ -200,3 +200,19 @@ export const COUNTRIES: Country[] = [
     { name: 'Zambia', dial: '260' },
     { name: 'Zimbabwe', dial: '263' },
 ]
+
+export const dialOf = (name: string) =>
+    COUNTRIES.find((c) => c.name === name)?.dial
+// explaining the nextof the 
+
+export const cleanPhone = (v: string) => v.replace(/\D/g, '').replace(/^0+/, '')
+
+export const isValidPhone = (v: string) => {
+    const n = cleanPhone(v).length
+    return n >= 6 && n <= 12
+}
+
+export const toE164 = (dial: string, phone: string) =>
+    `+${dial}${cleanPhone(phone)}`
+
+
