@@ -12,7 +12,6 @@ import { Route as rootRouteImport } from './app/__root'
 import { Route as TestRouteImport } from './app/test'
 import { Route as TermsAndConditionsRouteImport } from './app/terms-and-conditions'
 import { Route as PrivacyPolicyRouteImport } from './app/privacy-policy'
-import { Route as PhoneInputRouteImport } from './app/phoneInput'
 import { Route as OurGalleryRouteImport } from './app/our-gallery'
 import { Route as OurClientsRouteImport } from './app/our-clients'
 import { Route as AboutRouteImport } from './app/about'
@@ -38,11 +37,6 @@ const TermsAndConditionsRoute = TermsAndConditionsRouteImport.update({
 const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
   id: '/privacy-policy',
   path: '/privacy-policy',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PhoneInputRoute = PhoneInputRouteImport.update({
-  id: '/phoneInput',
-  path: '/phoneInput',
   getParentRoute: () => rootRouteImport,
 } as any)
 const OurGalleryRoute = OurGalleryRouteImport.update({
@@ -111,7 +105,6 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/our-clients': typeof OurClientsRoute
   '/our-gallery': typeof OurGalleryRoute
-  '/phoneInput': typeof PhoneInputRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/test': typeof TestRoute
@@ -128,7 +121,6 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/our-clients': typeof OurClientsRoute
   '/our-gallery': typeof OurGalleryRoute
-  '/phoneInput': typeof PhoneInputRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/test': typeof TestRoute
@@ -146,7 +138,6 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/our-clients': typeof OurClientsRoute
   '/our-gallery': typeof OurGalleryRoute
-  '/phoneInput': typeof PhoneInputRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/test': typeof TestRoute
@@ -165,7 +156,6 @@ export interface FileRouteTypes {
     | '/about'
     | '/our-clients'
     | '/our-gallery'
-    | '/phoneInput'
     | '/privacy-policy'
     | '/terms-and-conditions'
     | '/test'
@@ -182,7 +172,6 @@ export interface FileRouteTypes {
     | '/about'
     | '/our-clients'
     | '/our-gallery'
-    | '/phoneInput'
     | '/privacy-policy'
     | '/terms-and-conditions'
     | '/test'
@@ -199,7 +188,6 @@ export interface FileRouteTypes {
     | '/about'
     | '/our-clients'
     | '/our-gallery'
-    | '/phoneInput'
     | '/privacy-policy'
     | '/terms-and-conditions'
     | '/test'
@@ -217,7 +205,6 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   OurClientsRoute: typeof OurClientsRoute
   OurGalleryRoute: typeof OurGalleryRoute
-  PhoneInputRoute: typeof PhoneInputRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
   TermsAndConditionsRoute: typeof TermsAndConditionsRoute
   TestRoute: typeof TestRoute
@@ -247,13 +234,6 @@ declare module '@tanstack/react-router' {
       path: '/privacy-policy'
       fullPath: '/privacy-policy'
       preLoaderRoute: typeof PrivacyPolicyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/phoneInput': {
-      id: '/phoneInput'
-      path: '/phoneInput'
-      fullPath: '/phoneInput'
-      preLoaderRoute: typeof PhoneInputRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/our-gallery': {
@@ -345,7 +325,6 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   OurClientsRoute: OurClientsRoute,
   OurGalleryRoute: OurGalleryRoute,
-  PhoneInputRoute: PhoneInputRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
   TermsAndConditionsRoute: TermsAndConditionsRoute,
   TestRoute: TestRoute,
