@@ -241,6 +241,18 @@ function RegisterPage() {
                 </div>
               </Field>
 
+              <Field label="Phone Number" required error={errors.phone}>
+                <div className="relative">
+                  <Phone className="absolute left-3 top-2.5 h-4 w-4 text-muted-foreground" />
+                  <input
+                    type="tel"
+                    className={`${inputCls} pl-9`}
+                    placeholder="+254 700 000 000"
+                    value={form.phone}
+                    onChange={set("phone")}
+                  />
+                </div>
+              </Field>
 
               <Field label="Organization">
                 <div className="relative">
@@ -266,7 +278,7 @@ function RegisterPage() {
                 </div>
               </Field>
               <Field label="Phone Number" required error={errors.phone}>
-                <PhoneField className="border-neutral-300 bg-white dark:border-neutral-700 dark:bg-zinc-950 dark:text-white"
+                <PhoneField
                   value={form.phone}
                   onChange={(value) => {
                     setForm((f) => ({ ...f, phone: value }));
