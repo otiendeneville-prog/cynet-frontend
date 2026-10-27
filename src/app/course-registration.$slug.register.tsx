@@ -305,6 +305,9 @@ function RegisterPage() {
                   />
                 </div>
               </Field>
+              <Field label="Phone Number">
+
+              </Field>
 
               <Field label="No. of Participants">
                 <div className="relative">

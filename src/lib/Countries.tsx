@@ -203,7 +203,7 @@ export const COUNTRIES: Country[] = [
 
 export const dialOf = (name: string) =>
     COUNTRIES.find((c) => c.name === name)?.dial
-// explaining the nextof the 
+
 
 export const cleanPhone = (v: string) => v.replace(/\D/g, '').replace(/^0+/, '')
 
