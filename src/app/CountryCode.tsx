@@ -16,8 +16,8 @@ export default function CountryCode({ value, onChange }: CountryCodeProps) {
                 country="ke"
                 value={value}
                 onChange={onChange}
-                inputClass="!w-full !h-10 !rounded-lg  !border-black  !bg-background !text-foreground !text-sm !outline-none !transition-all focus:!ring-2 focus:!ring-primary/40 pl-[48px]"
-                buttonClass="!rounded-l-lg !border-y !border-l !border-black !bg-muted/30 hover:!bg-muted/50 dark:!bg-muted/10"
+                inputClass="!w-full !h-10 !rounded-lg !border !bg-background !text-foreground !text-sm !outline-none !transition-all focus:!ring-2 focus:!ring-primary/40 pl-[48px]"
+                buttonClass="!rounded-l-lg !border-y !border-l !border  !bg-muted/30 hover:!bg-muted/50 dark:!bg-muted/10"
                 dropdownClass="!bg-popover !text-popover-foreground !border-input dark:[&_.country:hover]:!bg-muted/70 dark:[&_.country.highlight]:!bg-primary/20"
             />
         </div>
