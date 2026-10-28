@@ -319,18 +319,3 @@
 
   --animate-loop-scroll: loop-scroll 50s linear infinite;
 }
-
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    /* ... light mode styles */
-  }
-
-  .dark {
-    /* Change this from 0 0% 0% to a softer dark slate/zinc */
-    --background: 240 10% 3.9%;
-    /* Shadcn default Zinc (Very dark gray, not pure black) */
-    --foreground: 0 0% 98%;
-  }
-}

@@ -1,10 +1,10 @@
 export const CardSkeleton = () => (
   <div className="rounded-2xl border border-border bg-card overflow-hidden">
-    <div className="h-44 bg-secondary animate-pulse" />
+    <div className="h-44 bg-muted animate-pulse" />
     <div className="p-5 space-y-3">
-      <div className="h-4 bg-secondary rounded animate-pulse w-3/4" />
-      <div className="h-3 bg-secondary rounded animate-pulse" />
-      <div className="h-3 bg-secondary rounded animate-pulse w-5/6" />
+      <div className="h-4 bg-muted rounded animate-pulse w-3/4" />
+      <div className="h-3 bg-muted rounded animate-pulse" />
+      <div className="h-3 bg-muted animate-pulse w-5/6" />
     </div>
   </div>
 );
