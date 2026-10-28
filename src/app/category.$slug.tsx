@@ -145,11 +145,16 @@ function CategoryPage() {
                     </span>
                   </div>
                   <p className="mt-3 text-sm font-medium text-foreground">
-                    from KES {Number(c.price).toLocaleString()}
+                    <span>class</span><br />
+                    KES 110,000  USD 1,20{Number(c.price).toLocaleString()}
+                  </p>
+                  <p className="mt-3 text-sm font-medium text-foreground">
+                    <span>virtual</span><br />
+                    KES 65,000  USD 71{Number(c.price).toLocaleString()}
                   </p>
                 </div>
                 <Button asChild size="sm" className="mt-4 w-full">
-                  <Link to="/course/$slug" params={{ slug: c.slug }}>
+                  <Link to="/course/$slug" params={{ slug: c.slug } as any}>
                     See dates
                   </Link>
                 </Button>

@@ -109,7 +109,7 @@ function Courses() {
                 setSearch(e.target.value);
                 setParam("q", e.target.value);
               }}
-              className="w-full h-11 pl-10 pr-3 rounded-lg bg-secondary border border-border text-sm focus:outline-none focus:ring-2 focus:ring-ring/40"
+              className="w-full h-11 pl-10 pr-3 rounded-lg  border border-border text-sm focus:outline-none focus:ring-2 focus:ring-ring/40"
             />
           </div>
 

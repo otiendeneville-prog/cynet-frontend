@@ -22,6 +22,10 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useCourse } from "@/hooks/use-courses";
 import { api } from "@/lib/api-client";
+import { COUNTRIES } from "@/lib/Countries"
+
+import PhoneField from "@/app/PhoneField.tsx";
+
 
 interface FormData {
   firstName: string;
@@ -155,11 +159,14 @@ function RegisterPage() {
     );
   }
 
+
+
   return (
+
     <article className="bg-background">
       <div className="container mx-auto max-w-3xl px-4 py-12 lg:py-16">
         <Button asChild variant="ghost" size="sm" className="mb-6 -ml-2">
-          <Link to="/course/$slug" params={{ slug }}>
+          <Link to="/course/$slug" params={{ slug } as any}>
             <ArrowLeft className="mr-2 h-4 w-4" /> Back to course
           </Link>
         </Button>
@@ -270,16 +277,14 @@ function RegisterPage() {
                   />
                 </div>
               </Field>
-              <Field label="Place of registration">
-                <div className="relative">
-                  <Briefcase className="absolute left-3 top-2.5 h-4 w-4 text-muted-foreground" />
-                  <input
-                    className={`${inputCls} pl-9`}
-                    placeholder="country"
-                    value={form.placeofRegistration}
-                    onChange={set("placeofRegistration")}
-                  />
-                </div>
+              <Field label="Phone Number" required error={errors.phone}>
+                <PhoneField
+                  value={form.phone}
+                  onChange={(value) => {
+                    setForm((f) => ({ ...f, phone: value }));
+                    setErrors((err) => ({ ...err, phone: "" }));
+                  }}
+                />
               </Field>
 
               <Field label="Training Mode">
