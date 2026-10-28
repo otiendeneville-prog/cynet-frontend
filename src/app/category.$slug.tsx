@@ -1,5 +1,5 @@
 import { createFileRoute, Link, useParams } from "@tanstack/react-router";
-import { ArrowLeft, Calendar, Clock, MapPin, Quote, Users } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, MapPin, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
@@ -9,7 +9,6 @@ import { useCategoryCourses } from "@/hooks/use-courses";
 import { stripHtml } from "@/lib/wp";
 import { api } from "@/lib/api-client";
 
-// Marketing copy not yet modeled in the backend — see note below.
 const intakes = [
   { date: "14 Sep", mode: "Nairobi" },
   { date: "5 Oct", mode: "virtual" },
@@ -61,6 +60,7 @@ export const Route = createFileRoute("/category/$slug")({
   },
   component: CategoryPage,
 });
+
 function CategoryPage() {
   const { slug } = useParams({ from: "/category/$slug" });
   const { data, isLoading, isError } = useCategoryCourses(slug);
@@ -143,14 +143,29 @@ function CategoryPage() {
                     <span className="inline-flex items-center gap-1.5">
                       <MapPin className="h-3.5 w-3.5" /> Nairobi or virtual
                     </span>
+                    <aside className="space-y-4 w-full">
+                      {c.featured_image && (
+                        <div className="mt-4 rounded-2xl shadow-sm aspect-video w-full bg-muted overflow-hidden">
+                          <img
+                            src={c.featured_image}
+                            alt={c.title}
+                            className="h-full w-full object-cover rounded-2xl object-center transition duration-300 hover:scale-105"
+                            loading="eager"
+                          />
+                        </div>
+                      )}
+                    </aside>
                   </div>
+
                   <p className="mt-3 text-sm font-medium text-foreground">
-                    <span>class</span><br />
-                    KES 110,000  USD 1,20{Number(c.price).toLocaleString()}
+                    <span className="text-xs text-muted-foreground font-normal">Classroom</span>
+                    <br />
+                    KES 110,000 &middot; USD 1,200
                   </p>
                   <p className="mt-3 text-sm font-medium text-foreground">
-                    <span>virtual</span><br />
-                    KES 65,000  USD 71{Number(c.price).toLocaleString()}
+                    <span className="text-xs text-muted-foreground font-normal">Virtual</span>
+                    <br />
+                    KES 65,000 &middot; USD 710
                   </p>
                 </div>
                 <Button asChild size="sm" className="mt-4 w-full">
@@ -188,23 +203,8 @@ function CategoryPage() {
           title="Training a group of 5 or more?"
         >
           <p className="max-w-xl text-muted-foreground">
-            In house Training for teams
+            We offer tailored in-house training configurations and custom team pricing models.
           </p>
-          <div className="mt-5 flex flex-wrap gap-3">
-            <Button asChild>
-              <Link to="/contact">
-                <Users className="mr-2 h-4 w-4" /> Request a team proposal
-              </Link>
-            </Button>
-            <Button asChild variant="outline">
-              <a
-                href="https://drive.google.com/file/d/1TqaD4jHUqqFSqMgV5zePqF-uGg9rm4AE/view"
-                download
-              >
-                Download 2026 calendar
-              </a>
-            </Button>
-          </div>
         </Section>
       </div>
     </article>
