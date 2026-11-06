@@ -19,8 +19,8 @@ export default function OurServices() {
               Tailored solutions to help organizations succeed — from <br />growth strategy and financial advisory to team building <br /> and research. We drive measurable outcomes at every stage.
             </p>
 
-            <Button variant="default" className=" rounded-full px-5 py-6 sm:inline-flex">
-              <p className="flex items-center justify-center h-9 w-9 bg-secondary group-hover:bg-emerald-500 text-white rounded-full
+            <Button variant="default" className=" rounded-full px-5 py-7 sm:inline-flex">
+              <p className="flex items-center justify-center h-9 w-8 bg-secondary group-hover:bg-emerald-500 text-white rounded-full
               font-bold text-xs tracking-wider transition-colors">
                 11+
               </p>
