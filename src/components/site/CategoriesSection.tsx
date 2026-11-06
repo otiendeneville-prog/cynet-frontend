@@ -25,7 +25,7 @@ function CategoriesSection() {
             {Array.from({ length: 9 }).map((_, i) => (
               <div
                 key={i}
-                className="h-20 rounded-xl bg-secondary animate-pulse"
+                className="h-20 rounded-xl bg-neutral-200 animate-pulse"
               />
             ))}
           </div>

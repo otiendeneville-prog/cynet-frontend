@@ -14,6 +14,7 @@ const feedback = [
     name: "brian ogolla",
     title: "1 year ago",
     img: "b",
+    bgColor: "bg-purple-50/50",
   },
   {
     id: "2",
@@ -22,6 +23,7 @@ const feedback = [
     name: "Avi Tuvia Odek",
     title: "2 years ago",
     img: "A",
+    bgColor: "bg-emerald-50/50",
   },
   {
     id: "3",
