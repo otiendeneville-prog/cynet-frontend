@@ -5,7 +5,9 @@ import { CardGridSkeleton, ErrorState } from "./Loaders";
 import { CourseCard } from "./CourseCard";
 
 function FeaturedCourses() {
+
   const courses = useCourses({ page: 1 });
+
 
   return (
     <section className="max-w-7xl mx-auto px-5 lg:px-8 pb-16 lg:pb-24">
