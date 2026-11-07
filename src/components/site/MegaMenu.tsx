@@ -279,14 +279,7 @@ export function MegaMenu() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuLink asChild>
-            <Link
-              to="/"
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-foreground hover:text-primary transition-colors"
-            >
-              Home
-            </Link>
-          </NavigationMenuLink>
+          <Link to="/">Home</Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Courses</NavigationMenuTrigger>
