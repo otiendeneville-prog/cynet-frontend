@@ -33,6 +33,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { WP_API_URL } from "@/lib/site-config";
 
 /* ------------------------------------------------------------------ */
 /* Types                                                                */
@@ -85,14 +86,12 @@ export function useRegistration(): RegistrationState {
 /* ------------------------------------------------------------------ */
 /* Submit — posts to your plugin's existing AJAX action                */
 /* ------------------------------------------------------------------ */
-const WP_BASE = "https://cyneteastafrica.com/wp-json";
-
 async function submitRegistration(
   formData: FormData,
   courseName: string,
   courseCategory: string,
 ) {
-  const res = await fetch(`${WP_BASE}/tcr/v1/register`, {
+  const res = await fetch(`${WP_API_URL}/tcr/v1/register`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({

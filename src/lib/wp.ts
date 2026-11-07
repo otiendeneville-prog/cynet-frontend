@@ -1,5 +1,6 @@
-// WordPress REST API client for https://cyneteastafrica.com
-const WP_BASE = "https://cyneteastafrica.com/wp-json/wp/v2";
+import { WP_REST_BASE } from "@/lib/site-config";
+
+const WP_BASE = WP_REST_BASE;
 
 export interface WPRendered {
   rendered: string;

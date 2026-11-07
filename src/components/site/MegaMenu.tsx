@@ -29,6 +29,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
+import { absoluteUrl } from "@/lib/site-config";
 import OurServicesComponents from "./OurServices";
 
 type Item = {
@@ -198,7 +199,8 @@ const aboutUs: Item[] = [
 const OurServices: Item[] = [
   {
     title: "Business Strategy",
-    description: "We help organizations build resilient strategies aligned to long-term goals",
+    description:
+      "We help organizations build resilient strategies aligned to long-term goals",
     icon: Users,
     href: "/accreditation",
   },
@@ -221,7 +223,6 @@ const OurServices: Item[] = [
     href: "/our-gallery",
   },
 ];
-
 
 function MenuGrid({
   items,
@@ -277,8 +278,9 @@ export function MegaMenu() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
-
-        <NavigationMenuItem><a href="https://cyneteastafricaconsultancy.cynet-learn.workers.dev/">Home</a></NavigationMenuItem>
+        <NavigationMenuItem>
+          <a href={absoluteUrl("/")}>Home</a>
+        </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Courses</NavigationMenuTrigger>
           <NavigationMenuContent>

@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { toast } from "sonner";
+import { WP_API_URL } from "@/lib/site-config";
 
 export const Route = createFileRoute("/Contact")({
   head: () => ({
@@ -19,10 +20,9 @@ function Contact() {
 
     const form = e.target as HTMLFormElement;
     const data = new FormData(form);
-    const WP_BASE = "https://cyneteastafrica.com/wp-json";
 
     try {
-      const res = await fetch(`${WP_BASE}/tcr/v1/contact`, {
+      const res = await fetch(`${WP_API_URL}/tcr/v1/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -103,11 +103,7 @@ function Contact() {
             title="Office"
             text="View Park Towers , Nairobi, Kenya"
           />
-          <InfoCard
-            icon={Mail}
-            title="Email"
-            text="info@cyneteastafrica.com"
-          />
+          <InfoCard icon={Mail} title="Email" text="info@cyneteastafrica.com" />
           <InfoCard icon={Phone} title="Phone" text="+254(7) 92972525 " />
           <div className="rounded-2xl border border-border bg-gradient-card p-6">
             <p className="text-sm font-semibold">Office hours</p>

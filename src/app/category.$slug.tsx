@@ -8,6 +8,7 @@ import { Section } from "@/components/site/CourseDetail/Section";
 import { useCategoryCourses } from "@/hooks/use-courses";
 import { stripHtml } from "@/lib/wp";
 import { api } from "@/lib/api-client";
+import { absoluteUrl } from "@/lib/site-config";
 
 const intakes = [
   { date: "14 Sep", mode: "Nairobi" },
@@ -47,7 +48,7 @@ export const Route = createFileRoute("/category/$slug")({
         links: [
           {
             rel: "canonical",
-            href: `https://cyneteastafricaconsultancy.cynet-learn.workers.dev/courses?page=1&q=/${params.slug}`,
+            href: absoluteUrl(`/category/${params.slug}`),
           },
         ],
       };
@@ -95,8 +96,10 @@ function CategoryPage() {
           </p>
           <h1 className="mt-2 text-3xl font-bold leading-tight tracking-tight md:text-5xl">
             {category?.name
-              ? category.name.charAt(0).toUpperCase() + category.name.slice(1).toLowerCase()
-              : ""} in Nairobi
+              ? category.name.charAt(0).toUpperCase() +
+                category.name.slice(1).toLowerCase()
+              : ""}{" "}
+            in Nairobi
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
             Classroom, virtual, or in-house at your offices. Certificates issued
@@ -158,12 +161,16 @@ function CategoryPage() {
                   </div>
 
                   <p className="mt-3 text-sm font-medium text-foreground">
-                    <span className="text-xs text-muted-foreground font-normal">Classroom</span>
+                    <span className="text-xs text-muted-foreground font-normal">
+                      Classroom
+                    </span>
                     <br />
                     KES 110,000 &middot; USD 1,200
                   </p>
                   <p className="mt-3 text-sm font-medium text-foreground">
-                    <span className="text-xs text-muted-foreground font-normal">Virtual</span>
+                    <span className="text-xs text-muted-foreground font-normal">
+                      Virtual
+                    </span>
                     <br />
                     KES 65,000 &middot; USD 710
                   </p>
@@ -203,7 +210,8 @@ function CategoryPage() {
           title="Training a group of 5 or more?"
         >
           <p className="max-w-xl text-muted-foreground">
-            We offer tailored in-house training configurations and custom team pricing models.
+            We offer tailored in-house training configurations and custom team
+            pricing models.
           </p>
         </Section>
       </div>

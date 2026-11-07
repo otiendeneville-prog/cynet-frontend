@@ -1,10 +1,8 @@
-import { id } from "date-fns/locale";
 import FeedbackCard from "../FeedbackCard.tsx";
 import { Carousel as NukaCarousel } from "nuka-carousel";
+import { absoluteUrl } from "@/lib/site-config";
 
 const Carousel = NukaCarousel as any;
-
-
 
 const feedback = [
   {
@@ -60,8 +58,7 @@ const feedback = [
   },
   {
     id: "7",
-    content:
-      "Very relevant and Iformative training sessions",
+    content: "Very relevant and Iformative training sessions",
     name: "Benedict Ataro",
     title: "2 years",
     img: "B",
@@ -72,8 +69,8 @@ const feedback = [
       "I want to express my gratitude to Engineer Ochieng for his outstanding Data Analysis using Python training. His clear explanations and hands-on exercises made the learning process enjoyable and effective. Highly recommend this course!",
     name: "Gilbert Jumaa",
     title: "2years",
-    img: "G"
-  }
+    img: "G",
+  },
 ];
 
 const Testimonials = () => (
@@ -87,7 +84,7 @@ const Testimonials = () => (
       </h2>
       <div className="w-full md:mt-0 mt-6 md:flex justify-end">
         <a
-          href="https://cyneteastafricaconsultancy.cynet-learn.workers.dev/"
+          href={absoluteUrl("/")}
           target="_blank"
           rel="noreferrer"
           className="justify-center items-center flex bg-primary text-white px-6 py-3 rounded-xl font-poppins font-medium shadow-md hover:bg-secondary transition"

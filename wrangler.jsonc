@@ -5,5 +5,10 @@
   "compatibility_flags": [
     "nodejs_compat"
   ],
-  "main": "@tanstack/react-start/server-entry"
+  "main": "@tanstack/react-start/server-entry",
+  "workers_dev": false,
+  "routes": [
+    "cyneteastafrica.com/*",
+    "www.cyneteastafrica.com/*"
+  ]
 }

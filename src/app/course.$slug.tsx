@@ -31,6 +31,7 @@ import { Bullet } from "@/components/site/CourseDetail/Bullet";
 import { Section } from "@/components/site/CourseDetail/Section";
 import TrainingOptions from "@/components/site/CourseDetail/TrainingOptions";
 import { api, Faq } from "@/lib/api-client";
+import { SITE_URL } from "@/lib/site-config";
 
 type Maybe<T> = T | undefined | null;
 
@@ -51,15 +52,15 @@ export const Route = createFileRoute("/course/$slug")({
       const course = await api.getCourse(params.slug);
 
       const seoTitle =
-        course.seo_title || `${course.title} | Cynet East Africa Consultancy Institute`;
+        course.seo_title ||
+        `${course.title} | Cynet East Africa Consultancy Institute`;
       console.log("The seo title is: ", course.seo_description);
       const seoDescription =
         course.seo_description ||
         (course.excerpt ? stripHtml(course.excerpt) : "");
 
       const canonicalUrl =
-        course.seo_canonical ||
-        `https://cyneteastafrica.com/course/${params.slug}`;
+        course.seo_canonical || `${SITE_URL}/course/${params.slug}`;
 
       return {
         meta: [
@@ -85,7 +86,9 @@ export const Route = createFileRoute("/course/$slug")({
     } catch (error) {
       console.error("Failed to load SEO data:", error);
       return {
-        meta: [{ title: "Course Details | Cynet East Africa Consultancy Institute" }],
+        meta: [
+          { title: "Course Details | Cynet East Africa Consultancy Institute" },
+        ],
       };
     }
   },

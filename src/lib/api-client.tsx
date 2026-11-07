@@ -1,8 +1,9 @@
 import HeroSection from "@/components/site/HeroSection";
 import { createServerFn } from "@tanstack/react-start";
 import { email } from "zod";
+import { WP_REST_BASE } from "@/lib/site-config";
 
-const WP_BASE = "https://cyneteastafrica.com/wp-json/wp/v2";
+const WP_BASE = WP_REST_BASE;
 
 interface WPEmbeddedMedia {
   source_url?: string;
@@ -89,7 +90,6 @@ export interface OnlineSession {
   ksh: string;
   classroom: string;
   foreign: string;
-
 }
 
 export interface ClassroomSession {
@@ -144,28 +144,127 @@ export interface HeroSection {
   is_active: boolean;
 }
 
+const defaultHeroSection: HeroSection = {
+  headline: "Empowering professionals through expert training and consultancy",
+  second_headline: "for growth, impact, and lasting business value",
+  headline_highlight: "Capacity Building",
+  subheadline:
+    "Cynet East Africa helps businesses and professionals unlock practical skills, stronger leadership, and measurable growth through expert-led training and consultancy.",
+  cta_label: "Explore courses",
+  cta_url: "/courses",
+  badge_text: "NITA Approved",
+  is_active: true,
+};
+
+const defaultFeaturedCourses: Course[] = [
+  {
+    id: 1,
+    slug: "data-management-and-analysis-stata",
+    title: "Data Management and Analysis with Stata",
+    excerpt:
+      "Learn practical data cleaning, analysis, and reporting using Stata for research and business decision-making.",
+    content: "",
+    featured_image: null,
+    price: 0,
+    duration: "5 Days",
+    categories: [{ id: 1, slug: "data-analysis", name: "Data Analysis" }],
+    published_at: null,
+    seo_title: "Data Management and Analysis with Stata",
+    seo_description:
+      "Learn practical data cleaning, analysis, and reporting using Stata for research and business decision-making.",
+    seo_canonical: null,
+    seo_robots_noindex: false,
+    og_title: "Data Management and Analysis with Stata",
+    og_description:
+      "Learn practical data cleaning, analysis, and reporting using Stata for research and business decision-making.",
+  },
+  {
+    id: 2,
+    slug: "monitoring-and-evaluation-training",
+    title: "Monitoring & Evaluation Training",
+    excerpt:
+      "Build strong M&E skills for planning, implementation, and performance tracking in development and public sector contexts.",
+    content: "",
+    featured_image: null,
+    price: 0,
+    duration: "4 Days",
+    categories: [{ id: 2, slug: "monitoring-evaluation", name: "Monitoring & Evaluation" }],
+    published_at: null,
+    seo_title: "Monitoring & Evaluation Training",
+    seo_description:
+      "Build strong M&E skills for planning, implementation, and performance tracking in development and public sector contexts.",
+    seo_canonical: null,
+    seo_robots_noindex: false,
+    og_title: "Monitoring & Evaluation Training",
+    og_description:
+      "Build strong M&E skills for planning, implementation, and performance tracking in development and public sector contexts.",
+  },
+  {
+    id: 3,
+    slug: "project-management-training",
+    title: "Project Management Training",
+    excerpt:
+      "Strengthen your project planning, execution, and risk management capability with modern project leadership tools.",
+    content: "",
+    featured_image: null,
+    price: 0,
+    duration: "5 Days",
+    categories: [{ id: 3, slug: "project-management", name: "Project Management" }],
+    published_at: null,
+    seo_title: "Project Management Training",
+    seo_description:
+      "Strengthen your project planning, execution, and risk management capability with modern project leadership tools.",
+    seo_canonical: null,
+    seo_robots_noindex: false,
+    og_title: "Project Management Training",
+    og_description:
+      "Strengthen your project planning, execution, and risk management capability with modern project leadership tools.",
+  },
+  {
+    id: 4,
+    slug: "leadership-and-governance",
+    title: "Leadership & Governance",
+    excerpt:
+      "Develop the leadership mindset and governance competencies needed to manage teams and organizations effectively.",
+    content: "",
+    featured_image: null,
+    price: 0,
+    duration: "3 Days",
+    categories: [{ id: 4, slug: "governance-leadership", name: "Governance & Leadership" }],
+    published_at: null,
+    seo_title: "Leadership & Governance",
+    seo_description:
+      "Develop the leadership mindset and governance competencies needed to manage teams and organizations effectively.",
+    seo_canonical: null,
+    seo_robots_noindex: false,
+    og_title: "Leadership & Governance",
+    og_description:
+      "Develop the leadership mindset and governance competencies needed to manage teams and organizations effectively.",
+  },
+];
+
 type CourseRegistrationInput = {
-  firstName: string
-  lastName: string
-  email: string
-  phone: string
-  organization: string
-  jobTitle: string
-  trainingMode: string
-  participants: string
-  startDate: string
-  endDate: string
-  message: string
-  courseSlug: string
-  courseName: string
-  courseCategory: string
-}
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  organization: string;
+  jobTitle: string;
+  trainingMode: string;
+  participants: string;
+  startDate: string;
+  endDate: string;
+  message: string;
+  courseSlug: string;
+  courseName: string;
+  courseCategory: string;
+};
 const stripHtml = (value?: string) =>
   value
     ? value
-      .replace(/<[^>]*>/g, "")
-      .replace(/&nbsp;/g, " ")
-      .trim()
+        .replace(/<[^>]*>/g, "")
+        .replace(/&nbsp;/g, " ")
+        .trim()
     : "";
 
 const mapCourse = (item: WPCourseItem): Course => {
@@ -288,16 +387,21 @@ export const api = {
   listCourses: async (
     params: { page?: number; search?: string; category?: number } = {},
   ) => {
-    const items = await get<WPCourseItem[]>("/lp_course", {
-      page: params.page ?? 1,
-      per_page: 12,
-      search: params.search,
-      course_category: params.category,
-      orderby: "date",
-      order: "desc",
-      _embed: "wp:featuredmedia,wp:term",
-    });
-    return items.map(mapCourse);
+    try {
+      const items = await get<WPCourseItem[]>("/lp_course", {
+        page: params.page ?? 1,
+        per_page: 12,
+        search: params.search,
+        course_category: params.category,
+        orderby: "date",
+        order: "desc",
+        _embed: "wp:featuredmedia,wp:term",
+      });
+      return items.map(mapCourse);
+    } catch (error) {
+      console.warn("WordPress course listing is unavailable. Showing fallback course cards.", error);
+      return defaultFeaturedCourses;
+    }
   },
 
   getCourse: async (slug: string) => {
@@ -308,7 +412,14 @@ export const api = {
     return items[0] ? mapCourse(items[0]) : null;
   },
 
-  getHeroSection: () => get<HeroSection>("/hero-section"),
+  getHeroSection: async () => {
+    try {
+      return await get<HeroSection>("/hero-section");
+    } catch (error) {
+      console.warn("Hero endpoint unavailable, using fallback content.", error);
+      return defaultHeroSection;
+    }
+  },
 
   listCategories: async () => {
     const items = await get<WPCategoryItem[]>("/course_category", {
@@ -325,11 +436,11 @@ export const api = {
     const page = items[0];
     return page
       ? {
-        id: page.id,
-        slug: page.slug,
-        title: page.title.rendered,
-        content: page.content.rendered,
-      }
+          id: page.id,
+          slug: page.slug,
+          title: page.title.rendered,
+          content: page.content.rendered,
+        }
       : null;
   },
 
@@ -410,19 +521,18 @@ export const api = {
 
   registerForCourse: (payLoad: CourseRegistrationInput): Promise<string> =>
     registerForCourseFn({ data: payLoad }),
+};
 
-}
-
-export const registerForCourseFn = createServerFn({ method: 'POST' })
+export const registerForCourseFn = createServerFn({ method: "POST" })
   .inputValidator((d: CourseRegistrationInput) => d)
   .handler(async ({ data }): Promise<string> => {
     const response = await fetch(
-      ' https://api.cyneteastafrica.com/wp-json/tcr/v1/register',
+      " https://api.cyneteastafrica.com/wp-json/tcr/v1/register",
       {
-        method: 'POST',
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json'
+          "Content-Type": "application/json",
+          Accept: "application/json",
         },
         body: JSON.stringify({
           firstName: data.firstName,
@@ -440,11 +550,13 @@ export const registerForCourseFn = createServerFn({ method: 'POST' })
           endDate: data.endDate,
         }),
       },
-    )
+    );
 
-    const body = await response.json().catch(() => (({})))
+    const body = await response.json().catch(() => ({}));
     if (!response.ok) {
-      throw new Error(body?.message ?? `Registration failed ($response.status)`)
+      throw new Error(
+        body?.message ?? `Registration failed ($response.status)`,
+      );
     }
-    return body.message ?? 'Registration received will be intouch shortly'
-  })
+    return body.message ?? "Registration received will be intouch shortly";
+  });
