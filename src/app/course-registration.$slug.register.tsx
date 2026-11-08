@@ -241,7 +241,7 @@ function RegisterPage() {
                 </div>
               </Field>
 
-              <Field label="Phone Number" required error={errors.phone}>
+              {/* <Field label="Phone Number" required error={errors.phone}>
                 <div className="relative">
                   <Phone className="absolute left-3 top-2.5 h-4 w-4 text-muted-foreground" />
                   <input
@@ -252,7 +252,7 @@ function RegisterPage() {
                     onChange={set("phone")}
                   />
                 </div>
-              </Field>
+              </Field> */}
 
               <Field label="Organization">
                 <div className="relative">
