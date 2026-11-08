@@ -4,7 +4,7 @@ function BestPatner() {
     <section
       className="bg-team-hero w-full min-h-[500px] relative"
       style={{
-        backgroundImage: `url("https://cyneteastafrica.com/wp-content/uploads/revslider/slider-1/colleagues-team-working-company-paperwork-doig-teamwork-analyze-documents-online-research-information-planning-corporate-presentation-with-data-charts-job-collaboration-scaled.jpg")`,
+        backgroundImage: `url("https://api.cyneteastafrica.com/wp-content/uploads/revslider/slider-1/colleagues-team-working-company-paperwork-doig-teamwork-analyze-documents-online-research-information-planning-corporate-presentation-with-data-charts-job-collaboration-scaled.jpg")`,
       }}
     >
       <div className="absolute inset-0 bg-black/40 pointer-events-none" />
