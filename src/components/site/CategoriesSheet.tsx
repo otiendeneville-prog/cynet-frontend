@@ -49,7 +49,7 @@ export default function CategoriesSheet() {
                     <GraduationCapIcon />{" "}
                   </div>
 
-                  <Link to="/category/$slug" params={{ slug: category.slug }} onClick={() => setOpen(false)}>
+                  <Link to="/category/$slug" params={{ slug: category.slug } as any} onClick={() => setOpen(false)}>
                     <div className="font-semibold">{category.name}</div>
                   </Link>
                 </div>

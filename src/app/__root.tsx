@@ -40,7 +40,7 @@ export const Route = createRootRoute({
       {
         property: "og:title",
         content:
-          "Corporate: training trusted by 35+ organisations across Africa",
+          "Empowering Professionals Through Expert Training & Consultancy",
       },
       {
         property: "og:description",
@@ -54,18 +54,18 @@ export const Route = createRootRoute({
       {
         name: "twitter:title",
         content:
-          "Corporate: training trusted by 35+ organisations across Africa.",
+          "Empowering Professionals Through Expert Training & Consultancy",
       },
       {
         name: "twitter:description",
         content:
-          "Corporate: training trusted by 35+ organisations across Africa.",
+          "Empowering Professionals Through Expert Training & Consultancy",
       },
       {
         name: "twitter:image",
         content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/...",
       },
-      
+
       {
         name: "google-site-verification",
         content: "pdOAd7qjHCoS3jbyiLvqgOJf4F6cp3hRyZ3vpYwIKTo",
@@ -79,10 +79,10 @@ export const Route = createRootRoute({
         href: "https://fonts.gstatic.com",
         crossOrigin: "anonymous",
       },
-        { 
-        rel: "icon", 
-        type: "image/png", 
-        href: "/assets/favicon-cynet.png" 
+      {
+        rel: "icon",
+        type: "image/png",
+        href: "/assets/favicon-cynet.png"
       },
       {
         rel: "stylesheet",
