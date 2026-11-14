@@ -174,14 +174,14 @@ function SearchResults({ searchTerm }: { searchTerm: string }) {
 
 function SearchSuggestions({ onNavigate }: { onNavigate: () => void }) {
   const { data: categories } = useCategories();
-  const searchDropdownCategories = (categories ?? [])
+  const searchDropdownCategories = categories
     ?.slice(0, categoryStylePresets.length)
     .map((category, i) => ({
       title: category.name,
       slug: category.slug,
       image: "/assets/images/category-placeholder.png",
       ...categoryStylePresets[i],
-    }));
+    })) ?? [];
 
   return (
     <div className="absolute -bottom-104.5 left-0 z-50 h-100 w-full rounded-xl border border-border bg-background p-4 shadow-lg">
@@ -191,7 +191,7 @@ function SearchSuggestions({ onNavigate }: { onNavigate: () => void }) {
         <SearchDropdownLabel>Categories</SearchDropdownLabel>
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 lg:grid-cols-4 overflow-y-scroll lg:overflow-hidden h-65">
-          {searchDropdownCategories?.map((category) => (
+          {searchDropdownCategories.map((category) => (
             <div>
               <Link
                 to="/category/$slug"
@@ -252,7 +252,7 @@ function TrendingSearch({ onNavigate }: { onNavigate: () => void }) {
         ref={scrollerRef}
       >
         {trendingCourses.data &&
-          trendingCourses?.data?.map((item) => (
+          trendingCourses?.data.map((item) => (
             <div
               key={item.id}
               className="rounded-full text-foreground bg-background px-4 py-0.5 text-sm font-semibold whitespace-nowrap"
