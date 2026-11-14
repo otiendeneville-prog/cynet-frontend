@@ -252,7 +252,7 @@ function TrendingSearch({ onNavigate }: { onNavigate: () => void }) {
         ref={scrollerRef}
       >
         {trendingCourses.data &&
-          trendingCourses?.data.map((item) => (
+          trendingCourses?.data?.map((item) => (
             <div
               key={item.id}
               className="rounded-full text-foreground bg-background px-4 py-0.5 text-sm font-semibold whitespace-nowrap"
