@@ -174,7 +174,7 @@ function SearchResults({ searchTerm }: { searchTerm: string }) {
 
 function SearchSuggestions({ onNavigate }: { onNavigate: () => void }) {
   const { data: categories } = useCategories();
-  const searchDropdownCategories = categories
+  const searchDropdownCategories = (categories ?? [])
     ?.slice(0, categoryStylePresets.length)
     .map((category, i) => ({
       title: category.name,
@@ -191,7 +191,7 @@ function SearchSuggestions({ onNavigate }: { onNavigate: () => void }) {
         <SearchDropdownLabel>Categories</SearchDropdownLabel>
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 lg:grid-cols-4 overflow-y-scroll lg:overflow-hidden h-65">
-          {searchDropdownCategories.map((category) => (
+          {searchDropdownCategories?.map((category) => (
             <div>
               <Link
                 to="/category/$slug"
