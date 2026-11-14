@@ -154,7 +154,7 @@ function SearchResults({ searchTerm }: { searchTerm: string }) {
       {isLoading && (
         <p className="px-3 py-2 text-sm text-muted-foreground">Searching…</p>
       )}
-      {results?.map((item) => (
+      {results && results?.map((item) => (
         <div
           key={item.id}
           className="flex h-12 items-center gap-4 rounded-xl px-3 transition-all duration-150 ease-in-out hover:text-muted-foreground"
