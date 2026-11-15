@@ -3,7 +3,6 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRightCircle } from "lucide-react";
 import { CardGridSkeleton, ErrorState } from "./Loaders";
 import { CourseCard } from "./CourseCard";
-
 function FeaturedCourses() {
 
   const courses = useCourses({ page: 1 });

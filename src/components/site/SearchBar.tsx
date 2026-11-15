@@ -21,6 +21,8 @@ import {
 } from "@/hooks/use-courses";
 import { Link, useNavigate } from "@tanstack/react-router";
 import { FactCard } from "./CourseDetail/FactCard";
+import { CardGridSkeleton } from "./Loaders";
+import Skeleton from "react-loading-skeleton"
 
 export default function SearchBar() {
   return (
@@ -181,7 +183,7 @@ function SearchSuggestions({ onNavigate }: { onNavigate: () => void }) {
       slug: category.slug,
       image: "/assets/images/category-placeholder.png",
       ...categoryStylePresets[i],
-    })) ?? [];
+    }));
 
   return (
     <div className="absolute -bottom-104.5 left-0 z-50 h-100 w-full rounded-xl border border-border bg-background p-4 shadow-lg">
@@ -262,7 +264,7 @@ function TrendingSearch({ onNavigate }: { onNavigate: () => void }) {
                 params={{ slug: item.slug }}
                 onClick={onNavigate}
               >
-                {item.title}
+                {item.title || <Skeleton />}
               </Link>
             </div>
           ))}
