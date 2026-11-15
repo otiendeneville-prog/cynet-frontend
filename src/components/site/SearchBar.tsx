@@ -21,8 +21,6 @@ import {
 } from "@/hooks/use-courses";
 import { Link, useNavigate } from "@tanstack/react-router";
 import { FactCard } from "./CourseDetail/FactCard";
-import { CardGridSkeleton } from "./Loaders";
-import Skeleton from "react-loading-skeleton"
 
 export default function SearchBar() {
   return (
@@ -192,23 +190,38 @@ function SearchSuggestions({ onNavigate }: { onNavigate: () => void }) {
 
         <SearchDropdownLabel>Categories</SearchDropdownLabel>
 
+
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 lg:grid-cols-4 overflow-y-scroll lg:overflow-hidden h-65">
-          {searchDropdownCategories.map((category) => (
-            <div>
-              <Link
-                to="/category/$slug"
-                params={{ slug: category.slug }}
-                onClick={onNavigate}
+          {!searchDropdownCategories
+            ? Array.from({ length: 8 }).map((_, i) => (
+              <div
+                key={i}
+                className="h-28 rounded-xl border border-border bg-card p-4 flex items-start gap-3"
               >
-                <FactCard
-                  icon={GraduationCapIcon}
-                  label={""}
-                  value={category.title}
-                />
-              </Link>
-            </div>
-          ))}
+                <div className="size-8 rounded-full bg-sky-100/80 animate-pulse shrink-0" />
+                <div className="flex-1 space-y-2 pt-1">
+                  <div className="h-3.5 w-4/5 rounded bg-neutral-200 animate-pulse" />
+                  <div className="h-3.5 w-3/5 rounded bg-neutral-200 animate-pulse" />
+                </div>
+              </div>
+            ))
+            : searchDropdownCategories.map((category) => (
+              <div key={category.slug}>
+                <Link
+                  to="/category/$slug"
+                  params={{ slug: category.slug }}
+                  onClick={onNavigate}
+                >
+                  <FactCard
+                    icon={GraduationCapIcon}
+                    label={""}
+                    value={category.title}
+                  />
+                </Link>
+              </div>
+            ))}
         </div>
+
       </div>
     </div>
   );
@@ -264,7 +277,7 @@ function TrendingSearch({ onNavigate }: { onNavigate: () => void }) {
                 params={{ slug: item.slug }}
                 onClick={onNavigate}
               >
-                {item.title || <Skeleton />}
+                {item.title}
               </Link>
             </div>
           ))}
