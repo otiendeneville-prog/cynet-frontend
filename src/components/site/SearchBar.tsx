@@ -196,7 +196,7 @@ function SearchSuggestions({ onNavigate }: { onNavigate: () => void }) {
             ? Array.from({ length: 8 }).map((_, i) => (
               <div
                 key={i}
-                className="h-28 rounded-xl border border-border bg-card p-4 flex items-start gap-3"
+                className="h-25 rounded-xl border border-border bg-card p-4 flex items-start gap-3"
               >
                 <div className="size-8 rounded-full bg-sky-100/80 animate-pulse shrink-0" />
                 <div className="flex-1 space-y-2 pt-1">
@@ -209,7 +209,7 @@ function SearchSuggestions({ onNavigate }: { onNavigate: () => void }) {
               <div key={category.slug}>
                 <Link
                   to="/category/$slug"
-                  params={{ slug: category.slug }}
+                  params={{ slug: category.slug } as any}
                   onClick={onNavigate}
                 >
                   <FactCard
@@ -274,7 +274,7 @@ function TrendingSearch({ onNavigate }: { onNavigate: () => void }) {
             >
               <Link
                 to="/course/$slug"
-                params={{ slug: item.slug }}
+                params={{ slug: item.slug } as any}
                 onClick={onNavigate}
               >
                 {item.title}

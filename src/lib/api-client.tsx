@@ -262,9 +262,9 @@ type CourseRegistrationInput = {
 const stripHtml = (value?: string) =>
   value
     ? value
-        .replace(/<[^>]*>/g, "")
-        .replace(/&nbsp;/g, " ")
-        .trim()
+      .replace(/<[^>]*>/g, "")
+      .replace(/&nbsp;/g, " ")
+      .trim()
     : "";
 
 const mapCourse = (item: WPCourseItem): Course => {
@@ -436,11 +436,11 @@ export const api = {
     const page = items[0];
     return page
       ? {
-          id: page.id,
-          slug: page.slug,
-          title: page.title.rendered,
-          content: page.content.rendered,
-        }
+        id: page.id,
+        slug: page.slug,
+        title: page.title.rendered,
+        content: page.content.rendered,
+      }
       : null;
   },
 
