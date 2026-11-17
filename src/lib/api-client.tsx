@@ -405,12 +405,22 @@ export const api = {
   },
 
   getCourse: async (slug: string) => {
-    const items = await get<WPCourseItem[]>("/lp_course", {
-      slug,
-      _embed: "wp:featuredmedia,wp:term",
-    });
-    return items[0] ? mapCourse(items[0]) : null;
+    try {
+      const items = await get<WPCourseItem[]>("/lp_course", {
+        slug,
+        _embed: "wp:featuredmedia,wp:term",
+      });
+
+      if (items.length > 0) {
+        return mapCourse(items[0]);
+      }
+    } catch (error) {
+      console.warn(`WordPress lookup failed for "${slug}", checking fallbacks.`, error);
+    }
+
+    return defaultFeaturedCourses.find((course) => course.slug === slug) ?? null;
   },
+
 
   getHeroSection: async () => {
     try {
