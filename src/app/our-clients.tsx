@@ -151,7 +151,7 @@ export function OurClients() {
               <img
                 src={`/client-logos/${client.logo}`}
                 alt={client.name}
-                className=" h-full w-full object-fit rounded-sm opacity-60 grayscale transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0"
+                className=" h-full w-full object-fit rounded-sm opacity-60  transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0"
               />
 
               {/* <span className="text-lg font-semibold tracking-tight text-muted-foreground/40 transition-colors duration-300 group-hover:text-muted-foreground/70">
