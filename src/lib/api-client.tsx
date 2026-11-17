@@ -156,92 +156,92 @@ const defaultHeroSection: HeroSection = {
   is_active: true,
 };
 
-// const defaultFeaturedCourses: Course[] = [
-//   {
-//     id: 1,
-//     slug: "data-management-and-analysis-stata",
-//     title: "Data Management and Analysis with Stata",
-//     excerpt:
-//       "Learn practical data cleaning, analysis, and reporting using Stata for research and business decision-making.",
-//     content: "",
-//     featured_image: null,
-//     price: 0,
-//     duration: "5 Days",
-//     categories: [{ id: 1, slug: "data-analysis", name: "Data Analysis" }],
-//     published_at: null,
-//     seo_title: "Data Management and Analysis with Stata",
-//     seo_description:
-//       "Learn practical data cleaning, analysis, and reporting using Stata for research and business decision-making.",
-//     seo_canonical: null,
-//     seo_robots_noindex: false,
-//     og_title: "Data Management and Analysis with Stata",
-//     og_description:
-//       "Learn practical data cleaning, analysis, and reporting using Stata for research and business decision-making.",
-//   },
-//   {
-//     id: 2,
-//     slug: "monitoring-and-evaluation-training",
-//     title: "Monitoring & Evaluation Training",
-//     excerpt:
-//       "Build strong M&E skills for planning, implementation, and performance tracking in development and public sector contexts.",
-//     content: "",
-//     featured_image: null,
-//     price: 0,
-//     duration: "4 Days",
-//     categories: [{ id: 2, slug: "monitoring-evaluation", name: "Monitoring & Evaluation" }],
-//     published_at: null,
-//     seo_title: "Monitoring & Evaluation Training",
-//     seo_description:
-//       "Build strong M&E skills for planning, implementation, and performance tracking in development and public sector contexts.",
-//     seo_canonical: null,
-//     seo_robots_noindex: false,
-//     og_title: "Monitoring & Evaluation Training",
-//     og_description:
-//       "Build strong M&E skills for planning, implementation, and performance tracking in development and public sector contexts.",
-//   },
-//   {
-//     id: 3,
-//     slug: "project-management-training",
-//     title: "Project Management Training",
-//     excerpt:
-//       "Strengthen your project planning, execution, and risk management capability with modern project leadership tools.",
-//     content: "",
-//     featured_image: null,
-//     price: 0,
-//     duration: "5 Days",
-//     categories: [{ id: 3, slug: "project-management", name: "Project Management" }],
-//     published_at: null,
-//     seo_title: "Project Management Training",
-//     seo_description:
-//       "Strengthen your project planning, execution, and risk management capability with modern project leadership tools.",
-//     seo_canonical: null,
-//     seo_robots_noindex: false,
-//     og_title: "Project Management Training",
-//     og_description:
-//       "Strengthen your project planning, execution, and risk management capability with modern project leadership tools.",
-//   },
-//   {
-//     id: 4,
-//     slug: "leadership-and-governance",
-//     title: "Leadership & Governance",
-//     excerpt:
-//       "Develop the leadership mindset and governance competencies needed to manage teams and organizations effectively.",
-//     content: "",
-//     featured_image: null,
-//     price: 0,
-//     duration: "3 Days",
-//     categories: [{ id: 4, slug: "governance-leadership", name: "Governance & Leadership" }],
-//     published_at: null,
-//     seo_title: "Leadership & Governance",
-//     seo_description:
-//       "Develop the leadership mindset and governance competencies needed to manage teams and organizations effectively.",
-//     seo_canonical: null,
-//     seo_robots_noindex: false,
-//     og_title: "Leadership & Governance",
-//     og_description:
-//       "Develop the leadership mindset and governance competencies needed to manage teams and organizations effectively.",
-//   },
-// ];
+const defaultFeaturedCourses: Course[] = [
+  {
+    id: 1,
+    slug: "data-management-and-analysis-stata",
+    title: "Data Management and Analysis with Stata",
+    excerpt:
+      "Learn practical data cleaning, analysis, and reporting using Stata for research and business decision-making.",
+    content: "",
+    featured_image: "/assets/images/course-images/MicrosoftTeams-image-20.webp",
+    price: 0,
+    duration: "5 Days",
+    categories: [{ id: 1, slug: "data-analysis", name: "Data Analysis" }],
+    published_at: null,
+    seo_title: "Data Management and Analysis with Stata",
+    seo_description:
+      "Learn practical data cleaning, analysis, and reporting using Stata for research and business decision-making.",
+    seo_canonical: null,
+    seo_robots_noindex: false,
+    og_title: "Data Management and Analysis with Stata",
+    og_description:
+      "Learn practical data cleaning, analysis, and reporting using Stata for research and business decision-making.",
+  },
+  {
+    id: 2,
+    slug: "monitoring-and-evaluation-training",
+    title: "Monitoring & Evaluation Training",
+    excerpt:
+      "Build strong M&E skills for planning, implementation, and performance tracking in development and public sector contexts.",
+    content: "",
+    featured_image: "/assets/images/course-images/Integrated-Logistics-and-Administrative-Management-Training-e1762937068881.webp",
+    price: 0,
+    duration: "4 Days",
+    categories: [{ id: 2, slug: "monitoring-evaluation", name: "Monitoring & Evaluation" }],
+    published_at: null,
+    seo_title: "Monitoring & Evaluation Training",
+    seo_description:
+      "Build strong M&E skills for planning, implementation, and performance tracking in development and public sector contexts.",
+    seo_canonical: null,
+    seo_robots_noindex: false,
+    og_title: "Monitoring & Evaluation Training",
+    og_description:
+      "Build strong M&E skills for planning, implementation, and performance tracking in development and public sector contexts.",
+  },
+  {
+    id: 3,
+    slug: "project-management-training",
+    title: "Project Management Training",
+    excerpt:
+      "Strengthen your project planning, execution, and risk management capability with modern project leadership tools.",
+    content: "",
+    featured_image: "/assets/images/course-images/Urban-Climate-Adaptation-Strategies-Training-e1765442033536-1.webp",
+    price: 0,
+    duration: "5 Days",
+    categories: [{ id: 3, slug: "project-management", name: "Project Management" }],
+    published_at: null,
+    seo_title: "Project Management Training",
+    seo_description:
+      "Strengthen your project planning, execution, and risk management capability with modern project leadership tools.",
+    seo_canonical: null,
+    seo_robots_noindex: false,
+    og_title: "Project Management Training",
+    og_description:
+      "Strengthen your project planning, execution, and risk management capability with modern project leadership tools.",
+  },
+  {
+    id: 4,
+    slug: "leadership-and-governance",
+    title: "Leadership & Governance",
+    excerpt:
+      "Develop the leadership mindset and governance competencies needed to manage teams and organizations effectively.",
+    content: "",
+    featured_image: "/assets/images/course-images/5fb10e44315d6234887474-e1759149394525.webp",
+    price: 0,
+    duration: "3 Days",
+    categories: [{ id: 4, slug: "governance-leadership", name: "Governance & Leadership" }],
+    published_at: null,
+    seo_title: "Leadership & Governance",
+    seo_description:
+      "Develop the leadership mindset and governance competencies needed to manage teams and organizations effectively.",
+    seo_canonical: null,
+    seo_robots_noindex: false,
+    og_title: "Leadership & Governance",
+    og_description:
+      "Develop the leadership mindset and governance competencies needed to manage teams and organizations effectively.",
+  },
+];
 
 type CourseRegistrationInput = {
   firstName: string;
@@ -400,7 +400,7 @@ export const api = {
       return items.map(mapCourse);
     } catch (error) {
       console.warn("WordPress course listing is unavailable. Showing fallback course cards.", error);
-      return "/courses";
+      return defaultFeaturedCourses;
     }
   },
 
