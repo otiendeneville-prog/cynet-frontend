@@ -111,21 +111,22 @@ function RootLayout() {
                 </main>
                 <Footer />
               </div>
-              <FloatingWhatsApp
-                phoneNumber="+254 792 972 525"
-                accountName="Cynet East Africa Consultancy"
-                avatar="assets/Logo-cynet.png"
-                statusMessage="Typically replies within 1 hour"
-                chatMessage="Hello! 👋 How can we help you today?"
-                darkMode={false}
-                allowClickAway={true}
-                allowEsc={true}
-                notification={true}
-                notificationSound={true}
-              />
               <Toaster />
               <Sonner />
             </TooltipProvider>
+
+            <FloatingWhatsApp
+              phoneNumber="254792972525"
+              accountName="Cynet East Africa Consultancy"
+              avatar="/assets/Logo-cynet.png"
+              statusMessage="Typically replies within 1 hour"
+              chatMessage="Hello! 👋 How can we help you today?"
+              darkMode={false}
+              allowClickAway={false}
+              allowEsc={true}
+              notification={true}
+              notificationSound={true}
+            />
           </QueryClientProvider>
         </ThemeProvider>
         <Scripts />
