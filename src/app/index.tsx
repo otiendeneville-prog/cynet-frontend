@@ -4,7 +4,6 @@ import FeaturedCourses from "@/components/site/FeaturedCourses";
 import CategoriesSection from "@/components/site/CategoriesSection";
 import CompanyDetails from "@/components/site/CompanyDetails";
 import ClientCarousel from "@/components/site/ClientCarousel";
-import { api } from "@/lib/api-client";
 import Testimonials from "@/components/site/Testimonial";
 import BestPatner from "@/components/site/BestPatner";
 import OurServices from "@/components/site/OurServices";
@@ -12,16 +11,10 @@ import OurServices from "@/components/site/OurServices";
 export const Route = createFileRoute("/")({
   head: async () => {
     try {
-      const hero = await api.getHeroSection();
 
-      const title = hero?.headline
-        ? `${hero.headline} ${hero.headline_highlight ?? ""} ${hero.second_headline ?? ""} | Cynet East Africa`
-          .replace(/\s+/g, " ")
-          .trim()
-        : "Cynet East Africa — Empowering Professionals Through Expert Training & Consultancy";
+      const title = "Cynet East Africa — Empowering Professionals Through Expert Training & Consultancy";
 
       const description =
-        hero?.subheadline ||
         "At Cynet East Africa, we specialize in providing high-impact training, research, and consultancy services to individuals and organizations across various industries.";
 
       return {

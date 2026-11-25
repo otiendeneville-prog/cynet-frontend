@@ -11,17 +11,6 @@ describe("site configuration", () => {
   });
 });
 
-describe("api.getHeroSection", () => {
-  it("falls back to a default hero when the WordPress hero endpoint is unavailable", async () => {
-    vi.stubGlobal("fetch", vi.fn().mockRejectedValue(new Error("HTTPError")));
-
-    const result = await api.getHeroSection();
-
-    expect(result.headline).toBe("Empowering professionals through expert training and consultancy");
-    expect(result.second_headline).toBe("for growth, impact, and lasting business value");
-  });
-});
-
 describe("api.listPaginatedCourses", () => {
   afterEach(() => {
     vi.restoreAllMocks();

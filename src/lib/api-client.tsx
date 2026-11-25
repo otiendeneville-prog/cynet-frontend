@@ -422,15 +422,6 @@ export const api = {
   },
 
 
-  getHeroSection: async () => {
-    try {
-      return await get<HeroSection>("/hero-section");
-    } catch (error) {
-      console.warn("Hero endpoint unavailable, using fallback content.", error);
-      return defaultHeroSection;
-    }
-  },
-
   listCategories: async () => {
     const items = await get<WPCategoryItem[]>("/course_category", {
       per_page: 50,

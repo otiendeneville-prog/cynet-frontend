@@ -1,7 +1,6 @@
 import { BookOpen, Calendar, Sparkles } from "lucide-react";
 import { HeroCarousel } from "./HeroCarousel";
 import { Link } from "@tanstack/react-router";
-import { useHeroSection } from "@/hooks/use-homepage";
 
 function HeroSection() {
   const stats = [
@@ -11,7 +10,6 @@ function HeroSection() {
     { value: "11+", label: "Years of Experience" },
   ];
 
-  const { data: hero, isLoading } = useHeroSection();
 
   interface ClientLogo {
     name: string;
@@ -126,11 +124,11 @@ function HeroSection() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
-                to={hero?.cta_url ?? "/courses"}
+                to={"/courses"}
                 className="inline-flex items-center gap-2 px-5 h-12 rounded-lg bg-primary hover:text-white hsl(194, 66%, 49%) text-black font-medium shadow-glow hover:opacity-95 transition ease-in-out"
               >
                 <BookOpen className="size-4" />
-                {hero?.cta_label ?? "View Courses"}
+                {"View Courses"}
               </Link>
               <Link
                 to=""

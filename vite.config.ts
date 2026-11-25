@@ -6,7 +6,7 @@ import react from '@vitejs/plugin-react-swc'
 import path from 'path'
 import sitemap from 'vite-plugin-sitemap'
 
-const API_BASE = "https://cyneteastafrica.com/wp-json/wp/v2";
+const API_BASE = "https://api.cyneteastafrica.com/wp-json/wp/v2";
 
 const getCourseRoutes = async () => {
   try {
