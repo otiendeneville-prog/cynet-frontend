@@ -268,11 +268,6 @@ function CourseDetail() {
           eyebrow="Curriculum"
           title="What you'll master in this training"
         >
-          <p className="mb-6 max-w-2xl text-muted-foreground">
-            Built by industry pros — practical insights, real-world examples,
-            and strategies you can apply immediately.
-          </p>
-
           {curriculum.length ? (
             <Accordion type="multiple" className="rounded-xl border">
               {curriculum.map((m, i) => (
