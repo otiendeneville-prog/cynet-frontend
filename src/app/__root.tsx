@@ -27,14 +27,14 @@ export const Route = createRootRoute({
       { charSet: "UTF-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1.0" },
       {
-        title: "Cynet East Africa Consultancy-Cynet East Africa Consultancy",
+        title: "Cynet East Africa Consultancy",
       },
 
 
       {
         name: "description",
         content:
-          "NITA-approved courses delivered in Nairobi, online, or in-house at your offices. 1,000+ professionals trained since 2020.",
+          "Empowering Professionals Through Expert Training & Consultancy",
       },
       { property: "og:type", content: "website" },
       {
